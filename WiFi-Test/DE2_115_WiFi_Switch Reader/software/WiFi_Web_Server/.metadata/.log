@@ -1,0 +1,118 @@
+!SESSION 2022-04-21 22:42:53.387 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization E:/intelfpga_lite/18.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization E:/intelfpga_lite/18.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 16 2022-04-21 22:43:43.086
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: Received fatal alert: handshake_failure. ; version: 1.100.0.v20160217-0435
+!STACK 0
+javax.net.ssl.SSLHandshakeException: Received fatal alert: handshake_failure
+	at sun.security.ssl.Alerts.getSSLException(Unknown Source)
+	at sun.security.ssl.Alerts.getSSLException(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.recvAlert(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.readRecord(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:290)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:259)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:125)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.request(IO.java:205)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:68)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:101)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-04-21 22:45:40.938
+!MESSAGE Indexed 'software' (88 sources, 160 headers) in 3.06 sec: 5,558 declarations; 9,290 references; 18 unresolved inclusions; 2 syntax errors; 59 unresolved names (0.4%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-04-21 22:50:16.484
+!MESSAGE Indexed 'proj' (79 sources, 58 headers) in 0.768 sec: 1,189 declarations; 2,473 references; 110 unresolved inclusions; 6 syntax errors; 191 unresolved names (5%)
+!SESSION 2022-04-21 22:56:03.024 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization E:/intelfpga_lite/18.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization E:/intelfpga_lite/18.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-04-21 22:56:08.693
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 16 2022-04-21 22:56:16.666
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: Received fatal alert: handshake_failure. ; version: 1.100.0.v20160217-0435
+!STACK 0
+javax.net.ssl.SSLHandshakeException: Received fatal alert: handshake_failure
+	at sun.security.ssl.Alerts.getSSLException(Unknown Source)
+	at sun.security.ssl.Alerts.getSSLException(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.recvAlert(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.readRecord(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:290)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:259)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:125)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.request(IO.java:205)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:68)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:101)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-04-21 23:01:46.702
+!MESSAGE Indexed 'wifi_bsp' (88 sources, 122 headers) in 2.1 sec: 3,582 declarations; 6,569 references; 25 unresolved inclusions; 2 syntax errors; 68 unresolved names (0.67%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-04-21 23:01:50.775
+!MESSAGE Indexed 'wifi_qsys' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.core.resources 4 77 2022-04-21 23:03:28.298
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2022-04-21 23:03:28.298
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2022-04-21 23:03:28.298
+!MESSAGE C:\Users\dell\Desktop\DE2_115_WiFi_Web_Server\software\WiFi_Web_Server overlaps the workspace location: C:\Users\dell\Desktop\DE2_115_WiFi_Web_Server\software\WiFi_Web_Server
+
+!ENTRY org.eclipse.core.resources 4 77 2022-04-21 23:06:12.621
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2022-04-21 23:06:12.621
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2022-04-21 23:06:12.621
+!MESSAGE C:\Users\dell\Desktop\DE2_115_WiFi_Web_Server\software\WiFi_Web_Server overlaps the workspace location: C:\Users\dell\Desktop\DE2_115_WiFi_Web_Server\software\WiFi_Web_Server
+
+!ENTRY org.eclipse.core.resources 4 77 2022-04-21 23:09:38.586
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2022-04-21 23:09:38.586
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2022-04-21 23:09:38.586
+!MESSAGE C:\Users\dell\Desktop\DE2_115_WiFi_Web_Server\software\WiFi_Web_Server overlaps the workspace location: C:\Users\dell\Desktop\DE2_115_WiFi_Web_Server\software\WiFi_Web_Server
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-04-21 23:26:16.258
+!MESSAGE Indexed 'wifi_bsp' (88 sources, 155 headers) in 0.799 sec: 5,374 declarations; 9,064 references; 0 unresolved inclusions; 2 syntax errors; 8 unresolved names (0.055%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-04-21 23:30:48.251
+!MESSAGE Indexed 'wifi_bsp' (88 sources, 155 headers) in 0.726 sec: 5,374 declarations; 9,064 references; 0 unresolved inclusions; 2 syntax errors; 8 unresolved names (0.055%)

@@ -1,0 +1,357 @@
+Info: Starting: Create testbench Platform Designer system
+Info: C:/Users/dell/Desktop/DE2_115_WiFi_Web_Server/RFS_WiFi/testbench/RFS_WiFi.ipx
+Info: qsys-generate C:\Users\dell\Desktop\DE2_115_WiFi_Web_Server\RFS_WiFi.qsys --testbench=STANDARD --output-directory=C:\Users\dell\Desktop\DE2_115_WiFi_Web_Server --family="Cyclone IV E" --part=EP4CE115F29C7
+Progress: Loading DE2_115_WiFi_Web_Server/RFS_WiFi.qsys
+Progress: Reading input file
+Progress: Adding SEG7_IF_0 [SEG7_IF 1.0]
+Progress: Parameterizing module SEG7_IF_0
+Progress: Adding clk_50 [clock_source 18.1]
+Progress: Parameterizing module clk_50
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 18.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding nios2_gen2_0 [altera_nios2_gen2 18.1]
+Progress: Parameterizing module nios2_gen2_0
+Progress: Adding onchip_memory2 [altera_avalon_onchip_memory2 18.1]
+Progress: Parameterizing module onchip_memory2
+Progress: Adding pio_0 [altera_avalon_pio 18.1]
+Progress: Parameterizing module pio_0
+Progress: Adding pio_key [altera_avalon_pio 18.1]
+Progress: Parameterizing module pio_key
+Progress: Adding pio_led [altera_avalon_pio 18.1]
+Progress: Parameterizing module pio_led
+Progress: Adding pio_wifi_reset [altera_avalon_pio 18.1]
+Progress: Parameterizing module pio_wifi_reset
+Progress: Adding sysid_qsys [altera_avalon_sysid_qsys 18.1]
+Progress: Parameterizing module sysid_qsys
+Progress: Adding timer [altera_avalon_timer 18.1]
+Progress: Parameterizing module timer
+Progress: Adding wifi_uart0 [altera_avalon_uart 18.1]
+Progress: Parameterizing module wifi_uart0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: RFS_WiFi.jtag_uart: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: RFS_WiFi.pio_0: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: RFS_WiFi.pio_key: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: RFS_WiFi.sysid_qsys: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: RFS_WiFi.sysid_qsys: Time stamp will be automatically updated when this component is generated.
+Info: qsys-generate succeeded.
+Info: Loading IP catalog for testbench.
+Progress: 
+Progress: 
+Progress: 
+Progress: (2) searching E:/intelfpga_lite/18.1/quartus/sopc_builder/bin/root_components.ipx (ipx file)
+Info: Reading index E:\intelfpga_lite\18.1\quartus\sopc_builder\bin\root_components.ipx
+Info: E:\intelfpga_lite\18.1\quartus\sopc_builder\bin\root_components.ipx: Loading now from components.ipx
+Info: Reading index E:\intelfpga_lite\18.1\quartus\sopc_builder\bin\ip_component_categories.ipx
+Info: E:\intelfpga_lite\18.1\quartus\sopc_builder\bin\ip_component_categories.ipx described 0 plugins, 0 paths, in 0.01 seconds
+Info: E:/intelfpga_lite/18.1/quartus/sopc_builder/bin/ip_component_categories.ipx matched 1 files in 0.01 seconds
+Info: C:/Users/dell/Desktop/DE2_115_WiFi_Web_Server/RFS_WiFi/testbench/ip/**/* matched 0 files in 0.00 seconds
+Info: Reading index C:\Users\dell\Desktop\DE2_115_WiFi_Web_Server\RFS_WiFi\testbench\RFS_WiFi.ipx
+Progress: Loading DE2_115_WiFi_Web_Server/RFS_WiFi.qsys
+Info: C:/Users/dell/Desktop/DE2_115_WiFi_Web_Server/* matched 17 files in 0.01 seconds
+Progress: Loading TERASIC_SEG7/SEG7_IF_hw.tcl
+Info: C:/Users/dell/Desktop/DE2_115_WiFi_Web_Server/ip/**/* matched 3 files in 0.10 seconds
+Info: C:/Users/dell/Desktop/DE2_115_WiFi_Web_Server/*/* matched 470 files in 0.06 seconds
+Info: C:\Users\dell\Desktop\DE2_115_WiFi_Web_Server\RFS_WiFi\testbench\RFS_WiFi.ipx described 0 plugins, 3 paths, in 0.18 seconds
+Info: C:/Users/dell/Desktop/DE2_115_WiFi_Web_Server/RFS_WiFi/testbench/* matched 4 files in 0.18 seconds
+Info: C:/Users/dell/Desktop/DE2_115_WiFi_Web_Server/RFS_WiFi/testbench/*/* matched 0 files in 0.00 seconds
+Info: C:/Users/dell/.altera.quartus/ip/18.1/**/* matched 0 files in 0.00 seconds
+Info: E:/intelfpga_lite/18.1/quartus/sopc_builder/bin/$$QUARTUS_IP_PROJECTDIR/* matched 0 files in 0.00 seconds
+Info: E:/intelfpga_lite/18.1/quartus/sopc_builder/bin/$$QUARTUS_IP_USERDIR/* matched 0 files in 0.00 seconds
+Info: E:/intelfpga_lite/18.1/quartus/sopc_builder/bin/$$QUARTUS_IP_GLOBALDIR/* matched 0 files in 0.00 seconds
+Info: Reading index E:\intelfpga_lite\18.1\ip\altera\altera_components.ipx
+Info: E:\intelfpga_lite\18.1\ip\altera\altera_components.ipx described 2035 plugins, 0 paths, in 0.37 seconds
+Info: E:/intelfpga_lite/18.1/ip/**/* matched 139 files in 0.37 seconds
+Info: E:/intelfpga_lite/ip/**/* matched 0 files in 0.00 seconds
+Info: Reading index E:\intelfpga_lite\18.1\quartus\sopc_builder\builtin.ipx
+Info: E:\intelfpga_lite\18.1\quartus\sopc_builder\builtin.ipx described 83 plugins, 0 paths, in 0.02 seconds
+Info: E:/intelfpga_lite/18.1/quartus/sopc_builder/**/* matched 8 files in 0.02 seconds
+Info: Reading index E:\intelfpga_lite\18.1\quartus\common\librarian\factories\index.ipx
+Info: E:\intelfpga_lite\18.1\quartus\common\librarian\factories\index.ipx described 151 plugins, 0 paths, in 0.04 seconds
+Info: E:/intelfpga_lite/18.1/quartus/common/librarian/factories/**/* matched 4 files in 0.04 seconds
+Info: E:/intelfpga_lite/18.1/quartus/sopc_builder/bin/$IP_IPX_PATH matched 1 files in 0.00 seconds
+Info: E:\intelfpga_lite\18.1\quartus\sopc_builder\bin\root_components.ipx described 0 plugins, 13 paths, in 0.64 seconds
+Info: E:/intelfpga_lite/18.1/quartus/sopc_builder/bin/root_components.ipx matched 1 files in 0.64 seconds
+Progress: 
+Progress: 
+Progress: 
+Info: Running script E:/intelfpga_lite/18.1/quartus/sopc_builder/bin/tbgen.tcl
+Info: send_message Info TB_Gen: QSYS Testbench Generator Rev: $Revision: #1 $
+Info: TB_Gen: QSYS Testbench Generator Rev: $Revision: #1 $
+Info: get_module_property NAME
+Info: send_message Info TB_Gen: System design is: RFS_WiFi
+Info: TB_Gen: System design is: RFS_WiFi
+Info: get_interfaces 
+Info: get_connections 
+Info: get_interface_property clk EXPORT_OF
+Info: get_instance_property clk_50 CLASS_NAME
+Info: get_instance_assignment clk_50 testbench.partner.map.clk_in
+Info: get_interface_property pio_0_external_connection EXPORT_OF
+Info: get_instance_property pio_0 CLASS_NAME
+Info: get_instance_assignment pio_0 testbench.partner.map.external_connection
+Info: get_interface_property pio_key_external_connection EXPORT_OF
+Info: get_instance_property pio_key CLASS_NAME
+Info: get_instance_assignment pio_key testbench.partner.map.external_connection
+Info: get_interface_property pio_led_external_connection EXPORT_OF
+Info: get_instance_property pio_led CLASS_NAME
+Info: get_instance_assignment pio_led testbench.partner.map.external_connection
+Info: get_interface_property pio_wifi_reset_external_connection EXPORT_OF
+Info: get_instance_property pio_wifi_reset CLASS_NAME
+Info: get_instance_assignment pio_wifi_reset testbench.partner.map.external_connection
+Info: get_interface_property reset EXPORT_OF
+Info: get_instance_property clk_50 CLASS_NAME
+Info: get_instance_assignment clk_50 testbench.partner.map.clk_in_reset
+Info: get_interface_property seg7_if_0_conduit_end EXPORT_OF
+Info: get_instance_property SEG7_IF_0 CLASS_NAME
+Info: get_instance_assignment SEG7_IF_0 testbench.partner.map.conduit_end
+Info: get_interface_property wifi_uart0_external_connection EXPORT_OF
+Info: get_instance_property wifi_uart0 CLASS_NAME
+Info: get_instance_assignment wifi_uart0 testbench.partner.map.external_connection
+Info: send_message Info TB_Gen: Creating testbench system : RFS_WiFi_tb with all standard BFMs
+Info: TB_Gen: Creating testbench system : RFS_WiFi_tb with all standard BFMs
+Info: create_system RFS_WiFi_tb
+Info: add_instance RFS_WiFi_inst RFS_WiFi 
+Info: set_use_testbench_naming_pattern true RFS_WiFi
+Info: get_instance_interfaces RFS_WiFi_inst
+Info: get_instance_interface_property RFS_WiFi_inst clk CLASS_NAME
+Info: get_instance_interface_property RFS_WiFi_inst pio_0_external_connection CLASS_NAME
+Info: get_instance_interface_property RFS_WiFi_inst pio_key_external_connection CLASS_NAME
+Info: get_instance_interface_property RFS_WiFi_inst pio_led_external_connection CLASS_NAME
+Info: get_instance_interface_property RFS_WiFi_inst pio_wifi_reset_external_connection CLASS_NAME
+Info: get_instance_interface_property RFS_WiFi_inst reset CLASS_NAME
+Info: get_instance_interface_property RFS_WiFi_inst seg7_if_0_conduit_end CLASS_NAME
+Info: get_instance_interface_property RFS_WiFi_inst wifi_uart0_external_connection CLASS_NAME
+Info: get_instance_interface_property RFS_WiFi_inst clk CLASS_NAME
+Info: send_message Info TB_Gen: clock_sink found: clk
+Info: TB_Gen: clock_sink found: clk
+Info: get_instance_interface_property RFS_WiFi_inst clk CLASS_NAME
+Info: add_instance RFS_WiFi_inst_clk_bfm altera_avalon_clock_source 
+Info: get_instance_property RFS_WiFi_inst_clk_bfm CLASS_NAME
+Info: get_instance_interface_parameter_value RFS_WiFi_inst clk clockRate
+Info: set_instance_parameter_value RFS_WiFi_inst_clk_bfm CLOCK_RATE 50000000.0
+Info: set_instance_parameter_value RFS_WiFi_inst_clk_bfm CLOCK_UNIT 1
+Info: get_instance_property RFS_WiFi_inst_clk_bfm CLASS_NAME
+Info: get_instance_interface_property RFS_WiFi_inst clk CLASS_NAME
+Info: get_instance_interfaces RFS_WiFi_inst_clk_bfm
+Info: get_instance_interface_property RFS_WiFi_inst_clk_bfm clk CLASS_NAME
+Info: add_connection RFS_WiFi_inst_clk_bfm.clk RFS_WiFi_inst.clk
+Info: get_instance_interface_property RFS_WiFi_inst reset CLASS_NAME
+Info: send_message Info TB_Gen: reset_sink found: reset
+Info: TB_Gen: reset_sink found: reset
+Info: get_instance_interface_property RFS_WiFi_inst reset CLASS_NAME
+Info: add_instance RFS_WiFi_inst_reset_bfm altera_avalon_reset_source 
+Info: get_instance_property RFS_WiFi_inst_reset_bfm CLASS_NAME
+Info: get_instance_interface_ports RFS_WiFi_inst reset
+Info: get_instance_interface_port_property RFS_WiFi_inst reset reset_reset_n ROLE
+Info: get_instance_interface_port_property RFS_WiFi_inst reset reset_reset_n ROLE
+Info: set_instance_parameter_value RFS_WiFi_inst_reset_bfm ASSERT_HIGH_RESET 0
+Info: set_instance_parameter_value RFS_WiFi_inst_reset_bfm INITIAL_RESET_CYCLES 50
+Info: get_instance_property RFS_WiFi_inst_reset_bfm CLASS_NAME
+Info: get_instance_interfaces RFS_WiFi_inst_reset_bfm
+Info: get_instance_interface_property RFS_WiFi_inst_reset_bfm clk CLASS_NAME
+Info: get_instance_interface_property RFS_WiFi_inst_reset_bfm reset CLASS_NAME
+Info: get_instance_property RFS_WiFi_inst_reset_bfm CLASS_NAME
+Info: get_instance_interface_parameter_value RFS_WiFi_inst reset associatedClock
+Info: get_instance_interfaces RFS_WiFi_inst_clk_bfm
+Info: get_instance_interface_property RFS_WiFi_inst_clk_bfm clk CLASS_NAME
+Info: send_message Warning TB_Gen: RFS_WiFi_inst_reset_bfm is not associated to any clock; connecting RFS_WiFi_inst_reset_bfm to 'RFS_WiFi_inst_clk_bfm.clk'
+Warning: TB_Gen: RFS_WiFi_inst_reset_bfm is not associated to any clock; connecting RFS_WiFi_inst_reset_bfm to 'RFS_WiFi_inst_clk_bfm.clk'
+Info: add_connection RFS_WiFi_inst_clk_bfm.clk RFS_WiFi_inst_reset_bfm.clk
+Info: get_instance_interface_property RFS_WiFi_inst reset CLASS_NAME
+Info: get_instance_interfaces RFS_WiFi_inst_reset_bfm
+Info: get_instance_interface_property RFS_WiFi_inst_reset_bfm clk CLASS_NAME
+Info: get_instance_interface_property RFS_WiFi_inst_reset_bfm reset CLASS_NAME
+Info: add_connection RFS_WiFi_inst_reset_bfm.reset RFS_WiFi_inst.reset
+Info: get_instance_interface_property RFS_WiFi_inst pio_0_external_connection CLASS_NAME
+Info: send_message Info TB_Gen: conduit_end found: pio_0_external_connection
+Info: TB_Gen: conduit_end found: pio_0_external_connection
+Info: get_instance_interface_property RFS_WiFi_inst pio_0_external_connection CLASS_NAME
+Info: add_instance RFS_WiFi_inst_pio_0_external_connection_bfm altera_conduit_bfm 
+Info: get_instance_property RFS_WiFi_inst_pio_0_external_connection_bfm CLASS_NAME
+Info: get_instance_interface_parameter_value RFS_WiFi_inst pio_0_external_connection associatedClock
+Info: get_instance_interface_parameter_value RFS_WiFi_inst pio_0_external_connection associatedReset
+Info: get_instance_interface_ports RFS_WiFi_inst pio_0_external_connection
+Info: get_instance_interface_port_property RFS_WiFi_inst pio_0_external_connection pio_0_external_connection_export ROLE
+Info: get_instance_interface_port_property RFS_WiFi_inst pio_0_external_connection pio_0_external_connection_export WIDTH
+Info: get_instance_interface_port_property RFS_WiFi_inst pio_0_external_connection pio_0_external_connection_export DIRECTION
+Info: set_instance_parameter_value RFS_WiFi_inst_pio_0_external_connection_bfm CLOCKED_SIGNAL 0
+Info: set_instance_parameter_value RFS_WiFi_inst_pio_0_external_connection_bfm ENABLE_RESET 0
+Info: set_instance_parameter_value RFS_WiFi_inst_pio_0_external_connection_bfm SIGNAL_ROLES export
+Info: set_instance_parameter_value RFS_WiFi_inst_pio_0_external_connection_bfm SIGNAL_WIDTHS 8
+Info: set_instance_parameter_value RFS_WiFi_inst_pio_0_external_connection_bfm SIGNAL_DIRECTIONS output
+Info: get_instance_property RFS_WiFi_inst_pio_0_external_connection_bfm CLASS_NAME
+Info: get_instance_interface_property RFS_WiFi_inst pio_0_external_connection CLASS_NAME
+Info: get_instance_interfaces RFS_WiFi_inst_pio_0_external_connection_bfm
+Info: get_instance_interface_property RFS_WiFi_inst_pio_0_external_connection_bfm conduit CLASS_NAME
+Info: add_connection RFS_WiFi_inst_pio_0_external_connection_bfm.conduit RFS_WiFi_inst.pio_0_external_connection
+Info: get_instance_interface_property RFS_WiFi_inst pio_key_external_connection CLASS_NAME
+Info: send_message Info TB_Gen: conduit_end found: pio_key_external_connection
+Info: TB_Gen: conduit_end found: pio_key_external_connection
+Info: get_instance_interface_property RFS_WiFi_inst pio_key_external_connection CLASS_NAME
+Info: add_instance RFS_WiFi_inst_pio_key_external_connection_bfm altera_conduit_bfm 
+Info: get_instance_property RFS_WiFi_inst_pio_key_external_connection_bfm CLASS_NAME
+Info: get_instance_interface_parameter_value RFS_WiFi_inst pio_key_external_connection associatedClock
+Info: get_instance_interface_parameter_value RFS_WiFi_inst pio_key_external_connection associatedReset
+Info: get_instance_interface_ports RFS_WiFi_inst pio_key_external_connection
+Info: get_instance_interface_port_property RFS_WiFi_inst pio_key_external_connection pio_key_external_connection_export ROLE
+Info: get_instance_interface_port_property RFS_WiFi_inst pio_key_external_connection pio_key_external_connection_export WIDTH
+Info: get_instance_interface_port_property RFS_WiFi_inst pio_key_external_connection pio_key_external_connection_export DIRECTION
+Info: set_instance_parameter_value RFS_WiFi_inst_pio_key_external_connection_bfm CLOCKED_SIGNAL 0
+Info: set_instance_parameter_value RFS_WiFi_inst_pio_key_external_connection_bfm ENABLE_RESET 0
+Info: set_instance_parameter_value RFS_WiFi_inst_pio_key_external_connection_bfm SIGNAL_ROLES export
+Info: set_instance_parameter_value RFS_WiFi_inst_pio_key_external_connection_bfm SIGNAL_WIDTHS 2
+Info: set_instance_parameter_value RFS_WiFi_inst_pio_key_external_connection_bfm SIGNAL_DIRECTIONS output
+Info: get_instance_property RFS_WiFi_inst_pio_key_external_connection_bfm CLASS_NAME
+Info: get_instance_interface_property RFS_WiFi_inst pio_key_external_connection CLASS_NAME
+Info: get_instance_interfaces RFS_WiFi_inst_pio_key_external_connection_bfm
+Info: get_instance_interface_property RFS_WiFi_inst_pio_key_external_connection_bfm conduit CLASS_NAME
+Info: add_connection RFS_WiFi_inst_pio_key_external_connection_bfm.conduit RFS_WiFi_inst.pio_key_external_connection
+Info: get_instance_interface_property RFS_WiFi_inst pio_led_external_connection CLASS_NAME
+Info: send_message Info TB_Gen: conduit_end found: pio_led_external_connection
+Info: TB_Gen: conduit_end found: pio_led_external_connection
+Info: get_instance_interface_property RFS_WiFi_inst pio_led_external_connection CLASS_NAME
+Info: add_instance RFS_WiFi_inst_pio_led_external_connection_bfm altera_conduit_bfm 
+Info: get_instance_property RFS_WiFi_inst_pio_led_external_connection_bfm CLASS_NAME
+Info: get_instance_interface_parameter_value RFS_WiFi_inst pio_led_external_connection associatedClock
+Info: get_instance_interface_parameter_value RFS_WiFi_inst pio_led_external_connection associatedReset
+Info: get_instance_interface_ports RFS_WiFi_inst pio_led_external_connection
+Info: get_instance_interface_port_property RFS_WiFi_inst pio_led_external_connection pio_led_external_connection_export ROLE
+Info: get_instance_interface_port_property RFS_WiFi_inst pio_led_external_connection pio_led_external_connection_export WIDTH
+Info: get_instance_interface_port_property RFS_WiFi_inst pio_led_external_connection pio_led_external_connection_export DIRECTION
+Info: set_instance_parameter_value RFS_WiFi_inst_pio_led_external_connection_bfm CLOCKED_SIGNAL 0
+Info: set_instance_parameter_value RFS_WiFi_inst_pio_led_external_connection_bfm ENABLE_RESET 0
+Info: set_instance_parameter_value RFS_WiFi_inst_pio_led_external_connection_bfm SIGNAL_ROLES export
+Info: set_instance_parameter_value RFS_WiFi_inst_pio_led_external_connection_bfm SIGNAL_WIDTHS 4
+Info: set_instance_parameter_value RFS_WiFi_inst_pio_led_external_connection_bfm SIGNAL_DIRECTIONS input
+Info: get_instance_property RFS_WiFi_inst_pio_led_external_connection_bfm CLASS_NAME
+Info: get_instance_interface_property RFS_WiFi_inst pio_led_external_connection CLASS_NAME
+Info: get_instance_interfaces RFS_WiFi_inst_pio_led_external_connection_bfm
+Info: get_instance_interface_property RFS_WiFi_inst_pio_led_external_connection_bfm conduit CLASS_NAME
+Info: add_connection RFS_WiFi_inst_pio_led_external_connection_bfm.conduit RFS_WiFi_inst.pio_led_external_connection
+Info: get_instance_interface_property RFS_WiFi_inst pio_wifi_reset_external_connection CLASS_NAME
+Info: send_message Info TB_Gen: conduit_end found: pio_wifi_reset_external_connection
+Info: TB_Gen: conduit_end found: pio_wifi_reset_external_connection
+Info: get_instance_interface_property RFS_WiFi_inst pio_wifi_reset_external_connection CLASS_NAME
+Info: add_instance RFS_WiFi_inst_pio_wifi_reset_external_connection_bfm altera_conduit_bfm 
+Info: get_instance_property RFS_WiFi_inst_pio_wifi_reset_external_connection_bfm CLASS_NAME
+Info: get_instance_interface_parameter_value RFS_WiFi_inst pio_wifi_reset_external_connection associatedClock
+Info: get_instance_interface_parameter_value RFS_WiFi_inst pio_wifi_reset_external_connection associatedReset
+Info: get_instance_interface_ports RFS_WiFi_inst pio_wifi_reset_external_connection
+Info: get_instance_interface_port_property RFS_WiFi_inst pio_wifi_reset_external_connection pio_wifi_reset_external_connection_export ROLE
+Info: get_instance_interface_port_property RFS_WiFi_inst pio_wifi_reset_external_connection pio_wifi_reset_external_connection_export WIDTH
+Info: get_instance_interface_port_property RFS_WiFi_inst pio_wifi_reset_external_connection pio_wifi_reset_external_connection_export DIRECTION
+Info: set_instance_parameter_value RFS_WiFi_inst_pio_wifi_reset_external_connection_bfm CLOCKED_SIGNAL 0
+Info: set_instance_parameter_value RFS_WiFi_inst_pio_wifi_reset_external_connection_bfm ENABLE_RESET 0
+Info: set_instance_parameter_value RFS_WiFi_inst_pio_wifi_reset_external_connection_bfm SIGNAL_ROLES export
+Info: set_instance_parameter_value RFS_WiFi_inst_pio_wifi_reset_external_connection_bfm SIGNAL_WIDTHS 1
+Info: set_instance_parameter_value RFS_WiFi_inst_pio_wifi_reset_external_connection_bfm SIGNAL_DIRECTIONS input
+Info: get_instance_property RFS_WiFi_inst_pio_wifi_reset_external_connection_bfm CLASS_NAME
+Info: get_instance_interface_property RFS_WiFi_inst pio_wifi_reset_external_connection CLASS_NAME
+Info: get_instance_interfaces RFS_WiFi_inst_pio_wifi_reset_external_connection_bfm
+Info: get_instance_interface_property RFS_WiFi_inst_pio_wifi_reset_external_connection_bfm conduit CLASS_NAME
+Info: add_connection RFS_WiFi_inst_pio_wifi_reset_external_connection_bfm.conduit RFS_WiFi_inst.pio_wifi_reset_external_connection
+Info: get_instance_interface_property RFS_WiFi_inst seg7_if_0_conduit_end CLASS_NAME
+Info: send_message Info TB_Gen: conduit_end found: seg7_if_0_conduit_end
+Info: TB_Gen: conduit_end found: seg7_if_0_conduit_end
+Info: get_instance_interface_property RFS_WiFi_inst seg7_if_0_conduit_end CLASS_NAME
+Info: add_instance RFS_WiFi_inst_seg7_if_0_conduit_end_bfm altera_conduit_bfm 
+Info: get_instance_property RFS_WiFi_inst_seg7_if_0_conduit_end_bfm CLASS_NAME
+Info: get_instance_interface_parameter_value RFS_WiFi_inst seg7_if_0_conduit_end associatedClock
+Info: get_instance_interface_parameter_value RFS_WiFi_inst seg7_if_0_conduit_end associatedReset
+Info: get_instance_interface_ports RFS_WiFi_inst seg7_if_0_conduit_end
+Info: get_instance_interface_port_property RFS_WiFi_inst seg7_if_0_conduit_end seg7_if_0_conduit_end_export ROLE
+Info: get_instance_interface_port_property RFS_WiFi_inst seg7_if_0_conduit_end seg7_if_0_conduit_end_export WIDTH
+Info: get_instance_interface_port_property RFS_WiFi_inst seg7_if_0_conduit_end seg7_if_0_conduit_end_export DIRECTION
+Info: set_instance_parameter_value RFS_WiFi_inst_seg7_if_0_conduit_end_bfm CLOCKED_SIGNAL 0
+Info: set_instance_parameter_value RFS_WiFi_inst_seg7_if_0_conduit_end_bfm ENABLE_RESET 0
+Info: set_instance_parameter_value RFS_WiFi_inst_seg7_if_0_conduit_end_bfm SIGNAL_ROLES export
+Info: set_instance_parameter_value RFS_WiFi_inst_seg7_if_0_conduit_end_bfm SIGNAL_WIDTHS 48
+Info: set_instance_parameter_value RFS_WiFi_inst_seg7_if_0_conduit_end_bfm SIGNAL_DIRECTIONS input
+Info: get_instance_property RFS_WiFi_inst_seg7_if_0_conduit_end_bfm CLASS_NAME
+Info: get_instance_interface_property RFS_WiFi_inst seg7_if_0_conduit_end CLASS_NAME
+Info: get_instance_interfaces RFS_WiFi_inst_seg7_if_0_conduit_end_bfm
+Info: get_instance_interface_property RFS_WiFi_inst_seg7_if_0_conduit_end_bfm conduit CLASS_NAME
+Info: add_connection RFS_WiFi_inst_seg7_if_0_conduit_end_bfm.conduit RFS_WiFi_inst.seg7_if_0_conduit_end
+Info: get_instance_interface_property RFS_WiFi_inst wifi_uart0_external_connection CLASS_NAME
+Info: send_message Info TB_Gen: conduit_end found: wifi_uart0_external_connection
+Info: TB_Gen: conduit_end found: wifi_uart0_external_connection
+Info: get_instance_interface_property RFS_WiFi_inst wifi_uart0_external_connection CLASS_NAME
+Info: add_instance RFS_WiFi_inst_wifi_uart0_external_connection_bfm altera_conduit_bfm 
+Info: get_instance_property RFS_WiFi_inst_wifi_uart0_external_connection_bfm CLASS_NAME
+Info: get_instance_interface_parameter_value RFS_WiFi_inst wifi_uart0_external_connection associatedClock
+Info: get_instance_interface_parameter_value RFS_WiFi_inst wifi_uart0_external_connection associatedReset
+Info: get_instance_interface_ports RFS_WiFi_inst wifi_uart0_external_connection
+Info: get_instance_interface_port_property RFS_WiFi_inst wifi_uart0_external_connection wifi_uart0_external_connection_cts_n ROLE
+Info: get_instance_interface_port_property RFS_WiFi_inst wifi_uart0_external_connection wifi_uart0_external_connection_cts_n WIDTH
+Info: get_instance_interface_port_property RFS_WiFi_inst wifi_uart0_external_connection wifi_uart0_external_connection_cts_n DIRECTION
+Info: get_instance_interface_port_property RFS_WiFi_inst wifi_uart0_external_connection wifi_uart0_external_connection_rts_n ROLE
+Info: get_instance_interface_port_property RFS_WiFi_inst wifi_uart0_external_connection wifi_uart0_external_connection_rts_n WIDTH
+Info: get_instance_interface_port_property RFS_WiFi_inst wifi_uart0_external_connection wifi_uart0_external_connection_rts_n DIRECTION
+Info: get_instance_interface_port_property RFS_WiFi_inst wifi_uart0_external_connection wifi_uart0_external_connection_rxd ROLE
+Info: get_instance_interface_port_property RFS_WiFi_inst wifi_uart0_external_connection wifi_uart0_external_connection_rxd WIDTH
+Info: get_instance_interface_port_property RFS_WiFi_inst wifi_uart0_external_connection wifi_uart0_external_connection_rxd DIRECTION
+Info: get_instance_interface_port_property RFS_WiFi_inst wifi_uart0_external_connection wifi_uart0_external_connection_txd ROLE
+Info: get_instance_interface_port_property RFS_WiFi_inst wifi_uart0_external_connection wifi_uart0_external_connection_txd WIDTH
+Info: get_instance_interface_port_property RFS_WiFi_inst wifi_uart0_external_connection wifi_uart0_external_connection_txd DIRECTION
+Info: set_instance_parameter_value RFS_WiFi_inst_wifi_uart0_external_connection_bfm CLOCKED_SIGNAL 0
+Info: set_instance_parameter_value RFS_WiFi_inst_wifi_uart0_external_connection_bfm ENABLE_RESET 0
+Info: set_instance_parameter_value RFS_WiFi_inst_wifi_uart0_external_connection_bfm SIGNAL_ROLES cts_n rts_n rxd txd
+Info: set_instance_parameter_value RFS_WiFi_inst_wifi_uart0_external_connection_bfm SIGNAL_WIDTHS 1 1 1 1
+Info: set_instance_parameter_value RFS_WiFi_inst_wifi_uart0_external_connection_bfm SIGNAL_DIRECTIONS output input output input
+Info: get_instance_property RFS_WiFi_inst_wifi_uart0_external_connection_bfm CLASS_NAME
+Info: get_instance_interface_property RFS_WiFi_inst wifi_uart0_external_connection CLASS_NAME
+Info: get_instance_interfaces RFS_WiFi_inst_wifi_uart0_external_connection_bfm
+Info: get_instance_interface_property RFS_WiFi_inst_wifi_uart0_external_connection_bfm conduit CLASS_NAME
+Info: add_connection RFS_WiFi_inst_wifi_uart0_external_connection_bfm.conduit RFS_WiFi_inst.wifi_uart0_external_connection
+Info: send_message Info TB_Gen: Saving testbench system: RFS_WiFi_tb.qsys
+Info: TB_Gen: Saving testbench system: RFS_WiFi_tb.qsys
+Info: save_system RFS_WiFi_tb.qsys
+Info: send_message Info TB_Gen: TBGEN SUCCESSFUL
+Info: TB_Gen: TBGEN SUCCESSFUL
+Info: Testbench system: C:/Users/dell/Desktop/DE2_115_WiFi_Web_Server/RFS_WiFi/testbench/RFS_WiFi_tb.qsys
+Info: Done
+Info: qsys-generate C:\Users\dell\Desktop\DE2_115_WiFi_Web_Server\RFS_WiFi.qsys --simulation=VERILOG --allow-mixed-language-simulation --testbench=STANDARD --testbench-simulation=VERILOG --allow-mixed-language-testbench-simulation --output-directory=C:\Users\dell\Desktop\DE2_115_WiFi_Web_Server\RFS_WiFi\testbench\RFS_WiFi_tb\simulation --family="Cyclone IV E" --part=EP4CE115F29C7
+Progress: Loading testbench/RFS_WiFi_tb.qsys
+Progress: Reading input file
+Progress: Adding RFS_WiFi_inst [RFS_WiFi 1.0]
+Progress: Parameterizing module RFS_WiFi_inst
+Progress: Adding RFS_WiFi_inst_clk_bfm [altera_avalon_clock_source 18.1]
+Progress: Parameterizing module RFS_WiFi_inst_clk_bfm
+Progress: Adding RFS_WiFi_inst_pio_0_external_connection_bfm [altera_conduit_bfm 18.1]
+Progress: Parameterizing module RFS_WiFi_inst_pio_0_external_connection_bfm
+Progress: Adding RFS_WiFi_inst_pio_key_external_connection_bfm [altera_conduit_bfm 18.1]
+Progress: Parameterizing module RFS_WiFi_inst_pio_key_external_connection_bfm
+Progress: Adding RFS_WiFi_inst_pio_led_external_connection_bfm [altera_conduit_bfm 18.1]
+Progress: Parameterizing module RFS_WiFi_inst_pio_led_external_connection_bfm
+Progress: Adding RFS_WiFi_inst_pio_wifi_reset_external_connection_bfm [altera_conduit_bfm 18.1]
+Progress: Parameterizing module RFS_WiFi_inst_pio_wifi_reset_external_connection_bfm
+Progress: Adding RFS_WiFi_inst_reset_bfm [altera_avalon_reset_source 18.1]
+Progress: Parameterizing module RFS_WiFi_inst_reset_bfm
+Progress: Adding RFS_WiFi_inst_seg7_if_0_conduit_end_bfm [altera_conduit_bfm 18.1]
+Progress: Parameterizing module RFS_WiFi_inst_seg7_if_0_conduit_end_bfm
+Progress: Adding RFS_WiFi_inst_wifi_uart0_external_connection_bfm [altera_conduit_bfm 18.1]
+Progress: Parameterizing module RFS_WiFi_inst_wifi_uart0_external_connection_bfm
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: RFS_WiFi_tb.RFS_WiFi_inst.jtag_uart: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: RFS_WiFi_tb.RFS_WiFi_inst.pio_0: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: RFS_WiFi_tb.RFS_WiFi_inst.pio_key: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: RFS_WiFi_tb.RFS_WiFi_inst.sysid_qsys: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: RFS_WiFi_tb.RFS_WiFi_inst.sysid_qsys: Time stamp will be automatically updated when this component is generated.
+Info: RFS_WiFi_tb.RFS_WiFi_inst_clk_bfm: Elaborate: altera_clock_source
+Info: RFS_WiFi_tb.RFS_WiFi_inst_clk_bfm:            $Revision: #1 $
+Info: RFS_WiFi_tb.RFS_WiFi_inst_clk_bfm:            $Date: 2018/07/18 $
+Info: RFS_WiFi_tb.RFS_WiFi_inst_reset_bfm: Elaborate: altera_reset_source
+Info: RFS_WiFi_tb.RFS_WiFi_inst_reset_bfm:            $Revision: #1 $
+Info: RFS_WiFi_tb.RFS_WiFi_inst_reset_bfm:            $Date: 2018/07/18 $
+Info: RFS_WiFi_tb.RFS_WiFi_inst_reset_bfm: Reset is negatively asserted.
+Info: RFS_WiFi_tb: Generating RFS_WiFi_tb "RFS_WiFi_tb" for SIM_VERILOG
+Error: Generation stopped, 9 or more modules remaining
+Info: RFS_WiFi_tb: Done "RFS_WiFi_tb" with 10 modules, 1 files
+Error: qsys-generate failed with exit code 1: 1 Error, 0 Warnings
+Error: There were errors creating the testbench system.
+Info: Stopping: Create testbench Platform Designer system
