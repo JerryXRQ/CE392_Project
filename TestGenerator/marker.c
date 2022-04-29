@@ -8,7 +8,7 @@
 #define MARKER_R 0
 #define MARKER_G 200
 #define MARKER_B 0
-#define X_POS 200
+#define X_POS 280
 #define Y_POS 300
 #define WIDTH 80
 #define HEIGHT 80
@@ -70,8 +70,8 @@ void write_markered_bmp(const char *filename, unsigned char* header, struct pixe
          (*(data_temp + y*width + x)).g = (*(source + y*width + x)).g;
          (*(data_temp + y*width + x)).r = (*(source + y*width + x)).r;
 
-         if(y > Y_POS - HEIGHT/2 && y <= Y_POS + HEIGHT/2){
-            if(x > X_POS - WIDTH/2 && x <= X_POS + WIDTH/2){
+         if(y >= Y_POS - HEIGHT/2 && y < Y_POS + HEIGHT/2){
+            if(x >= X_POS - WIDTH/2 && x < X_POS + WIDTH/2){
                (*(data_temp + y*width + x)).b = MARKER_R;
                (*(data_temp + y*width + x)).g = MARKER_G;
                (*(data_temp + y*width + x)).r = MARKER_B;
