@@ -8,11 +8,11 @@
 #define MARKER_R 0
 #define MARKER_G 200
 #define MARKER_B 0
-#define X_POS 50
-#define Y_POS 100
-#define WIDTH 40
-#define HEIGHT 40
-#define IMAGE_HEIGHT 720
+#define X_POS 200
+#define Y_POS 300
+#define WIDTH 80
+#define HEIGHT 80
+#define IMAGE_HEIGHT 540
 #define IMAGE_WIDTH 720
 
 
