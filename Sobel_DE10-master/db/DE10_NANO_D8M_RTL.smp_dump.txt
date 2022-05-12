@@ -1,0 +1,13 @@
+
+State Machine - |painting_top|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|tracking:tracking_dut|state
+Name state.s3 state.s2 state.s1 state.s0 
+state.s0 0 0 0 0 
+state.s1 0 0 1 1 
+state.s2 0 1 0 1 
+state.s3 1 0 0 1 
+
+State Machine - |painting_top|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|HDMI_TX_AD7513:hdmi|I2C_HDMI_Config:u_I2C_HDMI_Config|mSetup_ST
+Name mSetup_ST.0000 mSetup_ST.0010 mSetup_ST.0001 
+mSetup_ST.0000 0 0 0 
+mSetup_ST.0001 1 0 1 
+mSetup_ST.0010 1 1 0 

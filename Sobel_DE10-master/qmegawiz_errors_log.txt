@@ -1,0 +1,6 @@
+
+
+D:/Sobel_DE10-master/V/VIDEO_PLL.v
+
+May 10 04PM:08:44>: Megafunction PLL Intel FPGA IP v20.1 is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
