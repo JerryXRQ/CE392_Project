@@ -5,10 +5,13 @@
 `timescale 1 ps / 1 ps
 module RFS_WiFi (
 		input  wire        clk_clk,                                   //                                clk.clk
-		input  wire [3:0]  pio_0_external_connection_export,          //          pio_0_external_connection.export
+		input  wire [11:0] pio_height_external_connection_export,     //     pio_height_external_connection.export
 		input  wire [1:0]  pio_key_external_connection_export,        //        pio_key_external_connection.export
 		output wire [3:0]  pio_led_external_connection_export,        //        pio_led_external_connection.export
+		input  wire [11:0] pio_width_external_connection_export,      //      pio_width_external_connection.export
 		output wire        pio_wifi_reset_external_connection_export, // pio_wifi_reset_external_connection.export
+		input  wire [11:0] pio_x_external_connection_export,          //          pio_x_external_connection.export
+		input  wire [11:0] pio_y_external_connection_export,          //          pio_y_external_connection.export
 		input  wire        reset_reset_n,                             //                              reset.reset_n
 		output wire [47:0] seg7_if_0_conduit_end_export,              //              seg7_if_0_conduit_end.export
 		input  wire        wifi_uart0_external_connection_rxd,        //     wifi_uart0_external_connection.rxd
@@ -53,13 +56,6 @@ module RFS_WiFi (
 	wire   [3:0] mm_interconnect_0_nios2_gen2_0_debug_mem_slave_byteenable;  // mm_interconnect_0:nios2_gen2_0_debug_mem_slave_byteenable -> nios2_gen2_0:debug_mem_slave_byteenable
 	wire         mm_interconnect_0_nios2_gen2_0_debug_mem_slave_write;       // mm_interconnect_0:nios2_gen2_0_debug_mem_slave_write -> nios2_gen2_0:debug_mem_slave_write
 	wire  [31:0] mm_interconnect_0_nios2_gen2_0_debug_mem_slave_writedata;   // mm_interconnect_0:nios2_gen2_0_debug_mem_slave_writedata -> nios2_gen2_0:debug_mem_slave_writedata
-	wire         mm_interconnect_0_onchip_memory2_s1_chipselect;             // mm_interconnect_0:onchip_memory2_s1_chipselect -> onchip_memory2:chipselect
-	wire  [31:0] mm_interconnect_0_onchip_memory2_s1_readdata;               // onchip_memory2:readdata -> mm_interconnect_0:onchip_memory2_s1_readdata
-	wire  [15:0] mm_interconnect_0_onchip_memory2_s1_address;                // mm_interconnect_0:onchip_memory2_s1_address -> onchip_memory2:address
-	wire   [3:0] mm_interconnect_0_onchip_memory2_s1_byteenable;             // mm_interconnect_0:onchip_memory2_s1_byteenable -> onchip_memory2:byteenable
-	wire         mm_interconnect_0_onchip_memory2_s1_write;                  // mm_interconnect_0:onchip_memory2_s1_write -> onchip_memory2:write
-	wire  [31:0] mm_interconnect_0_onchip_memory2_s1_writedata;              // mm_interconnect_0:onchip_memory2_s1_writedata -> onchip_memory2:writedata
-	wire         mm_interconnect_0_onchip_memory2_s1_clken;                  // mm_interconnect_0:onchip_memory2_s1_clken -> onchip_memory2:clken
 	wire         mm_interconnect_0_timer_s1_chipselect;                      // mm_interconnect_0:timer_s1_chipselect -> timer:chipselect
 	wire  [15:0] mm_interconnect_0_timer_s1_readdata;                        // timer:readdata -> mm_interconnect_0:timer_s1_readdata
 	wire   [2:0] mm_interconnect_0_timer_s1_address;                         // mm_interconnect_0:timer_s1_address -> timer:address
@@ -87,14 +83,27 @@ module RFS_WiFi (
 	wire   [1:0] mm_interconnect_0_pio_led_s1_address;                       // mm_interconnect_0:pio_led_s1_address -> pio_led:address
 	wire         mm_interconnect_0_pio_led_s1_write;                         // mm_interconnect_0:pio_led_s1_write -> pio_led:write_n
 	wire  [31:0] mm_interconnect_0_pio_led_s1_writedata;                     // mm_interconnect_0:pio_led_s1_writedata -> pio_led:writedata
-	wire  [31:0] mm_interconnect_0_pio_0_s1_readdata;                        // pio_0:readdata -> mm_interconnect_0:pio_0_s1_readdata
-	wire   [1:0] mm_interconnect_0_pio_0_s1_address;                         // mm_interconnect_0:pio_0_s1_address -> pio_0:address
+	wire  [31:0] mm_interconnect_0_pio_x_s1_readdata;                        // pio_x:readdata -> mm_interconnect_0:pio_x_s1_readdata
+	wire   [1:0] mm_interconnect_0_pio_x_s1_address;                         // mm_interconnect_0:pio_x_s1_address -> pio_x:address
+	wire  [31:0] mm_interconnect_0_pio_y_s1_readdata;                        // pio_y:readdata -> mm_interconnect_0:pio_y_s1_readdata
+	wire   [1:0] mm_interconnect_0_pio_y_s1_address;                         // mm_interconnect_0:pio_y_s1_address -> pio_y:address
+	wire  [31:0] mm_interconnect_0_pio_width_s1_readdata;                    // pio_width:readdata -> mm_interconnect_0:pio_width_s1_readdata
+	wire   [1:0] mm_interconnect_0_pio_width_s1_address;                     // mm_interconnect_0:pio_width_s1_address -> pio_width:address
+	wire  [31:0] mm_interconnect_0_pio_height_s1_readdata;                   // pio_height:readdata -> mm_interconnect_0:pio_height_s1_readdata
+	wire   [1:0] mm_interconnect_0_pio_height_s1_address;                    // mm_interconnect_0:pio_height_s1_address -> pio_height:address
+	wire         mm_interconnect_0_onchip_memory2_s1_chipselect;             // mm_interconnect_0:onchip_memory2_s1_chipselect -> onchip_memory2:chipselect
+	wire  [31:0] mm_interconnect_0_onchip_memory2_s1_readdata;               // onchip_memory2:readdata -> mm_interconnect_0:onchip_memory2_s1_readdata
+	wire  [14:0] mm_interconnect_0_onchip_memory2_s1_address;                // mm_interconnect_0:onchip_memory2_s1_address -> onchip_memory2:address
+	wire   [3:0] mm_interconnect_0_onchip_memory2_s1_byteenable;             // mm_interconnect_0:onchip_memory2_s1_byteenable -> onchip_memory2:byteenable
+	wire         mm_interconnect_0_onchip_memory2_s1_write;                  // mm_interconnect_0:onchip_memory2_s1_write -> onchip_memory2:write
+	wire  [31:0] mm_interconnect_0_onchip_memory2_s1_writedata;              // mm_interconnect_0:onchip_memory2_s1_writedata -> onchip_memory2:writedata
+	wire         mm_interconnect_0_onchip_memory2_s1_clken;                  // mm_interconnect_0:onchip_memory2_s1_clken -> onchip_memory2:clken
 	wire         irq_mapper_receiver0_irq;                                   // jtag_uart:av_irq -> irq_mapper:receiver0_irq
 	wire         irq_mapper_receiver1_irq;                                   // timer:irq -> irq_mapper:receiver1_irq
 	wire         irq_mapper_receiver2_irq;                                   // pio_key:irq -> irq_mapper:receiver2_irq
 	wire         irq_mapper_receiver3_irq;                                   // wifi_uart0:irq -> irq_mapper:receiver3_irq
 	wire  [31:0] nios2_gen2_0_irq_irq;                                       // irq_mapper:sender_irq -> nios2_gen2_0:irq
-	wire         rst_controller_reset_out_reset;                             // rst_controller:reset_out -> [SEG7_IF_0:s_reset, jtag_uart:rst_n, mm_interconnect_0:jtag_uart_reset_reset_bridge_in_reset_reset, onchip_memory2:reset, pio_0:reset_n, pio_key:reset_n, pio_led:reset_n, pio_wifi_reset:reset_n, rst_translator:in_reset, sysid_qsys:reset_n, timer:reset_n, wifi_uart0:reset_n]
+	wire         rst_controller_reset_out_reset;                             // rst_controller:reset_out -> [SEG7_IF_0:s_reset, jtag_uart:rst_n, mm_interconnect_0:jtag_uart_reset_reset_bridge_in_reset_reset, onchip_memory2:reset, pio_height:reset_n, pio_key:reset_n, pio_led:reset_n, pio_width:reset_n, pio_wifi_reset:reset_n, pio_x:reset_n, pio_y:reset_n, rst_translator:in_reset, sysid_qsys:reset_n, timer:reset_n, wifi_uart0:reset_n]
 	wire         rst_controller_reset_out_reset_req;                         // rst_controller:reset_req -> [onchip_memory2:reset_req, rst_translator:reset_req_in]
 	wire         rst_controller_001_reset_out_reset;                         // rst_controller_001:reset_out -> [irq_mapper:reset, mm_interconnect_0:nios2_gen2_0_reset_reset_bridge_in_reset_reset, nios2_gen2_0:reset_n]
 	wire         rst_controller_001_reset_out_reset_req;                     // rst_controller_001:reset_req -> [nios2_gen2_0:reset_req, rst_translator_001:reset_req_in]
@@ -174,12 +183,12 @@ module RFS_WiFi (
 		.freeze     (1'b0)                                            // (terminated)
 	);
 
-	RFS_WiFi_pio_0 pio_0 (
-		.clk      (clk_clk),                             //                 clk.clk
-		.reset_n  (~rst_controller_reset_out_reset),     //               reset.reset_n
-		.address  (mm_interconnect_0_pio_0_s1_address),  //                  s1.address
-		.readdata (mm_interconnect_0_pio_0_s1_readdata), //                    .readdata
-		.in_port  (pio_0_external_connection_export)     // external_connection.export
+	RFS_WiFi_pio_height pio_height (
+		.clk      (clk_clk),                                  //                 clk.clk
+		.reset_n  (~rst_controller_reset_out_reset),          //               reset.reset_n
+		.address  (mm_interconnect_0_pio_height_s1_address),  //                  s1.address
+		.readdata (mm_interconnect_0_pio_height_s1_readdata), //                    .readdata
+		.in_port  (pio_height_external_connection_export)     // external_connection.export
 	);
 
 	RFS_WiFi_pio_key pio_key (
@@ -205,6 +214,14 @@ module RFS_WiFi (
 		.out_port   (pio_led_external_connection_export)       // external_connection.export
 	);
 
+	RFS_WiFi_pio_height pio_width (
+		.clk      (clk_clk),                                 //                 clk.clk
+		.reset_n  (~rst_controller_reset_out_reset),         //               reset.reset_n
+		.address  (mm_interconnect_0_pio_width_s1_address),  //                  s1.address
+		.readdata (mm_interconnect_0_pio_width_s1_readdata), //                    .readdata
+		.in_port  (pio_width_external_connection_export)     // external_connection.export
+	);
+
 	RFS_WiFi_pio_wifi_reset pio_wifi_reset (
 		.clk        (clk_clk),                                        //                 clk.clk
 		.reset_n    (~rst_controller_reset_out_reset),                //               reset.reset_n
@@ -214,6 +231,22 @@ module RFS_WiFi (
 		.chipselect (mm_interconnect_0_pio_wifi_reset_s1_chipselect), //                    .chipselect
 		.readdata   (mm_interconnect_0_pio_wifi_reset_s1_readdata),   //                    .readdata
 		.out_port   (pio_wifi_reset_external_connection_export)       // external_connection.export
+	);
+
+	RFS_WiFi_pio_height pio_x (
+		.clk      (clk_clk),                             //                 clk.clk
+		.reset_n  (~rst_controller_reset_out_reset),     //               reset.reset_n
+		.address  (mm_interconnect_0_pio_x_s1_address),  //                  s1.address
+		.readdata (mm_interconnect_0_pio_x_s1_readdata), //                    .readdata
+		.in_port  (pio_x_external_connection_export)     // external_connection.export
+	);
+
+	RFS_WiFi_pio_height pio_y (
+		.clk      (clk_clk),                             //                 clk.clk
+		.reset_n  (~rst_controller_reset_out_reset),     //               reset.reset_n
+		.address  (mm_interconnect_0_pio_y_s1_address),  //                  s1.address
+		.readdata (mm_interconnect_0_pio_y_s1_readdata), //                    .readdata
+		.in_port  (pio_y_external_connection_export)     // external_connection.export
 	);
 
 	RFS_WiFi_sysid_qsys sysid_qsys (
@@ -291,8 +324,8 @@ module RFS_WiFi (
 		.onchip_memory2_s1_byteenable                   (mm_interconnect_0_onchip_memory2_s1_byteenable),             //                                         .byteenable
 		.onchip_memory2_s1_chipselect                   (mm_interconnect_0_onchip_memory2_s1_chipselect),             //                                         .chipselect
 		.onchip_memory2_s1_clken                        (mm_interconnect_0_onchip_memory2_s1_clken),                  //                                         .clken
-		.pio_0_s1_address                               (mm_interconnect_0_pio_0_s1_address),                         //                                 pio_0_s1.address
-		.pio_0_s1_readdata                              (mm_interconnect_0_pio_0_s1_readdata),                        //                                         .readdata
+		.pio_height_s1_address                          (mm_interconnect_0_pio_height_s1_address),                    //                            pio_height_s1.address
+		.pio_height_s1_readdata                         (mm_interconnect_0_pio_height_s1_readdata),                   //                                         .readdata
 		.pio_key_s1_address                             (mm_interconnect_0_pio_key_s1_address),                       //                               pio_key_s1.address
 		.pio_key_s1_write                               (mm_interconnect_0_pio_key_s1_write),                         //                                         .write
 		.pio_key_s1_readdata                            (mm_interconnect_0_pio_key_s1_readdata),                      //                                         .readdata
@@ -303,11 +336,17 @@ module RFS_WiFi (
 		.pio_led_s1_readdata                            (mm_interconnect_0_pio_led_s1_readdata),                      //                                         .readdata
 		.pio_led_s1_writedata                           (mm_interconnect_0_pio_led_s1_writedata),                     //                                         .writedata
 		.pio_led_s1_chipselect                          (mm_interconnect_0_pio_led_s1_chipselect),                    //                                         .chipselect
+		.pio_width_s1_address                           (mm_interconnect_0_pio_width_s1_address),                     //                             pio_width_s1.address
+		.pio_width_s1_readdata                          (mm_interconnect_0_pio_width_s1_readdata),                    //                                         .readdata
 		.pio_wifi_reset_s1_address                      (mm_interconnect_0_pio_wifi_reset_s1_address),                //                        pio_wifi_reset_s1.address
 		.pio_wifi_reset_s1_write                        (mm_interconnect_0_pio_wifi_reset_s1_write),                  //                                         .write
 		.pio_wifi_reset_s1_readdata                     (mm_interconnect_0_pio_wifi_reset_s1_readdata),               //                                         .readdata
 		.pio_wifi_reset_s1_writedata                    (mm_interconnect_0_pio_wifi_reset_s1_writedata),              //                                         .writedata
 		.pio_wifi_reset_s1_chipselect                   (mm_interconnect_0_pio_wifi_reset_s1_chipselect),             //                                         .chipselect
+		.pio_x_s1_address                               (mm_interconnect_0_pio_x_s1_address),                         //                                 pio_x_s1.address
+		.pio_x_s1_readdata                              (mm_interconnect_0_pio_x_s1_readdata),                        //                                         .readdata
+		.pio_y_s1_address                               (mm_interconnect_0_pio_y_s1_address),                         //                                 pio_y_s1.address
+		.pio_y_s1_readdata                              (mm_interconnect_0_pio_y_s1_readdata),                        //                                         .readdata
 		.SEG7_IF_0_avalon_slave_address                 (mm_interconnect_0_seg7_if_0_avalon_slave_address),           //                   SEG7_IF_0_avalon_slave.address
 		.SEG7_IF_0_avalon_slave_write                   (mm_interconnect_0_seg7_if_0_avalon_slave_write),             //                                         .write
 		.SEG7_IF_0_avalon_slave_read                    (mm_interconnect_0_seg7_if_0_avalon_slave_read),              //                                         .read

@@ -46,8 +46,42 @@ module WiFi_Network_Time(
 	output		          		WIFI_UART0_RTS,
 	input 		          		WIFI_UART0_RX,
 	output		          		WIFI_UART0_TX,
-	input 		          		WIFI_UART1_RX
+	input 		          		WIFI_UART1_RX,
+
+
+	//////////// HDMI //////////
+	inout 		          		HDMI_I2C_SCL,
+	inout 		          		HDMI_I2C_SDA,
+	inout 		          		HDMI_I2S,
+	inout 		          		HDMI_LRCLK,
+	inout 		          		HDMI_MCLK,
+	inout 		          		HDMI_SCLK,
+	output		          		HDMI_TX_CLK,
+	output		          		HDMI_TX_DE,
+	output		    [23:0]		HDMI_TX_D,
+	output		          		HDMI_TX_HS,
+	input 		          		HDMI_TX_INT,
+	output		          		HDMI_TX_VS,
+
+	//////////// GPIO_0, GPIO connect to D8M-GPIO //////////
+	inout 		          		CAMERA_I2C_SCL,
+	inout 		          		CAMERA_I2C_SDA,
+	output		          		CAMERA_PWDN_n,
+	output		          		MIPI_CS_n,
+	inout 		          		MIPI_I2C_SCL,
+	inout 		          		MIPI_I2C_SDA,
+	output		          		MIPI_MCLK,
+	input 		          		MIPI_PIXEL_CLK,
+	input 		     [9:0]		MIPI_PIXEL_D,
+	input 		          		MIPI_PIXEL_HS,
+	input 		          		MIPI_PIXEL_VS,
+	output		          		MIPI_REFCLK,
+	output		          		MIPI_RESET_n
+
 );
+
+// Y.X.
+//reg [3:0] LED_local;
 
 
 
@@ -55,6 +89,10 @@ module WiFi_Network_Time(
 //  REG/WIRE declarations
 //=======================================================
 wire pio_wifi_reset;
+wire [11:0] x;
+wire [11:0] y;
+wire [11:0] width;
+wire [11:0] height;
 
 //wire HEX0_DP, HEX1_DP, HEX2_DP, HEX3_DP, HEX4_DP, HEX5_DP;
 
@@ -86,7 +124,60 @@ RFS_WiFi u0(
 
         .pio_wifi_reset_external_connection_export(pio_wifi_reset),     // pio_wifi_reset_external_connection.export
         .pio_led_external_connection_export(LED[3: 0]),                 //        pio_led_external_connection.export
-				.pio_0_external_connection_export(SW[3:0])
+		.pio_x_external_connection_export(x),
+		.pio_y_external_connection_export(y),
+		.pio_width_external_connection_export(width),
+		.pio_height_external_connection_export(height)
+	);
+
+
+painting_top pt(
+
+			//////////// CLOCK //////////
+			.FPGA_CLK1_50(FPGA_CLK1_50),
+			.FPGA_CLK2_50(FPGA_CLK2_50),
+			.FPGA_CLK3_50(FPGA_CLK3_50),
+			//////////// HDMI //////////
+			.HDMI_I2C_SCL(HDMI_I2C_SCL),
+			.HDMI_I2C_SDA(HDMI_I2C_SDA),
+			.HDMI_I2S(HDMI_I2S),
+			.HDMI_LRCLK(HDMI_LRCLK),
+			.HDMI_MCLK(HDMI_MCLK),
+			.HDMI_SCLK(HDMI_SCLK),
+			.HDMI_TX_CLK(HDMI_TX_CLK),
+			.HDMI_TX_DE(HDMI_TX_DE),
+			.HDMI_TX_D(HDMI_TX_D),
+			.HDMI_TX_HS(HDMI_TX_HS),
+			.HDMI_TX_INT(HDMI_TX_INT),
+			.HDMI_TX_VS(HDMI_TX_VS),
+
+			//////////// KEY //////////
+			.KEY(KEY),
+
+			//////////// LED //////////
+//			.LED(LED_local),
+
+			//////////// SW //////////
+			.SW(SW),
+
+			//////////// GPIO_0, GPIO connect to D8M-GPIO //////////
+			.CAMERA_I2C_SCL(CAMERA_I2C_SCL),
+			.CAMERA_I2C_SDA(CAMERA_I2C_SDA),
+			.CAMERA_PWDN_n(CAMERA_PWDN_n),
+			.MIPI_CS_n(MIPI_CS_n),
+			.MIPI_I2C_SCL(MIPI_I2C_SCL),
+			.MIPI_I2C_SDA(MIPI_I2C_SDA),
+			.MIPI_MCLK(MIPI_MCLK),
+			.MIPI_PIXEL_CLK(MIPI_PIXEL_CLK),
+			.MIPI_PIXEL_D(MIPI_PIXEL_D),
+			.MIPI_PIXEL_HS(MIPI_PIXEL_HS),
+			.MIPI_PIXEL_VS(MIPI_PIXEL_VS),
+			.MIPI_REFCLK(MIPI_REFCLK),
+			.MIPI_RESET_n(MIPI_RESET_n),
+			.center_x_out(x),
+    		.center_y_out(y),
+    		.width_out(width),
+    		.height_out(height)
 		);
 
 endmodule

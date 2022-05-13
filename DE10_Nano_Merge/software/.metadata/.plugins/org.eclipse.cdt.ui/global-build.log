@@ -1,34 +1,30 @@
-20:02:38 **** Incremental Build of configuration Nios II for project WiFi_Network_Time ****
+01:11:32 **** Incremental Build of configuration Nios II for project WiFi_Network_Time ****
 make -j8 all 
 Info: Building ../RFS_WiFi_bsp/
 E:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../RFS_WiFi_bsp/
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../RFS_WiFi_bsp//HAL/inc -I../RFS_WiFi_bsp/ -I../RFS_WiFi_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/main.o main.c
+main.c: In function 'main':
+main.c:33:5: warning: implicit declaration of function 'hello_world' [-Wimplicit-function-declaration]
+     hello_world();
+     ^
+main.c: At top level:
+main.c:41:6: warning: conflicting types for 'hello_world'
+ void hello_world()
+      ^
+main.c:33:5: note: previous implicit declaration of 'hello_world' was here
+     hello_world();
+     ^
 [BSP build complete]
+Info: Linking WiFi_Network_Time.elf
+nios2-elf-g++  -T'../RFS_WiFi_bsp//linker.x' -msys-crt0='../RFS_WiFi_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../RFS_WiFi_bsp/   -Wl,-Map=WiFi_Network_Time.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o WiFi_Network_Time.elf obj/default/SEG7.o obj/default/esp8266.o obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert WiFi_Network_Time.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x810d0 --timestamp 1652407859 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name RFS_WiFi --sopcinfo E:/CE392/DE10_Nano_Merge/software/RFS_WiFi_bsp/../../RFS_WiFi.sopcinfo
+Info: (WiFi_Network_Time.elf) 116 KBytes program size (code + initialized data).
+Info:                         3600 Bytes free for stack + heap.
+Info: Creating WiFi_Network_Time.objdump
+nios2-elf-objdump --disassemble --syms --all-header WiFi_Network_Time.elf >WiFi_Network_Time.objdump
 [WiFi_Network_Time build complete]
-20:02:42 **** Incremental Build of configuration Nios II for project WiFi_Network_Time ****
-make -j8 all 
-Info: Building ../RFS_WiFi_bsp/
-E:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../RFS_WiFi_bsp/
-[BSP build complete]
-[WiFi_Network_Time build complete]
-20:03:39 **** Incremental Build of configuration Nios II for project WiFi_Network_Time ****
-make -j8 all 
-Info: Building ../RFS_WiFi_bsp/
-E:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../RFS_WiFi_bsp/
-[BSP build complete]
-[WiFi_Network_Time build complete]
-20:04:11 **** Incremental Build of configuration Nios II for project WiFi_Network_Time ****
-make -j8 all 
-Info: Building ../RFS_WiFi_bsp/
-E:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../RFS_WiFi_bsp/
-[BSP build complete]
-[WiFi_Network_Time build complete]
-20:06:18 **** Incremental Build of configuration Nios II for project WiFi_Network_Time ****
-make -j8 all 
-Info: Building ../RFS_WiFi_bsp/
-E:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../RFS_WiFi_bsp/
-[BSP build complete]
-[WiFi_Network_Time build complete]
-20:34:27 **** Incremental Build of configuration Nios II for project WiFi_Network_Time ****
+01:27:01 **** Incremental Build of configuration Nios II for project WiFi_Network_Time ****
 make -j8 all 
 Info: Building ../RFS_WiFi_bsp/
 E:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../RFS_WiFi_bsp/

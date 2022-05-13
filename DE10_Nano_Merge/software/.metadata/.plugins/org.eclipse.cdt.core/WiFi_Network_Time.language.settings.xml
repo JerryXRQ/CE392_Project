@@ -1382,7 +1382,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1394,7 +1396,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1406,7 +1410,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1418,7 +1424,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1430,7 +1438,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1442,7 +1452,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1454,7 +1466,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1466,7 +1480,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1478,7 +1494,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1490,7 +1508,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1502,7 +1522,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1514,7 +1536,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1540,7 +1564,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1552,7 +1578,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1564,7 +1592,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1576,7 +1606,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1588,7 +1620,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1600,7 +1634,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1612,7 +1648,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1624,7 +1662,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1636,7 +1676,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1648,7 +1690,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1660,7 +1704,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1672,7 +1718,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1684,7 +1732,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1696,7 +1746,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1708,7 +1760,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1720,7 +1774,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1732,7 +1788,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1744,7 +1802,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1756,7 +1816,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1768,7 +1830,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1780,7 +1844,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1792,7 +1858,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1804,7 +1872,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1816,7 +1886,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1828,7 +1900,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1840,7 +1914,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1852,7 +1928,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1864,7 +1942,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1876,7 +1956,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1888,7 +1970,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1900,7 +1984,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1912,7 +1998,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1924,7 +2012,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1936,7 +2026,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1948,7 +2040,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1960,7 +2054,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1986,7 +2082,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -1998,7 +2096,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -2010,7 +2110,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -2022,7 +2124,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -2034,7 +2138,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -2046,7 +2152,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -2058,7 +2166,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -2070,7 +2180,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -2082,7 +2194,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -2108,7 +2222,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -2120,7 +2236,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -2132,7 +2250,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
@@ -2144,7 +2264,9 @@
 						<entry kind="includePath" name="/RFS_WiFi_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="E:/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/RFS_WiFi_bsp"/>
+						<entry kind="includePath" name="/RFS_WiFi_bsp">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
 						<entry kind="includePath" name="/RFS_WiFi_bsp/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>

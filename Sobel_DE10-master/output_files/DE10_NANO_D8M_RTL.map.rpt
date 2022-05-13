@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DE10_NANO_D8M_RTL
-Tue May 10 16:28:58 2022
+Thu May 12 16:05:17 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -123,7 +123,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue May 10 16:28:57 2022       ;
+; Analysis & Synthesis Status     ; Successful - Thu May 12 16:05:17 2022       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; DE10_NANO_D8M_RTL                           ;
 ; Top-level Entity Name           ; painting_top                                ;
@@ -249,86 +249,86 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                       ;
-+--------------------------------------------------------------------+-----------------+----------------------------------------------+------------------------------------------------------------------------------------------+-------------+
-; File Name with User-Entered Path                                   ; Used in Netlist ; File Type                                    ; File Name with Absolute Path                                                             ; Library     ;
-+--------------------------------------------------------------------+-----------------+----------------------------------------------+------------------------------------------------------------------------------------------+-------------+
-; 3D_Painting_Top/3d_painting_top.sv                                 ; yes             ; User SystemVerilog HDL File                  ; D:/Sobel_DE10-master/3D_Painting_Top/3d_painting_top.sv                                  ;             ;
-; location_tracking/tracking.sv                                      ; yes             ; User SystemVerilog HDL File                  ; D:/Sobel_DE10-master/location_tracking/tracking.sv                                       ;             ;
-; location_tracking/fifo.sv                                          ; yes             ; User SystemVerilog HDL File                  ; D:/Sobel_DE10-master/location_tracking/fifo.sv                                           ;             ;
-; DE10_NANO_D8M_RTL.v                                                ; yes             ; User Verilog HDL File                        ; D:/Sobel_DE10-master/DE10_NANO_D8M_RTL.v                                                 ;             ;
-; V/D8M_LUT.v                                                        ; yes             ; User Verilog HDL File                        ; D:/Sobel_DE10-master/V/D8M_LUT.v                                                         ;             ;
-; V_D8M/R_GAIN.v                                                     ; yes             ; User Wizard-Generated File                   ; D:/Sobel_DE10-master/V_D8M/R_GAIN.v                                                      ;             ;
-; V_D8M/G_GAIN.v                                                     ; yes             ; User Wizard-Generated File                   ; D:/Sobel_DE10-master/V_D8M/G_GAIN.v                                                      ;             ;
-; V/I2C_READ_DATA.v                                                  ; yes             ; User Verilog HDL File                        ; D:/Sobel_DE10-master/V/I2C_READ_DATA.v                                                   ;             ;
-; V/I2C_RESET_DELAY.v                                                ; yes             ; User Verilog HDL File                        ; D:/Sobel_DE10-master/V/I2C_RESET_DELAY.v                                                 ;             ;
-; V/I2C_WRITE_PTR.v                                                  ; yes             ; User Verilog HDL File                        ; D:/Sobel_DE10-master/V/I2C_WRITE_PTR.v                                                   ;             ;
-; V/I2C_WRITE_WDATA.v                                                ; yes             ; User Verilog HDL File                        ; D:/Sobel_DE10-master/V/I2C_WRITE_WDATA.v                                                 ;             ;
-; V_HDMI/I2C_HDMI_Config.v                                           ; yes             ; User Verilog HDL File                        ; D:/Sobel_DE10-master/V_HDMI/I2C_HDMI_Config.v                                            ;             ;
-; V_HDMI/I2C_Controller.v                                            ; yes             ; User Verilog HDL File                        ; D:/Sobel_DE10-master/V_HDMI/I2C_Controller.v                                             ;             ;
-; V_HDMI/HDMI_TX_AD7513.v                                            ; yes             ; User Verilog HDL File                        ; D:/Sobel_DE10-master/V_HDMI/HDMI_TX_AD7513.v                                             ;             ;
-; V_HDMI/HDMI_I2C_WRITE_WDATA.v                                      ; yes             ; User Verilog HDL File                        ; D:/Sobel_DE10-master/V_HDMI/HDMI_I2C_WRITE_WDATA.v                                       ;             ;
-; V_HDMI/AUDIO_IF.v                                                  ; yes             ; User Verilog HDL File                        ; D:/Sobel_DE10-master/V_HDMI/AUDIO_IF.v                                                   ;             ;
-; V_D8M/int_line.v                                                   ; yes             ; User Wizard-Generated File                   ; D:/Sobel_DE10-master/V_D8M/int_line.v                                                    ;             ;
-; V_D8M/RAW2RGB_J.v                                                  ; yes             ; User Verilog HDL File                        ; D:/Sobel_DE10-master/V_D8M/RAW2RGB_J.v                                                   ;             ;
-; V_D8M/RAW_RGB_BIN.v                                                ; yes             ; User Verilog HDL File                        ; D:/Sobel_DE10-master/V_D8M/RAW_RGB_BIN.v                                                 ;             ;
-; V_D8M/ON_CHIP_FRAM.v                                               ; yes             ; User Verilog HDL File                        ; D:/Sobel_DE10-master/V_D8M/ON_CHIP_FRAM.v                                                ;             ;
-; V_D8M/MIPI_CAMERA_CONFIG.v                                         ; yes             ; User Verilog HDL File                        ; D:/Sobel_DE10-master/V_D8M/MIPI_CAMERA_CONFIG.v                                          ;             ;
-; V_D8M/MIPI_BRIDGE_CONFIG.v                                         ; yes             ; User Verilog HDL File                        ; D:/Sobel_DE10-master/V_D8M/MIPI_BRIDGE_CONFIG.v                                          ;             ;
-; V_D8M/MIPI_BRIDGE_CAMERA_Config.v                                  ; yes             ; User Verilog HDL File                        ; D:/Sobel_DE10-master/V_D8M/MIPI_BRIDGE_CAMERA_Config.v                                   ;             ;
-; V_D8M/Line_Buffer_J.v                                              ; yes             ; User Verilog HDL File                        ; D:/Sobel_DE10-master/V_D8M/Line_Buffer_J.v                                               ;             ;
-; V_D8M/FRM_COUNTER.v                                                ; yes             ; User Verilog HDL File                        ; D:/Sobel_DE10-master/V_D8M/FRM_COUNTER.v                                                 ;             ;
-; V_D8M/B_GAIN.v                                                     ; yes             ; User Wizard-Generated File                   ; D:/Sobel_DE10-master/V_D8M/B_GAIN.v                                                      ;             ;
-; V_D8M/FRAM_BUFF.v                                                  ; yes             ; User Wizard-Generated File                   ; D:/Sobel_DE10-master/V_D8M/FRAM_BUFF.v                                                   ;             ;
-; V_Auto/VCM_I2C.v                                                   ; yes             ; User Verilog HDL File                        ; D:/Sobel_DE10-master/V_Auto/VCM_I2C.v                                                    ;             ;
-; V_Auto/VCM_CTRL_P.v                                                ; yes             ; User Verilog HDL File                        ; D:/Sobel_DE10-master/V_Auto/VCM_CTRL_P.v                                                 ;             ;
-; V_Auto/RESET_DELAY.v                                               ; yes             ; User Verilog HDL File                        ; D:/Sobel_DE10-master/V_Auto/RESET_DELAY.v                                                ;             ;
-; V_Auto/MODIFY_SYNC.v                                               ; yes             ; User Verilog HDL File                        ; D:/Sobel_DE10-master/V_Auto/MODIFY_SYNC.v                                                ;             ;
-; V_Auto/LCD_COUNTER.v                                               ; yes             ; User Verilog HDL File                        ; D:/Sobel_DE10-master/V_Auto/LCD_COUNTER.v                                                ;             ;
-; V_Auto/I2C_DELAY.v                                                 ; yes             ; User Verilog HDL File                        ; D:/Sobel_DE10-master/V_Auto/I2C_DELAY.v                                                  ;             ;
-; V_Auto/FOCUS_ADJ.v                                                 ; yes             ; User Verilog HDL File                        ; D:/Sobel_DE10-master/V_Auto/FOCUS_ADJ.v                                                  ;             ;
-; V_Auto/F_VCM.v                                                     ; yes             ; User Verilog HDL File                        ; D:/Sobel_DE10-master/V_Auto/F_VCM.v                                                      ;             ;
-; V_Auto/CLOCKMEM.v                                                  ; yes             ; User Verilog HDL File                        ; D:/Sobel_DE10-master/V_Auto/CLOCKMEM.v                                                   ;             ;
-; V_Auto/AUTO_SYNC_MODIFY.v                                          ; yes             ; User Verilog HDL File                        ; D:/Sobel_DE10-master/V_Auto/AUTO_SYNC_MODIFY.v                                           ;             ;
-; V_Auto/AUTO_FOCUS_ON.v                                             ; yes             ; User Verilog HDL File                        ; D:/Sobel_DE10-master/V_Auto/AUTO_FOCUS_ON.v                                              ;             ;
-; V/VIDEO_PLL.v                                                      ; yes             ; User Wizard-Generated File                   ; D:/Sobel_DE10-master/V/VIDEO_PLL.v                                                       ; VIDEO_PLL   ;
-; V/VIDEO_PLL/VIDEO_PLL_0002.v                                       ; yes             ; User Verilog HDL File                        ; D:/Sobel_DE10-master/V/VIDEO_PLL/VIDEO_PLL_0002.v                                        ; VIDEO_PLL   ;
-; V/AUDIO_PLL.v                                                      ; yes             ; User Wizard-Generated File                   ; D:/Sobel_DE10-master/V/AUDIO_PLL.v                                                       ; AUDIO_PLL   ;
-; V/AUDIO_PLL/AUDIO_PLL_0002.v                                       ; yes             ; User Verilog HDL File                        ; D:/Sobel_DE10-master/V/AUDIO_PLL/AUDIO_PLL_0002.v                                        ; AUDIO_PLL   ;
-; VGA_Controller/VGA_Controller.v                                    ; yes             ; User Verilog HDL File                        ; D:/Sobel_DE10-master/VGA_Controller/VGA_Controller.v                                     ;             ;
-; lpm_constant.tdf                                                   ; yes             ; Megafunction                                 ; e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_constant.tdf                  ;             ;
-; db/lpm_constant_sc8.tdf                                            ; yes             ; Auto-Generated Megafunction                  ; D:/Sobel_DE10-master/db/lpm_constant_sc8.tdf                                             ;             ;
-; sld_mod_ram_rom.vhd                                                ; yes             ; Encrypted Megafunction                       ; e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_mod_ram_rom.vhd               ;             ;
-; sld_jtag_endpoint_adapter.vhd                                      ; yes             ; Encrypted Megafunction                       ; e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd     ;             ;
-; sld_jtag_endpoint_adapter_impl.sv                                  ; yes             ; Encrypted Megafunction                       ; e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter_impl.sv ;             ;
-; sld_rom_sr.vhd                                                     ; yes             ; Encrypted Megafunction                       ; e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_rom_sr.vhd                    ;             ;
-; db/lpm_constant_0b8.tdf                                            ; yes             ; Auto-Generated Megafunction                  ; D:/Sobel_DE10-master/db/lpm_constant_0b8.tdf                                             ;             ;
-; db/lpm_constant_oa8.tdf                                            ; yes             ; Auto-Generated Megafunction                  ; D:/Sobel_DE10-master/db/lpm_constant_oa8.tdf                                             ;             ;
-; altera_pll.v                                                       ; yes             ; Megafunction                                 ; e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altera_pll.v                      ;             ;
-; altsyncram.tdf                                                     ; yes             ; Megafunction                                 ; e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf                    ;             ;
-; stratix_ram_block.inc                                              ; yes             ; Megafunction                                 ; e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/stratix_ram_block.inc             ;             ;
-; lpm_mux.inc                                                        ; yes             ; Megafunction                                 ; e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.inc                       ;             ;
-; lpm_decode.inc                                                     ; yes             ; Megafunction                                 ; e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_decode.inc                    ;             ;
-; aglobal181.inc                                                     ; yes             ; Megafunction                                 ; e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc                    ;             ;
-; a_rdenreg.inc                                                      ; yes             ; Megafunction                                 ; e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_rdenreg.inc                     ;             ;
-; altrom.inc                                                         ; yes             ; Megafunction                                 ; e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.inc                        ;             ;
-; altram.inc                                                         ; yes             ; Megafunction                                 ; e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.inc                        ;             ;
-; altdpram.inc                                                       ; yes             ; Megafunction                                 ; e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.inc                      ;             ;
-; db/altsyncram_i4q1.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; D:/Sobel_DE10-master/db/altsyncram_i4q1.tdf                                              ;             ;
-; db/decode_3na.tdf                                                  ; yes             ; Auto-Generated Megafunction                  ; D:/Sobel_DE10-master/db/decode_3na.tdf                                                   ;             ;
-; db/decode_s2a.tdf                                                  ; yes             ; Auto-Generated Megafunction                  ; D:/Sobel_DE10-master/db/decode_s2a.tdf                                                   ;             ;
-; db/mux_sib.tdf                                                     ; yes             ; Auto-Generated Megafunction                  ; D:/Sobel_DE10-master/db/mux_sib.tdf                                                      ;             ;
-; db/altsyncram_6lq1.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; D:/Sobel_DE10-master/db/altsyncram_6lq1.tdf                                              ;             ;
-; sld_hub.vhd                                                        ; yes             ; Encrypted Megafunction                       ; e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_hub.vhd                       ; altera_sld  ;
-; db/ip/sld2d1b536e/alt_sld_fab.v                                    ; yes             ; Encrypted Auto-Found Verilog HDL File        ; D:/Sobel_DE10-master/db/ip/sld2d1b536e/alt_sld_fab.v                                     ; alt_sld_fab ;
-; db/ip/sld2d1b536e/submodules/alt_sld_fab_alt_sld_fab.v             ; yes             ; Encrypted Auto-Found Verilog HDL File        ; D:/Sobel_DE10-master/db/ip/sld2d1b536e/submodules/alt_sld_fab_alt_sld_fab.v              ; alt_sld_fab ;
-; db/ip/sld2d1b536e/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; yes             ; Auto-Found SystemVerilog HDL File            ; D:/Sobel_DE10-master/db/ip/sld2d1b536e/submodules/alt_sld_fab_alt_sld_fab_ident.sv       ; alt_sld_fab ;
-; db/ip/sld2d1b536e/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; D:/Sobel_DE10-master/db/ip/sld2d1b536e/submodules/alt_sld_fab_alt_sld_fab_presplit.sv    ; alt_sld_fab ;
-; db/ip/sld2d1b536e/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; yes             ; Encrypted Auto-Found VHDL File               ; D:/Sobel_DE10-master/db/ip/sld2d1b536e/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd  ; alt_sld_fab ;
-; db/ip/sld2d1b536e/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; D:/Sobel_DE10-master/db/ip/sld2d1b536e/submodules/alt_sld_fab_alt_sld_fab_splitter.sv    ; alt_sld_fab ;
-; sld_jtag_hub.vhd                                                   ; yes             ; Encrypted Megafunction                       ; e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_jtag_hub.vhd                  ;             ;
-+--------------------------------------------------------------------+-----------------+----------------------------------------------+------------------------------------------------------------------------------------------+-------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                ;
++--------------------------------------------------------------------+-----------------+----------------------------------------------+-------------------------------------------------------------------------------------------------------------------+-------------+
+; File Name with User-Entered Path                                   ; Used in Netlist ; File Type                                    ; File Name with Absolute Path                                                                                      ; Library     ;
++--------------------------------------------------------------------+-----------------+----------------------------------------------+-------------------------------------------------------------------------------------------------------------------+-------------+
+; 3D_Painting_Top/3d_painting_top.sv                                 ; yes             ; User SystemVerilog HDL File                  ; E:/GitHub Repo/CE392_Project/Sobel_DE10-master/3D_Painting_Top/3d_painting_top.sv                                 ;             ;
+; location_tracking/tracking.sv                                      ; yes             ; User SystemVerilog HDL File                  ; E:/GitHub Repo/CE392_Project/Sobel_DE10-master/location_tracking/tracking.sv                                      ;             ;
+; location_tracking/fifo.sv                                          ; yes             ; User SystemVerilog HDL File                  ; E:/GitHub Repo/CE392_Project/Sobel_DE10-master/location_tracking/fifo.sv                                          ;             ;
+; DE10_NANO_D8M_RTL.v                                                ; yes             ; User Verilog HDL File                        ; E:/GitHub Repo/CE392_Project/Sobel_DE10-master/DE10_NANO_D8M_RTL.v                                                ;             ;
+; V/D8M_LUT.v                                                        ; yes             ; User Verilog HDL File                        ; E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V/D8M_LUT.v                                                        ;             ;
+; V_D8M/R_GAIN.v                                                     ; yes             ; User Wizard-Generated File                   ; E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/R_GAIN.v                                                     ;             ;
+; V_D8M/G_GAIN.v                                                     ; yes             ; User Wizard-Generated File                   ; E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/G_GAIN.v                                                     ;             ;
+; V/I2C_READ_DATA.v                                                  ; yes             ; User Verilog HDL File                        ; E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V/I2C_READ_DATA.v                                                  ;             ;
+; V/I2C_RESET_DELAY.v                                                ; yes             ; User Verilog HDL File                        ; E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V/I2C_RESET_DELAY.v                                                ;             ;
+; V/I2C_WRITE_PTR.v                                                  ; yes             ; User Verilog HDL File                        ; E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V/I2C_WRITE_PTR.v                                                  ;             ;
+; V/I2C_WRITE_WDATA.v                                                ; yes             ; User Verilog HDL File                        ; E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V/I2C_WRITE_WDATA.v                                                ;             ;
+; V_HDMI/I2C_HDMI_Config.v                                           ; yes             ; User Verilog HDL File                        ; E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_HDMI/I2C_HDMI_Config.v                                           ;             ;
+; V_HDMI/I2C_Controller.v                                            ; yes             ; User Verilog HDL File                        ; E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_HDMI/I2C_Controller.v                                            ;             ;
+; V_HDMI/HDMI_TX_AD7513.v                                            ; yes             ; User Verilog HDL File                        ; E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_HDMI/HDMI_TX_AD7513.v                                            ;             ;
+; V_HDMI/HDMI_I2C_WRITE_WDATA.v                                      ; yes             ; User Verilog HDL File                        ; E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_HDMI/HDMI_I2C_WRITE_WDATA.v                                      ;             ;
+; V_HDMI/AUDIO_IF.v                                                  ; yes             ; User Verilog HDL File                        ; E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_HDMI/AUDIO_IF.v                                                  ;             ;
+; V_D8M/int_line.v                                                   ; yes             ; User Wizard-Generated File                   ; E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/int_line.v                                                   ;             ;
+; V_D8M/RAW2RGB_J.v                                                  ; yes             ; User Verilog HDL File                        ; E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/RAW2RGB_J.v                                                  ;             ;
+; V_D8M/RAW_RGB_BIN.v                                                ; yes             ; User Verilog HDL File                        ; E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/RAW_RGB_BIN.v                                                ;             ;
+; V_D8M/ON_CHIP_FRAM.v                                               ; yes             ; User Verilog HDL File                        ; E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/ON_CHIP_FRAM.v                                               ;             ;
+; V_D8M/MIPI_CAMERA_CONFIG.v                                         ; yes             ; User Verilog HDL File                        ; E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/MIPI_CAMERA_CONFIG.v                                         ;             ;
+; V_D8M/MIPI_BRIDGE_CONFIG.v                                         ; yes             ; User Verilog HDL File                        ; E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/MIPI_BRIDGE_CONFIG.v                                         ;             ;
+; V_D8M/MIPI_BRIDGE_CAMERA_Config.v                                  ; yes             ; User Verilog HDL File                        ; E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/MIPI_BRIDGE_CAMERA_Config.v                                  ;             ;
+; V_D8M/Line_Buffer_J.v                                              ; yes             ; User Verilog HDL File                        ; E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/Line_Buffer_J.v                                              ;             ;
+; V_D8M/FRM_COUNTER.v                                                ; yes             ; User Verilog HDL File                        ; E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/FRM_COUNTER.v                                                ;             ;
+; V_D8M/B_GAIN.v                                                     ; yes             ; User Wizard-Generated File                   ; E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/B_GAIN.v                                                     ;             ;
+; V_D8M/FRAM_BUFF.v                                                  ; yes             ; User Wizard-Generated File                   ; E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/FRAM_BUFF.v                                                  ;             ;
+; V_Auto/VCM_I2C.v                                                   ; yes             ; User Verilog HDL File                        ; E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/VCM_I2C.v                                                   ;             ;
+; V_Auto/VCM_CTRL_P.v                                                ; yes             ; User Verilog HDL File                        ; E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/VCM_CTRL_P.v                                                ;             ;
+; V_Auto/RESET_DELAY.v                                               ; yes             ; User Verilog HDL File                        ; E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/RESET_DELAY.v                                               ;             ;
+; V_Auto/MODIFY_SYNC.v                                               ; yes             ; User Verilog HDL File                        ; E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/MODIFY_SYNC.v                                               ;             ;
+; V_Auto/LCD_COUNTER.v                                               ; yes             ; User Verilog HDL File                        ; E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/LCD_COUNTER.v                                               ;             ;
+; V_Auto/I2C_DELAY.v                                                 ; yes             ; User Verilog HDL File                        ; E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/I2C_DELAY.v                                                 ;             ;
+; V_Auto/FOCUS_ADJ.v                                                 ; yes             ; User Verilog HDL File                        ; E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/FOCUS_ADJ.v                                                 ;             ;
+; V_Auto/F_VCM.v                                                     ; yes             ; User Verilog HDL File                        ; E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/F_VCM.v                                                     ;             ;
+; V_Auto/CLOCKMEM.v                                                  ; yes             ; User Verilog HDL File                        ; E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/CLOCKMEM.v                                                  ;             ;
+; V_Auto/AUTO_SYNC_MODIFY.v                                          ; yes             ; User Verilog HDL File                        ; E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/AUTO_SYNC_MODIFY.v                                          ;             ;
+; V_Auto/AUTO_FOCUS_ON.v                                             ; yes             ; User Verilog HDL File                        ; E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/AUTO_FOCUS_ON.v                                             ;             ;
+; V/VIDEO_PLL.v                                                      ; yes             ; User Wizard-Generated File                   ; E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V/VIDEO_PLL.v                                                      ; VIDEO_PLL   ;
+; V/VIDEO_PLL/VIDEO_PLL_0002.v                                       ; yes             ; User Verilog HDL File                        ; E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V/VIDEO_PLL/VIDEO_PLL_0002.v                                       ; VIDEO_PLL   ;
+; V/AUDIO_PLL.v                                                      ; yes             ; User Wizard-Generated File                   ; E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V/AUDIO_PLL.v                                                      ; AUDIO_PLL   ;
+; V/AUDIO_PLL/AUDIO_PLL_0002.v                                       ; yes             ; User Verilog HDL File                        ; E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V/AUDIO_PLL/AUDIO_PLL_0002.v                                       ; AUDIO_PLL   ;
+; VGA_Controller/VGA_Controller.v                                    ; yes             ; User Verilog HDL File                        ; E:/GitHub Repo/CE392_Project/Sobel_DE10-master/VGA_Controller/VGA_Controller.v                                    ;             ;
+; lpm_constant.tdf                                                   ; yes             ; Megafunction                                 ; e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_constant.tdf                                           ;             ;
+; db/lpm_constant_sc8.tdf                                            ; yes             ; Auto-Generated Megafunction                  ; E:/GitHub Repo/CE392_Project/Sobel_DE10-master/db/lpm_constant_sc8.tdf                                            ;             ;
+; sld_mod_ram_rom.vhd                                                ; yes             ; Encrypted Megafunction                       ; e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_mod_ram_rom.vhd                                        ;             ;
+; sld_jtag_endpoint_adapter.vhd                                      ; yes             ; Encrypted Megafunction                       ; e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd                              ;             ;
+; sld_jtag_endpoint_adapter_impl.sv                                  ; yes             ; Encrypted Megafunction                       ; e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter_impl.sv                          ;             ;
+; sld_rom_sr.vhd                                                     ; yes             ; Encrypted Megafunction                       ; e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_rom_sr.vhd                                             ;             ;
+; db/lpm_constant_0b8.tdf                                            ; yes             ; Auto-Generated Megafunction                  ; E:/GitHub Repo/CE392_Project/Sobel_DE10-master/db/lpm_constant_0b8.tdf                                            ;             ;
+; db/lpm_constant_oa8.tdf                                            ; yes             ; Auto-Generated Megafunction                  ; E:/GitHub Repo/CE392_Project/Sobel_DE10-master/db/lpm_constant_oa8.tdf                                            ;             ;
+; altera_pll.v                                                       ; yes             ; Megafunction                                 ; e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altera_pll.v                                               ;             ;
+; altsyncram.tdf                                                     ; yes             ; Megafunction                                 ; e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf                                             ;             ;
+; stratix_ram_block.inc                                              ; yes             ; Megafunction                                 ; e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                      ;             ;
+; lpm_mux.inc                                                        ; yes             ; Megafunction                                 ; e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.inc                                                ;             ;
+; lpm_decode.inc                                                     ; yes             ; Megafunction                                 ; e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_decode.inc                                             ;             ;
+; aglobal181.inc                                                     ; yes             ; Megafunction                                 ; e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc                                             ;             ;
+; a_rdenreg.inc                                                      ; yes             ; Megafunction                                 ; e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_rdenreg.inc                                              ;             ;
+; altrom.inc                                                         ; yes             ; Megafunction                                 ; e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.inc                                                 ;             ;
+; altram.inc                                                         ; yes             ; Megafunction                                 ; e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.inc                                                 ;             ;
+; altdpram.inc                                                       ; yes             ; Megafunction                                 ; e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.inc                                               ;             ;
+; db/altsyncram_i4q1.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; E:/GitHub Repo/CE392_Project/Sobel_DE10-master/db/altsyncram_i4q1.tdf                                             ;             ;
+; db/decode_3na.tdf                                                  ; yes             ; Auto-Generated Megafunction                  ; E:/GitHub Repo/CE392_Project/Sobel_DE10-master/db/decode_3na.tdf                                                  ;             ;
+; db/decode_s2a.tdf                                                  ; yes             ; Auto-Generated Megafunction                  ; E:/GitHub Repo/CE392_Project/Sobel_DE10-master/db/decode_s2a.tdf                                                  ;             ;
+; db/mux_sib.tdf                                                     ; yes             ; Auto-Generated Megafunction                  ; E:/GitHub Repo/CE392_Project/Sobel_DE10-master/db/mux_sib.tdf                                                     ;             ;
+; db/altsyncram_6lq1.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; E:/GitHub Repo/CE392_Project/Sobel_DE10-master/db/altsyncram_6lq1.tdf                                             ;             ;
+; sld_hub.vhd                                                        ; yes             ; Encrypted Megafunction                       ; e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_hub.vhd                                                ; altera_sld  ;
+; db/ip/sld2d1b536e/alt_sld_fab.v                                    ; yes             ; Encrypted Auto-Found Verilog HDL File        ; E:/GitHub Repo/CE392_Project/Sobel_DE10-master/db/ip/sld2d1b536e/alt_sld_fab.v                                    ; alt_sld_fab ;
+; db/ip/sld2d1b536e/submodules/alt_sld_fab_alt_sld_fab.v             ; yes             ; Encrypted Auto-Found Verilog HDL File        ; E:/GitHub Repo/CE392_Project/Sobel_DE10-master/db/ip/sld2d1b536e/submodules/alt_sld_fab_alt_sld_fab.v             ; alt_sld_fab ;
+; db/ip/sld2d1b536e/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; yes             ; Auto-Found SystemVerilog HDL File            ; E:/GitHub Repo/CE392_Project/Sobel_DE10-master/db/ip/sld2d1b536e/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; alt_sld_fab ;
+; db/ip/sld2d1b536e/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; E:/GitHub Repo/CE392_Project/Sobel_DE10-master/db/ip/sld2d1b536e/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; alt_sld_fab ;
+; db/ip/sld2d1b536e/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; yes             ; Encrypted Auto-Found VHDL File               ; E:/GitHub Repo/CE392_Project/Sobel_DE10-master/db/ip/sld2d1b536e/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; alt_sld_fab ;
+; db/ip/sld2d1b536e/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; E:/GitHub Repo/CE392_Project/Sobel_DE10-master/db/ip/sld2d1b536e/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; alt_sld_fab ;
+; sld_jtag_hub.vhd                                                   ; yes             ; Encrypted Megafunction                       ; e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_jtag_hub.vhd                                           ;             ;
++--------------------------------------------------------------------+-----------------+----------------------------------------------+-------------------------------------------------------------------------------------------------------------------+-------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -2639,7 +2639,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:21     ;
+; Top            ; 00:00:24     ;
 +----------------+--------------+
 
 
@@ -2649,149 +2649,149 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue May 10 16:27:50 2022
+    Info: Processing started: Thu May 12 16:04:19 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE10_NANO_D8M_RTL -c DE10_NANO_D8M_RTL
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file 3d_painting_top/3d_painting_top.sv
-    Info (12023): Found entity 1: painting_top File: D:/Sobel_DE10-master/3D_Painting_Top/3d_painting_top.sv Line: 1
+    Info (12023): Found entity 1: painting_top File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/3D_Painting_Top/3d_painting_top.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file location_tracking/empty.sv
-    Info (12023): Found entity 1: empty_test File: D:/Sobel_DE10-master/location_tracking/empty.sv Line: 2
+    Info (12023): Found entity 1: empty_test File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/location_tracking/empty.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file location_tracking/tracking.sv
-    Info (12023): Found entity 1: tracking File: D:/Sobel_DE10-master/location_tracking/tracking.sv Line: 1
+    Info (12023): Found entity 1: tracking File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/location_tracking/tracking.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file location_tracking/fifo.sv
-    Info (12023): Found entity 1: fifo File: D:/Sobel_DE10-master/location_tracking/fifo.sv Line: 2
+    Info (12023): Found entity 1: fifo File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/location_tracking/fifo.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file de10_nano_d8m_rtl.v
-    Info (12023): Found entity 1: DE10_NANO_D8M_RTL File: D:/Sobel_DE10-master/DE10_NANO_D8M_RTL.v Line: 6
+    Info (12023): Found entity 1: DE10_NANO_D8M_RTL File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/DE10_NANO_D8M_RTL.v Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file v/d8m_lut.v
-    Info (12023): Found entity 1: D8M_LUT File: D:/Sobel_DE10-master/V/D8M_LUT.v Line: 1
+    Info (12023): Found entity 1: D8M_LUT File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V/D8M_LUT.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file v_d8m/r_gain.v
-    Info (12023): Found entity 1: R_GAIN File: D:/Sobel_DE10-master/V_D8M/R_GAIN.v Line: 40
+    Info (12023): Found entity 1: R_GAIN File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/R_GAIN.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file v_d8m/g_gain.v
-    Info (12023): Found entity 1: G_GAIN File: D:/Sobel_DE10-master/V_D8M/G_GAIN.v Line: 40
+    Info (12023): Found entity 1: G_GAIN File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/G_GAIN.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file v/i2c_read_data.v
-    Info (12023): Found entity 1: I2C_READ_DATA File: D:/Sobel_DE10-master/V/I2C_READ_DATA.v Line: 1
+    Info (12023): Found entity 1: I2C_READ_DATA File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V/I2C_READ_DATA.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file v/i2c_reset_delay.v
-    Info (12023): Found entity 1: I2C_RESET_DELAY File: D:/Sobel_DE10-master/V/I2C_RESET_DELAY.v Line: 1
+    Info (12023): Found entity 1: I2C_RESET_DELAY File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V/I2C_RESET_DELAY.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file v/i2c_write_ptr.v
-    Info (12023): Found entity 1: I2C_WRITE_PTR File: D:/Sobel_DE10-master/V/I2C_WRITE_PTR.v Line: 1
+    Info (12023): Found entity 1: I2C_WRITE_PTR File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V/I2C_WRITE_PTR.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file v/i2c_write_wdata.v
-    Info (12023): Found entity 1: I2C_WRITE_WDATA File: D:/Sobel_DE10-master/V/I2C_WRITE_WDATA.v Line: 1
+    Info (12023): Found entity 1: I2C_WRITE_WDATA File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V/I2C_WRITE_WDATA.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file v_hdmi/i2c_hdmi_config.v
-    Info (12023): Found entity 1: I2C_HDMI_Config File: D:/Sobel_DE10-master/V_HDMI/I2C_HDMI_Config.v Line: 1
+    Info (12023): Found entity 1: I2C_HDMI_Config File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_HDMI/I2C_HDMI_Config.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file v_hdmi/i2c_controller.v
-    Info (12023): Found entity 1: I2C_Controller File: D:/Sobel_DE10-master/V_HDMI/I2C_Controller.v Line: 43
+    Info (12023): Found entity 1: I2C_Controller File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_HDMI/I2C_Controller.v Line: 43
 Info (12021): Found 1 design units, including 1 entities, in source file v_hdmi/hdmi_tx_ad7513.v
-    Info (12023): Found entity 1: HDMI_TX_AD7513 File: D:/Sobel_DE10-master/V_HDMI/HDMI_TX_AD7513.v Line: 3
+    Info (12023): Found entity 1: HDMI_TX_AD7513 File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_HDMI/HDMI_TX_AD7513.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file v_hdmi/hdmi_i2c_write_wdata.v
-    Info (12023): Found entity 1: HDMI_I2C_WRITE_WDATA File: D:/Sobel_DE10-master/V_HDMI/HDMI_I2C_WRITE_WDATA.v Line: 1
+    Info (12023): Found entity 1: HDMI_I2C_WRITE_WDATA File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_HDMI/HDMI_I2C_WRITE_WDATA.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file v_hdmi/audio_if.v
-    Info (12023): Found entity 1: AUDIO_IF File: D:/Sobel_DE10-master/V_HDMI/AUDIO_IF.v Line: 56
+    Info (12023): Found entity 1: AUDIO_IF File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_HDMI/AUDIO_IF.v Line: 56
 Info (12021): Found 1 design units, including 1 entities, in source file v_d8m/int_line.v
-    Info (12023): Found entity 1: int_line File: D:/Sobel_DE10-master/V_D8M/int_line.v Line: 40
+    Info (12023): Found entity 1: int_line File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/int_line.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file v_d8m/raw2rgb_j.v
-    Info (12023): Found entity 1: RAW2RGB_J File: D:/Sobel_DE10-master/V_D8M/RAW2RGB_J.v Line: 2
+    Info (12023): Found entity 1: RAW2RGB_J File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/RAW2RGB_J.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file v_d8m/raw_rgb_bin.v
-    Info (12023): Found entity 1: RAW_RGB_BIN File: D:/Sobel_DE10-master/V_D8M/RAW_RGB_BIN.v Line: 4
+    Info (12023): Found entity 1: RAW_RGB_BIN File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/RAW_RGB_BIN.v Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file v_d8m/ram_read_counter.v
-    Info (12023): Found entity 1: RAM_READ_COUNTER File: D:/Sobel_DE10-master/V_D8M/RAM_READ_COUNTER.v Line: 2
+    Info (12023): Found entity 1: RAM_READ_COUNTER File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/RAM_READ_COUNTER.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file v_d8m/on_chip_fram.v
-    Info (12023): Found entity 1: ON_CHIP_FRAM File: D:/Sobel_DE10-master/V_D8M/ON_CHIP_FRAM.v Line: 1
-Warning (10275): Verilog HDL Module Instantiation warning at MIPI_CAMERA_CONFIG.v(301): ignored dangling comma in List of Port Connections File: D:/Sobel_DE10-master/V_D8M/MIPI_CAMERA_CONFIG.v Line: 301
+    Info (12023): Found entity 1: ON_CHIP_FRAM File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/ON_CHIP_FRAM.v Line: 1
+Warning (10275): Verilog HDL Module Instantiation warning at MIPI_CAMERA_CONFIG.v(301): ignored dangling comma in List of Port Connections File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/MIPI_CAMERA_CONFIG.v Line: 301
 Info (12021): Found 1 design units, including 1 entities, in source file v_d8m/mipi_camera_config.v
-    Info (12023): Found entity 1: MIPI_CAMERA_CONFIG File: D:/Sobel_DE10-master/V_D8M/MIPI_CAMERA_CONFIG.v Line: 1
-Warning (10275): Verilog HDL Module Instantiation warning at MIPI_BRIDGE_CONFIG.v(358): ignored dangling comma in List of Port Connections File: D:/Sobel_DE10-master/V_D8M/MIPI_BRIDGE_CONFIG.v Line: 358
+    Info (12023): Found entity 1: MIPI_CAMERA_CONFIG File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/MIPI_CAMERA_CONFIG.v Line: 1
+Warning (10275): Verilog HDL Module Instantiation warning at MIPI_BRIDGE_CONFIG.v(358): ignored dangling comma in List of Port Connections File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/MIPI_BRIDGE_CONFIG.v Line: 358
 Info (12021): Found 1 design units, including 1 entities, in source file v_d8m/mipi_bridge_config.v
-    Info (12023): Found entity 1: MIPI_BRIDGE_CONFIG File: D:/Sobel_DE10-master/V_D8M/MIPI_BRIDGE_CONFIG.v Line: 1
+    Info (12023): Found entity 1: MIPI_BRIDGE_CONFIG File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/MIPI_BRIDGE_CONFIG.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file v_d8m/mipi_bridge_camera_config.v
-    Info (12023): Found entity 1: MIPI_BRIDGE_CAMERA_Config File: D:/Sobel_DE10-master/V_D8M/MIPI_BRIDGE_CAMERA_Config.v Line: 1
+    Info (12023): Found entity 1: MIPI_BRIDGE_CAMERA_Config File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/MIPI_BRIDGE_CAMERA_Config.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file v_d8m/line_buffer_j.v
-    Info (12023): Found entity 1: Line_Buffer_J File: D:/Sobel_DE10-master/V_D8M/Line_Buffer_J.v Line: 1
+    Info (12023): Found entity 1: Line_Buffer_J File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/Line_Buffer_J.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file v_d8m/frm_counter.v
-    Info (12023): Found entity 1: FRM_COUNTER File: D:/Sobel_DE10-master/V_D8M/FRM_COUNTER.v Line: 1
+    Info (12023): Found entity 1: FRM_COUNTER File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/FRM_COUNTER.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file v_d8m/b_gain.v
-    Info (12023): Found entity 1: B_GAIN File: D:/Sobel_DE10-master/V_D8M/B_GAIN.v Line: 40
+    Info (12023): Found entity 1: B_GAIN File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/B_GAIN.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file v_d8m/fram_buff.v
-    Info (12023): Found entity 1: FRAM_BUFF File: D:/Sobel_DE10-master/V_D8M/FRAM_BUFF.v Line: 40
+    Info (12023): Found entity 1: FRAM_BUFF File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/FRAM_BUFF.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file v_auto/vcm_step.v
-    Info (12023): Found entity 1: VCM_STEP File: D:/Sobel_DE10-master/V_Auto/VCM_STEP.v Line: 1
-Warning (10275): Verilog HDL Module Instantiation warning at VCM_I2C.v(288): ignored dangling comma in List of Port Connections File: D:/Sobel_DE10-master/V_Auto/VCM_I2C.v Line: 288
+    Info (12023): Found entity 1: VCM_STEP File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/VCM_STEP.v Line: 1
+Warning (10275): Verilog HDL Module Instantiation warning at VCM_I2C.v(288): ignored dangling comma in List of Port Connections File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/VCM_I2C.v Line: 288
 Info (12021): Found 1 design units, including 1 entities, in source file v_auto/vcm_i2c.v
-    Info (12023): Found entity 1: VCM_I2C File: D:/Sobel_DE10-master/V_Auto/VCM_I2C.v Line: 1
+    Info (12023): Found entity 1: VCM_I2C File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/VCM_I2C.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file v_auto/vcm_ctrl_p.v
-    Info (12023): Found entity 1: VCM_CTRL_P File: D:/Sobel_DE10-master/V_Auto/VCM_CTRL_P.v Line: 1
+    Info (12023): Found entity 1: VCM_CTRL_P File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/VCM_CTRL_P.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file v_auto/reset_delay.v
-    Info (12023): Found entity 1: RESET_DELAY File: D:/Sobel_DE10-master/V_Auto/RESET_DELAY.v Line: 1
+    Info (12023): Found entity 1: RESET_DELAY File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/RESET_DELAY.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file v_auto/modify_sync.v
-    Info (12023): Found entity 1: MODIFY_SYNC File: D:/Sobel_DE10-master/V_Auto/MODIFY_SYNC.v Line: 1
+    Info (12023): Found entity 1: MODIFY_SYNC File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/MODIFY_SYNC.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file v_auto/lcd_counter.v
-    Info (12023): Found entity 1: LCD_COUNTER File: D:/Sobel_DE10-master/V_Auto/LCD_COUNTER.v Line: 1
+    Info (12023): Found entity 1: LCD_COUNTER File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/LCD_COUNTER.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file v_auto/i2c_delay.v
-    Info (12023): Found entity 1: I2C_DELAY File: D:/Sobel_DE10-master/V_Auto/I2C_DELAY.v Line: 1
+    Info (12023): Found entity 1: I2C_DELAY File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/I2C_DELAY.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file v_auto/focus_adj.v
-    Info (12023): Found entity 1: FOCUS_ADJ File: D:/Sobel_DE10-master/V_Auto/FOCUS_ADJ.v Line: 2
+    Info (12023): Found entity 1: FOCUS_ADJ File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/FOCUS_ADJ.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file v_auto/f_vcm.v
-    Info (12023): Found entity 1: F_VCM File: D:/Sobel_DE10-master/V_Auto/F_VCM.v Line: 1
+    Info (12023): Found entity 1: F_VCM File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/F_VCM.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file v_auto/clockmem.v
-    Info (12023): Found entity 1: CLOCKMEM File: D:/Sobel_DE10-master/V_Auto/CLOCKMEM.v Line: 1
+    Info (12023): Found entity 1: CLOCKMEM File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/CLOCKMEM.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file v_auto/auto_sync_modify.v
-    Info (12023): Found entity 1: AUTO_SYNC_MODIFY File: D:/Sobel_DE10-master/V_Auto/AUTO_SYNC_MODIFY.v Line: 2
+    Info (12023): Found entity 1: AUTO_SYNC_MODIFY File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/AUTO_SYNC_MODIFY.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file v_auto/auto_focus_on.v
-    Info (12023): Found entity 1: AUTO_FOCUS_ON File: D:/Sobel_DE10-master/V_Auto/AUTO_FOCUS_ON.v Line: 1
+    Info (12023): Found entity 1: AUTO_FOCUS_ON File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/AUTO_FOCUS_ON.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file v/video_pll.v
-    Info (12023): Found entity 1: VIDEO_PLL File: D:/Sobel_DE10-master/V/VIDEO_PLL.v Line: 8
+    Info (12023): Found entity 1: VIDEO_PLL File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V/VIDEO_PLL.v Line: 8
 Info (12021): Found 1 design units, including 1 entities, in source file v/video_pll/video_pll_0002.v
-    Info (12023): Found entity 1: VIDEO_PLL_0002 File: D:/Sobel_DE10-master/V/VIDEO_PLL/VIDEO_PLL_0002.v Line: 2
+    Info (12023): Found entity 1: VIDEO_PLL_0002 File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V/VIDEO_PLL/VIDEO_PLL_0002.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file v/audio_pll.v
-    Info (12023): Found entity 1: AUDIO_PLL File: D:/Sobel_DE10-master/V/AUDIO_PLL.v Line: 8
+    Info (12023): Found entity 1: AUDIO_PLL File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V/AUDIO_PLL.v Line: 8
 Info (12021): Found 1 design units, including 1 entities, in source file v/audio_pll/audio_pll_0002.v
-    Info (12023): Found entity 1: AUDIO_PLL_0002 File: D:/Sobel_DE10-master/V/AUDIO_PLL/AUDIO_PLL_0002.v Line: 2
+    Info (12023): Found entity 1: AUDIO_PLL_0002 File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V/AUDIO_PLL/AUDIO_PLL_0002.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file vga_controller/vga_controller.v
-    Info (12023): Found entity 1: VGA_Controller File: D:/Sobel_DE10-master/VGA_Controller/VGA_Controller.v Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at DE10_NANO_D8M_RTL.v(156): created implicit net for "AUD_CTRL_CLK" File: D:/Sobel_DE10-master/DE10_NANO_D8M_RTL.v Line: 156
-Warning (10236): Verilog HDL Implicit Net warning at DE10_NANO_D8M_RTL.v(220): created implicit net for "READY" File: D:/Sobel_DE10-master/DE10_NANO_D8M_RTL.v Line: 220
-Warning (10236): Verilog HDL Implicit Net warning at DE10_NANO_D8M_RTL.v(291): created implicit net for "clock" File: D:/Sobel_DE10-master/DE10_NANO_D8M_RTL.v Line: 291
-Warning (10236): Verilog HDL Implicit Net warning at DE10_NANO_D8M_RTL.v(292): created implicit net for "reset" File: D:/Sobel_DE10-master/DE10_NANO_D8M_RTL.v Line: 292
-Warning (10236): Verilog HDL Implicit Net warning at DE10_NANO_D8M_RTL.v(299): created implicit net for "center_x_out" File: D:/Sobel_DE10-master/DE10_NANO_D8M_RTL.v Line: 299
-Warning (10236): Verilog HDL Implicit Net warning at DE10_NANO_D8M_RTL.v(300): created implicit net for "center_y_out" File: D:/Sobel_DE10-master/DE10_NANO_D8M_RTL.v Line: 300
-Warning (10236): Verilog HDL Implicit Net warning at DE10_NANO_D8M_RTL.v(301): created implicit net for "width_out" File: D:/Sobel_DE10-master/DE10_NANO_D8M_RTL.v Line: 301
-Warning (10236): Verilog HDL Implicit Net warning at DE10_NANO_D8M_RTL.v(302): created implicit net for "height_out" File: D:/Sobel_DE10-master/DE10_NANO_D8M_RTL.v Line: 302
-Warning (10236): Verilog HDL Implicit Net warning at FOCUS_ADJ.v(58): created implicit net for "V_CNT" File: D:/Sobel_DE10-master/V_Auto/FOCUS_ADJ.v Line: 58
-Warning (10236): Verilog HDL Implicit Net warning at FOCUS_ADJ.v(59): created implicit net for "H_CNT" File: D:/Sobel_DE10-master/V_Auto/FOCUS_ADJ.v Line: 59
-Warning (10236): Verilog HDL Implicit Net warning at FOCUS_ADJ.v(60): created implicit net for "LINE" File: D:/Sobel_DE10-master/V_Auto/FOCUS_ADJ.v Line: 60
+    Info (12023): Found entity 1: VGA_Controller File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/VGA_Controller/VGA_Controller.v Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at DE10_NANO_D8M_RTL.v(156): created implicit net for "AUD_CTRL_CLK" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/DE10_NANO_D8M_RTL.v Line: 156
+Warning (10236): Verilog HDL Implicit Net warning at DE10_NANO_D8M_RTL.v(220): created implicit net for "READY" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/DE10_NANO_D8M_RTL.v Line: 220
+Warning (10236): Verilog HDL Implicit Net warning at DE10_NANO_D8M_RTL.v(291): created implicit net for "clock" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/DE10_NANO_D8M_RTL.v Line: 291
+Warning (10236): Verilog HDL Implicit Net warning at DE10_NANO_D8M_RTL.v(292): created implicit net for "reset" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/DE10_NANO_D8M_RTL.v Line: 292
+Warning (10236): Verilog HDL Implicit Net warning at DE10_NANO_D8M_RTL.v(299): created implicit net for "center_x_out" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/DE10_NANO_D8M_RTL.v Line: 299
+Warning (10236): Verilog HDL Implicit Net warning at DE10_NANO_D8M_RTL.v(300): created implicit net for "center_y_out" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/DE10_NANO_D8M_RTL.v Line: 300
+Warning (10236): Verilog HDL Implicit Net warning at DE10_NANO_D8M_RTL.v(301): created implicit net for "width_out" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/DE10_NANO_D8M_RTL.v Line: 301
+Warning (10236): Verilog HDL Implicit Net warning at DE10_NANO_D8M_RTL.v(302): created implicit net for "height_out" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/DE10_NANO_D8M_RTL.v Line: 302
+Warning (10236): Verilog HDL Implicit Net warning at FOCUS_ADJ.v(58): created implicit net for "V_CNT" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/FOCUS_ADJ.v Line: 58
+Warning (10236): Verilog HDL Implicit Net warning at FOCUS_ADJ.v(59): created implicit net for "H_CNT" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/FOCUS_ADJ.v Line: 59
+Warning (10236): Verilog HDL Implicit Net warning at FOCUS_ADJ.v(60): created implicit net for "LINE" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/FOCUS_ADJ.v Line: 60
 Info (12127): Elaborating entity "painting_top" for the top level hierarchy
-Info (12128): Elaborating entity "DE10_NANO_D8M_RTL" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST" File: D:/Sobel_DE10-master/3D_Painting_Top/3d_painting_top.sv Line: 111
-Warning (10230): Verilog HDL assignment warning at DE10_NANO_D8M_RTL.v(330): truncated value with size 32 to match size of target (24) File: D:/Sobel_DE10-master/DE10_NANO_D8M_RTL.v Line: 330
-Warning (10230): Verilog HDL assignment warning at DE10_NANO_D8M_RTL.v(337): truncated value with size 32 to match size of target (1) File: D:/Sobel_DE10-master/DE10_NANO_D8M_RTL.v Line: 337
-Warning (10034): Output port "MIPI_MCLK" at DE10_NANO_D8M_RTL.v(43) has no driver File: D:/Sobel_DE10-master/DE10_NANO_D8M_RTL.v Line: 43
-Info (12128): Elaborating entity "D8M_LUT" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|D8M_LUT:g_lut" File: D:/Sobel_DE10-master/DE10_NANO_D8M_RTL.v Line: 116
-Info (12128): Elaborating entity "RESET_DELAY" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|RESET_DELAY:dl" File: D:/Sobel_DE10-master/DE10_NANO_D8M_RTL.v Line: 135
-Info (12128): Elaborating entity "MIPI_BRIDGE_CAMERA_Config" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin" File: D:/Sobel_DE10-master/DE10_NANO_D8M_RTL.v Line: 148
-Warning (10858): Verilog HDL warning at MIPI_BRIDGE_CAMERA_Config.v(20): object VCM_I2C_SCL used but never assigned File: D:/Sobel_DE10-master/V_D8M/MIPI_BRIDGE_CAMERA_Config.v Line: 20
-Warning (10030): Net "VCM_I2C_SCL" at MIPI_BRIDGE_CAMERA_Config.v(20) has no driver or initial value, using a default initial value '0' File: D:/Sobel_DE10-master/V_D8M/MIPI_BRIDGE_CAMERA_Config.v Line: 20
-Warning (10034): Output port "STEP" at MIPI_BRIDGE_CAMERA_Config.v(12) has no driver File: D:/Sobel_DE10-master/V_D8M/MIPI_BRIDGE_CAMERA_Config.v Line: 12
-Info (12128): Elaborating entity "MIPI_CAMERA_CONFIG" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv" File: D:/Sobel_DE10-master/V_D8M/MIPI_BRIDGE_CAMERA_Config.v Line: 46
-Warning (10230): Verilog HDL assignment warning at MIPI_CAMERA_CONFIG.v(128): truncated value with size 32 to match size of target (8) File: D:/Sobel_DE10-master/V_D8M/MIPI_CAMERA_CONFIG.v Line: 128
-Warning (10230): Verilog HDL assignment warning at MIPI_CAMERA_CONFIG.v(174): truncated value with size 32 to match size of target (16) File: D:/Sobel_DE10-master/V_D8M/MIPI_CAMERA_CONFIG.v Line: 174
-Warning (10230): Verilog HDL assignment warning at MIPI_CAMERA_CONFIG.v(201): truncated value with size 32 to match size of target (16) File: D:/Sobel_DE10-master/V_D8M/MIPI_CAMERA_CONFIG.v Line: 201
-Warning (10230): Verilog HDL assignment warning at MIPI_CAMERA_CONFIG.v(226): truncated value with size 32 to match size of target (1) File: D:/Sobel_DE10-master/V_D8M/MIPI_CAMERA_CONFIG.v Line: 226
-Warning (10034): Output port "ID2" at MIPI_CAMERA_CONFIG.v(12) has no driver File: D:/Sobel_DE10-master/V_D8M/MIPI_CAMERA_CONFIG.v Line: 12
-Warning (10034): Output port "WORD_DATA[15..8]" at MIPI_CAMERA_CONFIG.v(20) has no driver File: D:/Sobel_DE10-master/V_D8M/MIPI_CAMERA_CONFIG.v Line: 20
-Warning (10034): Output port "TR" at MIPI_CAMERA_CONFIG.v(31) has no driver File: D:/Sobel_DE10-master/V_D8M/MIPI_CAMERA_CONFIG.v Line: 31
-Info (12128): Elaborating entity "R_GAIN" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|R_GAIN:r2" File: D:/Sobel_DE10-master/V_D8M/MIPI_CAMERA_CONFIG.v Line: 47
-Info (12128): Elaborating entity "lpm_constant" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|R_GAIN:r2|lpm_constant:LPM_CONSTANT_component" File: D:/Sobel_DE10-master/V_D8M/R_GAIN.v Line: 49
-Info (12130): Elaborated megafunction instantiation "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|R_GAIN:r2|lpm_constant:LPM_CONSTANT_component" File: D:/Sobel_DE10-master/V_D8M/R_GAIN.v Line: 49
-Info (12133): Instantiated megafunction "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|R_GAIN:r2|lpm_constant:LPM_CONSTANT_component" with the following parameter: File: D:/Sobel_DE10-master/V_D8M/R_GAIN.v Line: 49
+Info (12128): Elaborating entity "DE10_NANO_D8M_RTL" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/3D_Painting_Top/3d_painting_top.sv Line: 111
+Warning (10230): Verilog HDL assignment warning at DE10_NANO_D8M_RTL.v(330): truncated value with size 32 to match size of target (24) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/DE10_NANO_D8M_RTL.v Line: 330
+Warning (10230): Verilog HDL assignment warning at DE10_NANO_D8M_RTL.v(337): truncated value with size 32 to match size of target (1) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/DE10_NANO_D8M_RTL.v Line: 337
+Warning (10034): Output port "MIPI_MCLK" at DE10_NANO_D8M_RTL.v(43) has no driver File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/DE10_NANO_D8M_RTL.v Line: 43
+Info (12128): Elaborating entity "D8M_LUT" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|D8M_LUT:g_lut" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/DE10_NANO_D8M_RTL.v Line: 116
+Info (12128): Elaborating entity "RESET_DELAY" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|RESET_DELAY:dl" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/DE10_NANO_D8M_RTL.v Line: 135
+Info (12128): Elaborating entity "MIPI_BRIDGE_CAMERA_Config" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/DE10_NANO_D8M_RTL.v Line: 148
+Warning (10858): Verilog HDL warning at MIPI_BRIDGE_CAMERA_Config.v(20): object VCM_I2C_SCL used but never assigned File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/MIPI_BRIDGE_CAMERA_Config.v Line: 20
+Warning (10030): Net "VCM_I2C_SCL" at MIPI_BRIDGE_CAMERA_Config.v(20) has no driver or initial value, using a default initial value '0' File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/MIPI_BRIDGE_CAMERA_Config.v Line: 20
+Warning (10034): Output port "STEP" at MIPI_BRIDGE_CAMERA_Config.v(12) has no driver File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/MIPI_BRIDGE_CAMERA_Config.v Line: 12
+Info (12128): Elaborating entity "MIPI_CAMERA_CONFIG" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/MIPI_BRIDGE_CAMERA_Config.v Line: 46
+Warning (10230): Verilog HDL assignment warning at MIPI_CAMERA_CONFIG.v(128): truncated value with size 32 to match size of target (8) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/MIPI_CAMERA_CONFIG.v Line: 128
+Warning (10230): Verilog HDL assignment warning at MIPI_CAMERA_CONFIG.v(174): truncated value with size 32 to match size of target (16) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/MIPI_CAMERA_CONFIG.v Line: 174
+Warning (10230): Verilog HDL assignment warning at MIPI_CAMERA_CONFIG.v(201): truncated value with size 32 to match size of target (16) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/MIPI_CAMERA_CONFIG.v Line: 201
+Warning (10230): Verilog HDL assignment warning at MIPI_CAMERA_CONFIG.v(226): truncated value with size 32 to match size of target (1) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/MIPI_CAMERA_CONFIG.v Line: 226
+Warning (10034): Output port "ID2" at MIPI_CAMERA_CONFIG.v(12) has no driver File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/MIPI_CAMERA_CONFIG.v Line: 12
+Warning (10034): Output port "WORD_DATA[15..8]" at MIPI_CAMERA_CONFIG.v(20) has no driver File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/MIPI_CAMERA_CONFIG.v Line: 20
+Warning (10034): Output port "TR" at MIPI_CAMERA_CONFIG.v(31) has no driver File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/MIPI_CAMERA_CONFIG.v Line: 31
+Info (12128): Elaborating entity "R_GAIN" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|R_GAIN:r2" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/MIPI_CAMERA_CONFIG.v Line: 47
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|R_GAIN:r2|lpm_constant:LPM_CONSTANT_component" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/R_GAIN.v Line: 49
+Info (12130): Elaborated megafunction instantiation "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|R_GAIN:r2|lpm_constant:LPM_CONSTANT_component" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/R_GAIN.v Line: 49
+Info (12133): Instantiated megafunction "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|R_GAIN:r2|lpm_constant:LPM_CONSTANT_component" with the following parameter: File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/R_GAIN.v Line: 49
     Info (12134): Parameter "lpm_cvalue" = "1098"
     Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=YES, INSTANCE_NAME=R"
     Info (12134): Parameter "lpm_type" = "LPM_CONSTANT"
     Info (12134): Parameter "lpm_width" = "14"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_constant_sc8.tdf
-    Info (12023): Found entity 1: lpm_constant_sc8 File: D:/Sobel_DE10-master/db/lpm_constant_sc8.tdf Line: 25
+    Info (12023): Found entity 1: lpm_constant_sc8 File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/db/lpm_constant_sc8.tdf Line: 25
 Info (12128): Elaborating entity "lpm_constant_sc8" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|R_GAIN:r2|lpm_constant:LPM_CONSTANT_component|lpm_constant_sc8:ag" File: e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_constant.tdf Line: 45
-Info (12128): Elaborating entity "sld_mod_ram_rom" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|R_GAIN:r2|lpm_constant:LPM_CONSTANT_component|lpm_constant_sc8:ag|sld_mod_ram_rom:mgl_prim1" File: D:/Sobel_DE10-master/db/lpm_constant_sc8.tdf Line: 30
-Info (12130): Elaborated megafunction instantiation "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|R_GAIN:r2|lpm_constant:LPM_CONSTANT_component|lpm_constant_sc8:ag|sld_mod_ram_rom:mgl_prim1" File: D:/Sobel_DE10-master/db/lpm_constant_sc8.tdf Line: 30
-Info (12133): Instantiated megafunction "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|R_GAIN:r2|lpm_constant:LPM_CONSTANT_component|lpm_constant_sc8:ag|sld_mod_ram_rom:mgl_prim1" with the following parameter: File: D:/Sobel_DE10-master/db/lpm_constant_sc8.tdf Line: 30
+Info (12128): Elaborating entity "sld_mod_ram_rom" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|R_GAIN:r2|lpm_constant:LPM_CONSTANT_component|lpm_constant_sc8:ag|sld_mod_ram_rom:mgl_prim1" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/db/lpm_constant_sc8.tdf Line: 30
+Info (12130): Elaborated megafunction instantiation "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|R_GAIN:r2|lpm_constant:LPM_CONSTANT_component|lpm_constant_sc8:ag|sld_mod_ram_rom:mgl_prim1" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/db/lpm_constant_sc8.tdf Line: 30
+Info (12133): Instantiated megafunction "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|R_GAIN:r2|lpm_constant:LPM_CONSTANT_component|lpm_constant_sc8:ag|sld_mod_ram_rom:mgl_prim1" with the following parameter: File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/db/lpm_constant_sc8.tdf Line: 30
     Info (12134): Parameter "CVALUE" = "00010001001010"
     Info (12134): Parameter "IS_DATA_IN_RAM" = "0"
     Info (12134): Parameter "IS_READABLE" = "0"
@@ -2803,20 +2803,20 @@ Info (12133): Instantiated megafunction "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INS
 Info (12128): Elaborating entity "sld_jtag_endpoint_adapter" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|R_GAIN:r2|lpm_constant:LPM_CONSTANT_component|lpm_constant_sc8:ag|sld_mod_ram_rom:mgl_prim1|sld_jtag_endpoint_adapter:jtag_signal_adapter" File: e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_mod_ram_rom.vhd Line: 302
 Info (12128): Elaborating entity "sld_jtag_endpoint_adapter_impl" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|R_GAIN:r2|lpm_constant:LPM_CONSTANT_component|lpm_constant_sc8:ag|sld_mod_ram_rom:mgl_prim1|sld_jtag_endpoint_adapter:jtag_signal_adapter|sld_jtag_endpoint_adapter_impl:sld_jtag_endpoint_adapter_impl_inst" File: e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd Line: 232
 Info (12128): Elaborating entity "sld_rom_sr" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|R_GAIN:r2|lpm_constant:LPM_CONSTANT_component|lpm_constant_sc8:ag|sld_mod_ram_rom:mgl_prim1|sld_rom_sr:\constant_logic_gen:name_gen:info_rom_sr" File: e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_mod_ram_rom.vhd Line: 485
-Info (12128): Elaborating entity "G_GAIN" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|G_GAIN:g2" File: D:/Sobel_DE10-master/V_D8M/MIPI_CAMERA_CONFIG.v Line: 48
-Info (12128): Elaborating entity "lpm_constant" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|G_GAIN:g2|lpm_constant:LPM_CONSTANT_component" File: D:/Sobel_DE10-master/V_D8M/G_GAIN.v Line: 49
-Info (12130): Elaborated megafunction instantiation "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|G_GAIN:g2|lpm_constant:LPM_CONSTANT_component" File: D:/Sobel_DE10-master/V_D8M/G_GAIN.v Line: 49
-Info (12133): Instantiated megafunction "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|G_GAIN:g2|lpm_constant:LPM_CONSTANT_component" with the following parameter: File: D:/Sobel_DE10-master/V_D8M/G_GAIN.v Line: 49
+Info (12128): Elaborating entity "G_GAIN" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|G_GAIN:g2" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/MIPI_CAMERA_CONFIG.v Line: 48
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|G_GAIN:g2|lpm_constant:LPM_CONSTANT_component" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/G_GAIN.v Line: 49
+Info (12130): Elaborated megafunction instantiation "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|G_GAIN:g2|lpm_constant:LPM_CONSTANT_component" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/G_GAIN.v Line: 49
+Info (12133): Instantiated megafunction "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|G_GAIN:g2|lpm_constant:LPM_CONSTANT_component" with the following parameter: File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/G_GAIN.v Line: 49
     Info (12134): Parameter "lpm_cvalue" = "848"
     Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=YES, INSTANCE_NAME=G"
     Info (12134): Parameter "lpm_type" = "LPM_CONSTANT"
     Info (12134): Parameter "lpm_width" = "14"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_constant_0b8.tdf
-    Info (12023): Found entity 1: lpm_constant_0b8 File: D:/Sobel_DE10-master/db/lpm_constant_0b8.tdf Line: 25
+    Info (12023): Found entity 1: lpm_constant_0b8 File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/db/lpm_constant_0b8.tdf Line: 25
 Info (12128): Elaborating entity "lpm_constant_0b8" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|G_GAIN:g2|lpm_constant:LPM_CONSTANT_component|lpm_constant_0b8:ag" File: e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_constant.tdf Line: 45
-Info (12128): Elaborating entity "sld_mod_ram_rom" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|G_GAIN:g2|lpm_constant:LPM_CONSTANT_component|lpm_constant_0b8:ag|sld_mod_ram_rom:mgl_prim1" File: D:/Sobel_DE10-master/db/lpm_constant_0b8.tdf Line: 30
-Info (12130): Elaborated megafunction instantiation "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|G_GAIN:g2|lpm_constant:LPM_CONSTANT_component|lpm_constant_0b8:ag|sld_mod_ram_rom:mgl_prim1" File: D:/Sobel_DE10-master/db/lpm_constant_0b8.tdf Line: 30
-Info (12133): Instantiated megafunction "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|G_GAIN:g2|lpm_constant:LPM_CONSTANT_component|lpm_constant_0b8:ag|sld_mod_ram_rom:mgl_prim1" with the following parameter: File: D:/Sobel_DE10-master/db/lpm_constant_0b8.tdf Line: 30
+Info (12128): Elaborating entity "sld_mod_ram_rom" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|G_GAIN:g2|lpm_constant:LPM_CONSTANT_component|lpm_constant_0b8:ag|sld_mod_ram_rom:mgl_prim1" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/db/lpm_constant_0b8.tdf Line: 30
+Info (12130): Elaborated megafunction instantiation "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|G_GAIN:g2|lpm_constant:LPM_CONSTANT_component|lpm_constant_0b8:ag|sld_mod_ram_rom:mgl_prim1" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/db/lpm_constant_0b8.tdf Line: 30
+Info (12133): Instantiated megafunction "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|G_GAIN:g2|lpm_constant:LPM_CONSTANT_component|lpm_constant_0b8:ag|sld_mod_ram_rom:mgl_prim1" with the following parameter: File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/db/lpm_constant_0b8.tdf Line: 30
     Info (12134): Parameter "CVALUE" = "00001101010000"
     Info (12134): Parameter "IS_DATA_IN_RAM" = "0"
     Info (12134): Parameter "IS_READABLE" = "0"
@@ -2825,20 +2825,20 @@ Info (12133): Instantiated megafunction "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INS
     Info (12134): Parameter "SHIFT_COUNT_BITS" = "4"
     Info (12134): Parameter "WIDTH_WORD" = "14"
     Info (12134): Parameter "WIDTHAD" = "1"
-Info (12128): Elaborating entity "B_GAIN" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|B_GAIN:b2" File: D:/Sobel_DE10-master/V_D8M/MIPI_CAMERA_CONFIG.v Line: 49
-Info (12128): Elaborating entity "lpm_constant" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|B_GAIN:b2|lpm_constant:LPM_CONSTANT_component" File: D:/Sobel_DE10-master/V_D8M/B_GAIN.v Line: 49
-Info (12130): Elaborated megafunction instantiation "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|B_GAIN:b2|lpm_constant:LPM_CONSTANT_component" File: D:/Sobel_DE10-master/V_D8M/B_GAIN.v Line: 49
-Info (12133): Instantiated megafunction "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|B_GAIN:b2|lpm_constant:LPM_CONSTANT_component" with the following parameter: File: D:/Sobel_DE10-master/V_D8M/B_GAIN.v Line: 49
+Info (12128): Elaborating entity "B_GAIN" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|B_GAIN:b2" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/MIPI_CAMERA_CONFIG.v Line: 49
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|B_GAIN:b2|lpm_constant:LPM_CONSTANT_component" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/B_GAIN.v Line: 49
+Info (12130): Elaborated megafunction instantiation "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|B_GAIN:b2|lpm_constant:LPM_CONSTANT_component" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/B_GAIN.v Line: 49
+Info (12133): Instantiated megafunction "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|B_GAIN:b2|lpm_constant:LPM_CONSTANT_component" with the following parameter: File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/B_GAIN.v Line: 49
     Info (12134): Parameter "lpm_cvalue" = "1040"
     Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=YES, INSTANCE_NAME=B"
     Info (12134): Parameter "lpm_type" = "LPM_CONSTANT"
     Info (12134): Parameter "lpm_width" = "14"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_constant_oa8.tdf
-    Info (12023): Found entity 1: lpm_constant_oa8 File: D:/Sobel_DE10-master/db/lpm_constant_oa8.tdf Line: 25
+    Info (12023): Found entity 1: lpm_constant_oa8 File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/db/lpm_constant_oa8.tdf Line: 25
 Info (12128): Elaborating entity "lpm_constant_oa8" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|B_GAIN:b2|lpm_constant:LPM_CONSTANT_component|lpm_constant_oa8:ag" File: e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_constant.tdf Line: 45
-Info (12128): Elaborating entity "sld_mod_ram_rom" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|B_GAIN:b2|lpm_constant:LPM_CONSTANT_component|lpm_constant_oa8:ag|sld_mod_ram_rom:mgl_prim1" File: D:/Sobel_DE10-master/db/lpm_constant_oa8.tdf Line: 30
-Info (12130): Elaborated megafunction instantiation "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|B_GAIN:b2|lpm_constant:LPM_CONSTANT_component|lpm_constant_oa8:ag|sld_mod_ram_rom:mgl_prim1" File: D:/Sobel_DE10-master/db/lpm_constant_oa8.tdf Line: 30
-Info (12133): Instantiated megafunction "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|B_GAIN:b2|lpm_constant:LPM_CONSTANT_component|lpm_constant_oa8:ag|sld_mod_ram_rom:mgl_prim1" with the following parameter: File: D:/Sobel_DE10-master/db/lpm_constant_oa8.tdf Line: 30
+Info (12128): Elaborating entity "sld_mod_ram_rom" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|B_GAIN:b2|lpm_constant:LPM_CONSTANT_component|lpm_constant_oa8:ag|sld_mod_ram_rom:mgl_prim1" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/db/lpm_constant_oa8.tdf Line: 30
+Info (12130): Elaborated megafunction instantiation "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|B_GAIN:b2|lpm_constant:LPM_CONSTANT_component|lpm_constant_oa8:ag|sld_mod_ram_rom:mgl_prim1" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/db/lpm_constant_oa8.tdf Line: 30
+Info (12133): Instantiated megafunction "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|B_GAIN:b2|lpm_constant:LPM_CONSTANT_component|lpm_constant_oa8:ag|sld_mod_ram_rom:mgl_prim1" with the following parameter: File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/db/lpm_constant_oa8.tdf Line: 30
     Info (12134): Parameter "CVALUE" = "00010000010000"
     Info (12134): Parameter "IS_DATA_IN_RAM" = "0"
     Info (12134): Parameter "IS_READABLE" = "0"
@@ -2847,42 +2847,42 @@ Info (12133): Instantiated megafunction "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INS
     Info (12134): Parameter "SHIFT_COUNT_BITS" = "4"
     Info (12134): Parameter "WIDTH_WORD" = "14"
     Info (12134): Parameter "WIDTHAD" = "1"
-Info (12128): Elaborating entity "CLOCKMEM" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|CLOCKMEM:c1" File: D:/Sobel_DE10-master/V_D8M/MIPI_CAMERA_CONFIG.v Line: 55
-Info (12128): Elaborating entity "I2C_WRITE_WDATA" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|I2C_WRITE_WDATA:wrd" File: D:/Sobel_DE10-master/V_D8M/MIPI_CAMERA_CONFIG.v Line: 250
-Warning (10230): Verilog HDL assignment warning at I2C_WRITE_WDATA.v(72): truncated value with size 32 to match size of target (8) File: D:/Sobel_DE10-master/V/I2C_WRITE_WDATA.v Line: 72
-Warning (10230): Verilog HDL assignment warning at I2C_WRITE_WDATA.v(143): truncated value with size 32 to match size of target (8) File: D:/Sobel_DE10-master/V/I2C_WRITE_WDATA.v Line: 143
-Warning (10230): Verilog HDL assignment warning at I2C_WRITE_WDATA.v(153): truncated value with size 32 to match size of target (8) File: D:/Sobel_DE10-master/V/I2C_WRITE_WDATA.v Line: 153
-Info (12128): Elaborating entity "I2C_WRITE_PTR" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|I2C_WRITE_PTR:wpt" File: D:/Sobel_DE10-master/V_D8M/MIPI_CAMERA_CONFIG.v Line: 274
-Warning (10230): Verilog HDL assignment warning at I2C_WRITE_PTR.v(61): truncated value with size 32 to match size of target (8) File: D:/Sobel_DE10-master/V/I2C_WRITE_PTR.v Line: 61
-Warning (10230): Verilog HDL assignment warning at I2C_WRITE_PTR.v(125): truncated value with size 32 to match size of target (8) File: D:/Sobel_DE10-master/V/I2C_WRITE_PTR.v Line: 125
-Warning (10230): Verilog HDL assignment warning at I2C_WRITE_PTR.v(135): truncated value with size 32 to match size of target (8) File: D:/Sobel_DE10-master/V/I2C_WRITE_PTR.v Line: 135
-Warning (10230): Verilog HDL assignment warning at I2C_WRITE_PTR.v(160): truncated value with size 32 to match size of target (8) File: D:/Sobel_DE10-master/V/I2C_WRITE_PTR.v Line: 160
-Info (12128): Elaborating entity "I2C_READ_DATA" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|I2C_READ_DATA:rd" File: D:/Sobel_DE10-master/V_D8M/MIPI_CAMERA_CONFIG.v Line: 301
-Warning (10230): Verilog HDL assignment warning at I2C_READ_DATA.v(53): truncated value with size 33 to match size of target (9) File: D:/Sobel_DE10-master/V/I2C_READ_DATA.v Line: 53
-Warning (10230): Verilog HDL assignment warning at I2C_READ_DATA.v(67): truncated value with size 32 to match size of target (8) File: D:/Sobel_DE10-master/V/I2C_READ_DATA.v Line: 67
-Warning (10230): Verilog HDL assignment warning at I2C_READ_DATA.v(90): truncated value with size 32 to match size of target (8) File: D:/Sobel_DE10-master/V/I2C_READ_DATA.v Line: 90
-Warning (10230): Verilog HDL assignment warning at I2C_READ_DATA.v(93): truncated value with size 32 to match size of target (8) File: D:/Sobel_DE10-master/V/I2C_READ_DATA.v Line: 93
-Warning (10230): Verilog HDL assignment warning at I2C_READ_DATA.v(104): truncated value with size 32 to match size of target (8) File: D:/Sobel_DE10-master/V/I2C_READ_DATA.v Line: 104
-Warning (10230): Verilog HDL assignment warning at I2C_READ_DATA.v(168): truncated value with size 32 to match size of target (8) File: D:/Sobel_DE10-master/V/I2C_READ_DATA.v Line: 168
-Warning (10230): Verilog HDL assignment warning at I2C_READ_DATA.v(178): truncated value with size 32 to match size of target (8) File: D:/Sobel_DE10-master/V/I2C_READ_DATA.v Line: 178
-Warning (10272): Verilog HDL Case Statement warning at I2C_READ_DATA.v(141): case item expression covers a value already covered by a previous case item File: D:/Sobel_DE10-master/V/I2C_READ_DATA.v Line: 141
-Info (12128): Elaborating entity "I2C_RESET_DELAY" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|I2C_RESET_DELAY:DY" File: D:/Sobel_DE10-master/V_D8M/MIPI_CAMERA_CONFIG.v Line: 311
-Info (12128): Elaborating entity "MIPI_BRIDGE_CONFIG" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_BRIDGE_CONFIG:mpiv" File: D:/Sobel_DE10-master/V_D8M/MIPI_BRIDGE_CAMERA_Config.v Line: 58
-Warning (10230): Verilog HDL assignment warning at MIPI_BRIDGE_CONFIG.v(131): truncated value with size 32 to match size of target (8) File: D:/Sobel_DE10-master/V_D8M/MIPI_BRIDGE_CONFIG.v Line: 131
-Warning (10230): Verilog HDL assignment warning at MIPI_BRIDGE_CONFIG.v(178): truncated value with size 32 to match size of target (8) File: D:/Sobel_DE10-master/V_D8M/MIPI_BRIDGE_CONFIG.v Line: 178
-Warning (10230): Verilog HDL assignment warning at MIPI_BRIDGE_CONFIG.v(203): truncated value with size 32 to match size of target (8) File: D:/Sobel_DE10-master/V_D8M/MIPI_BRIDGE_CONFIG.v Line: 203
-Warning (10230): Verilog HDL assignment warning at MIPI_BRIDGE_CONFIG.v(241): truncated value with size 32 to match size of target (16) File: D:/Sobel_DE10-master/V_D8M/MIPI_BRIDGE_CONFIG.v Line: 241
-Warning (10230): Verilog HDL assignment warning at MIPI_BRIDGE_CONFIG.v(242): truncated value with size 32 to match size of target (16) File: D:/Sobel_DE10-master/V_D8M/MIPI_BRIDGE_CONFIG.v Line: 242
-Warning (10230): Verilog HDL assignment warning at MIPI_BRIDGE_CONFIG.v(243): truncated value with size 32 to match size of target (16) File: D:/Sobel_DE10-master/V_D8M/MIPI_BRIDGE_CONFIG.v Line: 243
-Warning (10230): Verilog HDL assignment warning at MIPI_BRIDGE_CONFIG.v(244): truncated value with size 32 to match size of target (16) File: D:/Sobel_DE10-master/V_D8M/MIPI_BRIDGE_CONFIG.v Line: 244
-Warning (10230): Verilog HDL assignment warning at MIPI_BRIDGE_CONFIG.v(245): truncated value with size 32 to match size of target (16) File: D:/Sobel_DE10-master/V_D8M/MIPI_BRIDGE_CONFIG.v Line: 245
-Warning (10034): Output port "TR" at MIPI_BRIDGE_CONFIG.v(36) has no driver File: D:/Sobel_DE10-master/V_D8M/MIPI_BRIDGE_CONFIG.v Line: 36
-Info (12128): Elaborating entity "AUDIO_PLL" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|AUDIO_PLL:pll1" File: D:/Sobel_DE10-master/DE10_NANO_D8M_RTL.v Line: 158
-Info (12128): Elaborating entity "AUDIO_PLL_0002" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|AUDIO_PLL:pll1|AUDIO_PLL_0002:audio_pll_inst" File: D:/Sobel_DE10-master/V/AUDIO_PLL.v Line: 20
-Info (12128): Elaborating entity "altera_pll" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|AUDIO_PLL:pll1|AUDIO_PLL_0002:audio_pll_inst|altera_pll:altera_pll_i" File: D:/Sobel_DE10-master/V/AUDIO_PLL/AUDIO_PLL_0002.v Line: 85
+Info (12128): Elaborating entity "CLOCKMEM" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|CLOCKMEM:c1" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/MIPI_CAMERA_CONFIG.v Line: 55
+Info (12128): Elaborating entity "I2C_WRITE_WDATA" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|I2C_WRITE_WDATA:wrd" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/MIPI_CAMERA_CONFIG.v Line: 250
+Warning (10230): Verilog HDL assignment warning at I2C_WRITE_WDATA.v(72): truncated value with size 32 to match size of target (8) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V/I2C_WRITE_WDATA.v Line: 72
+Warning (10230): Verilog HDL assignment warning at I2C_WRITE_WDATA.v(143): truncated value with size 32 to match size of target (8) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V/I2C_WRITE_WDATA.v Line: 143
+Warning (10230): Verilog HDL assignment warning at I2C_WRITE_WDATA.v(153): truncated value with size 32 to match size of target (8) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V/I2C_WRITE_WDATA.v Line: 153
+Info (12128): Elaborating entity "I2C_WRITE_PTR" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|I2C_WRITE_PTR:wpt" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/MIPI_CAMERA_CONFIG.v Line: 274
+Warning (10230): Verilog HDL assignment warning at I2C_WRITE_PTR.v(61): truncated value with size 32 to match size of target (8) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V/I2C_WRITE_PTR.v Line: 61
+Warning (10230): Verilog HDL assignment warning at I2C_WRITE_PTR.v(125): truncated value with size 32 to match size of target (8) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V/I2C_WRITE_PTR.v Line: 125
+Warning (10230): Verilog HDL assignment warning at I2C_WRITE_PTR.v(135): truncated value with size 32 to match size of target (8) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V/I2C_WRITE_PTR.v Line: 135
+Warning (10230): Verilog HDL assignment warning at I2C_WRITE_PTR.v(160): truncated value with size 32 to match size of target (8) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V/I2C_WRITE_PTR.v Line: 160
+Info (12128): Elaborating entity "I2C_READ_DATA" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|I2C_READ_DATA:rd" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/MIPI_CAMERA_CONFIG.v Line: 301
+Warning (10230): Verilog HDL assignment warning at I2C_READ_DATA.v(53): truncated value with size 33 to match size of target (9) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V/I2C_READ_DATA.v Line: 53
+Warning (10230): Verilog HDL assignment warning at I2C_READ_DATA.v(67): truncated value with size 32 to match size of target (8) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V/I2C_READ_DATA.v Line: 67
+Warning (10230): Verilog HDL assignment warning at I2C_READ_DATA.v(90): truncated value with size 32 to match size of target (8) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V/I2C_READ_DATA.v Line: 90
+Warning (10230): Verilog HDL assignment warning at I2C_READ_DATA.v(93): truncated value with size 32 to match size of target (8) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V/I2C_READ_DATA.v Line: 93
+Warning (10230): Verilog HDL assignment warning at I2C_READ_DATA.v(104): truncated value with size 32 to match size of target (8) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V/I2C_READ_DATA.v Line: 104
+Warning (10230): Verilog HDL assignment warning at I2C_READ_DATA.v(168): truncated value with size 32 to match size of target (8) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V/I2C_READ_DATA.v Line: 168
+Warning (10230): Verilog HDL assignment warning at I2C_READ_DATA.v(178): truncated value with size 32 to match size of target (8) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V/I2C_READ_DATA.v Line: 178
+Warning (10272): Verilog HDL Case Statement warning at I2C_READ_DATA.v(141): case item expression covers a value already covered by a previous case item File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V/I2C_READ_DATA.v Line: 141
+Info (12128): Elaborating entity "I2C_RESET_DELAY" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|I2C_RESET_DELAY:DY" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/MIPI_CAMERA_CONFIG.v Line: 311
+Info (12128): Elaborating entity "MIPI_BRIDGE_CONFIG" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_BRIDGE_CONFIG:mpiv" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/MIPI_BRIDGE_CAMERA_Config.v Line: 58
+Warning (10230): Verilog HDL assignment warning at MIPI_BRIDGE_CONFIG.v(131): truncated value with size 32 to match size of target (8) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/MIPI_BRIDGE_CONFIG.v Line: 131
+Warning (10230): Verilog HDL assignment warning at MIPI_BRIDGE_CONFIG.v(178): truncated value with size 32 to match size of target (8) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/MIPI_BRIDGE_CONFIG.v Line: 178
+Warning (10230): Verilog HDL assignment warning at MIPI_BRIDGE_CONFIG.v(203): truncated value with size 32 to match size of target (8) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/MIPI_BRIDGE_CONFIG.v Line: 203
+Warning (10230): Verilog HDL assignment warning at MIPI_BRIDGE_CONFIG.v(241): truncated value with size 32 to match size of target (16) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/MIPI_BRIDGE_CONFIG.v Line: 241
+Warning (10230): Verilog HDL assignment warning at MIPI_BRIDGE_CONFIG.v(242): truncated value with size 32 to match size of target (16) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/MIPI_BRIDGE_CONFIG.v Line: 242
+Warning (10230): Verilog HDL assignment warning at MIPI_BRIDGE_CONFIG.v(243): truncated value with size 32 to match size of target (16) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/MIPI_BRIDGE_CONFIG.v Line: 243
+Warning (10230): Verilog HDL assignment warning at MIPI_BRIDGE_CONFIG.v(244): truncated value with size 32 to match size of target (16) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/MIPI_BRIDGE_CONFIG.v Line: 244
+Warning (10230): Verilog HDL assignment warning at MIPI_BRIDGE_CONFIG.v(245): truncated value with size 32 to match size of target (16) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/MIPI_BRIDGE_CONFIG.v Line: 245
+Warning (10034): Output port "TR" at MIPI_BRIDGE_CONFIG.v(36) has no driver File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/MIPI_BRIDGE_CONFIG.v Line: 36
+Info (12128): Elaborating entity "AUDIO_PLL" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|AUDIO_PLL:pll1" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/DE10_NANO_D8M_RTL.v Line: 158
+Info (12128): Elaborating entity "AUDIO_PLL_0002" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|AUDIO_PLL:pll1|AUDIO_PLL_0002:audio_pll_inst" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V/AUDIO_PLL.v Line: 20
+Info (12128): Elaborating entity "altera_pll" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|AUDIO_PLL:pll1|AUDIO_PLL_0002:audio_pll_inst|altera_pll:altera_pll_i" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V/AUDIO_PLL/AUDIO_PLL_0002.v Line: 85
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "wire_to_nowhere_64" into its bus
-Info (12130): Elaborated megafunction instantiation "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|AUDIO_PLL:pll1|AUDIO_PLL_0002:audio_pll_inst|altera_pll:altera_pll_i" File: D:/Sobel_DE10-master/V/AUDIO_PLL/AUDIO_PLL_0002.v Line: 85
-Info (12133): Instantiated megafunction "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|AUDIO_PLL:pll1|AUDIO_PLL_0002:audio_pll_inst|altera_pll:altera_pll_i" with the following parameter: File: D:/Sobel_DE10-master/V/AUDIO_PLL/AUDIO_PLL_0002.v Line: 85
+Info (12130): Elaborated megafunction instantiation "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|AUDIO_PLL:pll1|AUDIO_PLL_0002:audio_pll_inst|altera_pll:altera_pll_i" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V/AUDIO_PLL/AUDIO_PLL_0002.v Line: 85
+Info (12133): Instantiated megafunction "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|AUDIO_PLL:pll1|AUDIO_PLL_0002:audio_pll_inst|altera_pll:altera_pll_i" with the following parameter: File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V/AUDIO_PLL/AUDIO_PLL_0002.v Line: 85
     Info (12134): Parameter "fractional_vco_multiplier" = "false"
     Info (12134): Parameter "reference_clock_frequency" = "50.0 MHz"
     Info (12134): Parameter "operation_mode" = "direct"
@@ -2943,12 +2943,12 @@ Info (12133): Instantiated megafunction "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INS
     Info (12134): Parameter "duty_cycle17" = "50"
     Info (12134): Parameter "pll_type" = "General"
     Info (12134): Parameter "pll_subtype" = "General"
-Info (12128): Elaborating entity "VIDEO_PLL" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|VIDEO_PLL:pll2" File: D:/Sobel_DE10-master/DE10_NANO_D8M_RTL.v Line: 165
-Info (12128): Elaborating entity "VIDEO_PLL_0002" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|VIDEO_PLL:pll2|VIDEO_PLL_0002:video_pll_inst" File: D:/Sobel_DE10-master/V/VIDEO_PLL.v Line: 22
-Info (12128): Elaborating entity "altera_pll" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|VIDEO_PLL:pll2|VIDEO_PLL_0002:video_pll_inst|altera_pll:altera_pll_i" File: D:/Sobel_DE10-master/V/VIDEO_PLL/VIDEO_PLL_0002.v Line: 88
+Info (12128): Elaborating entity "VIDEO_PLL" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|VIDEO_PLL:pll2" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/DE10_NANO_D8M_RTL.v Line: 165
+Info (12128): Elaborating entity "VIDEO_PLL_0002" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|VIDEO_PLL:pll2|VIDEO_PLL_0002:video_pll_inst" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V/VIDEO_PLL.v Line: 22
+Info (12128): Elaborating entity "altera_pll" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|VIDEO_PLL:pll2|VIDEO_PLL_0002:video_pll_inst|altera_pll:altera_pll_i" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V/VIDEO_PLL/VIDEO_PLL_0002.v Line: 88
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "wire_to_nowhere_64" into its bus
-Info (12130): Elaborated megafunction instantiation "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|VIDEO_PLL:pll2|VIDEO_PLL_0002:video_pll_inst|altera_pll:altera_pll_i" File: D:/Sobel_DE10-master/V/VIDEO_PLL/VIDEO_PLL_0002.v Line: 88
-Info (12133): Instantiated megafunction "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|VIDEO_PLL:pll2|VIDEO_PLL_0002:video_pll_inst|altera_pll:altera_pll_i" with the following parameter: File: D:/Sobel_DE10-master/V/VIDEO_PLL/VIDEO_PLL_0002.v Line: 88
+Info (12130): Elaborated megafunction instantiation "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|VIDEO_PLL:pll2|VIDEO_PLL_0002:video_pll_inst|altera_pll:altera_pll_i" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V/VIDEO_PLL/VIDEO_PLL_0002.v Line: 88
+Info (12133): Instantiated megafunction "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|VIDEO_PLL:pll2|VIDEO_PLL_0002:video_pll_inst|altera_pll:altera_pll_i" with the following parameter: File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V/VIDEO_PLL/VIDEO_PLL_0002.v Line: 88
     Info (12134): Parameter "fractional_vco_multiplier" = "false"
     Info (12134): Parameter "reference_clock_frequency" = "50.0 MHz"
     Info (12134): Parameter "operation_mode" = "direct"
@@ -3009,13 +3009,13 @@ Info (12133): Instantiated megafunction "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INS
     Info (12134): Parameter "duty_cycle17" = "50"
     Info (12134): Parameter "pll_type" = "General"
     Info (12134): Parameter "pll_subtype" = "General"
-Info (12128): Elaborating entity "ON_CHIP_FRAM" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|ON_CHIP_FRAM:fra" File: D:/Sobel_DE10-master/DE10_NANO_D8M_RTL.v Line: 179
-Info (12128): Elaborating entity "FRM_COUNTER" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|ON_CHIP_FRAM:fra|FRM_COUNTER:wrw" File: D:/Sobel_DE10-master/V_D8M/ON_CHIP_FRAM.v Line: 19
-Warning (10230): Verilog HDL assignment warning at FRM_COUNTER.v(13): truncated value with size 32 to match size of target (20) File: D:/Sobel_DE10-master/V_D8M/FRM_COUNTER.v Line: 13
-Info (12128): Elaborating entity "FRAM_BUFF" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|ON_CHIP_FRAM:fra|FRAM_BUFF:GG" File: D:/Sobel_DE10-master/V_D8M/ON_CHIP_FRAM.v Line: 45
-Info (12128): Elaborating entity "altsyncram" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|ON_CHIP_FRAM:fra|FRAM_BUFF:GG|altsyncram:altsyncram_component" File: D:/Sobel_DE10-master/V_D8M/FRAM_BUFF.v Line: 91
-Info (12130): Elaborated megafunction instantiation "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|ON_CHIP_FRAM:fra|FRAM_BUFF:GG|altsyncram:altsyncram_component" File: D:/Sobel_DE10-master/V_D8M/FRAM_BUFF.v Line: 91
-Info (12133): Instantiated megafunction "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|ON_CHIP_FRAM:fra|FRAM_BUFF:GG|altsyncram:altsyncram_component" with the following parameter: File: D:/Sobel_DE10-master/V_D8M/FRAM_BUFF.v Line: 91
+Info (12128): Elaborating entity "ON_CHIP_FRAM" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|ON_CHIP_FRAM:fra" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/DE10_NANO_D8M_RTL.v Line: 179
+Info (12128): Elaborating entity "FRM_COUNTER" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|ON_CHIP_FRAM:fra|FRM_COUNTER:wrw" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/ON_CHIP_FRAM.v Line: 19
+Warning (10230): Verilog HDL assignment warning at FRM_COUNTER.v(13): truncated value with size 32 to match size of target (20) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/FRM_COUNTER.v Line: 13
+Info (12128): Elaborating entity "FRAM_BUFF" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|ON_CHIP_FRAM:fra|FRAM_BUFF:GG" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/ON_CHIP_FRAM.v Line: 45
+Info (12128): Elaborating entity "altsyncram" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|ON_CHIP_FRAM:fra|FRAM_BUFF:GG|altsyncram:altsyncram_component" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/FRAM_BUFF.v Line: 91
+Info (12130): Elaborated megafunction instantiation "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|ON_CHIP_FRAM:fra|FRAM_BUFF:GG|altsyncram:altsyncram_component" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/FRAM_BUFF.v Line: 91
+Info (12133): Instantiated megafunction "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|ON_CHIP_FRAM:fra|FRAM_BUFF:GG|altsyncram:altsyncram_component" with the following parameter: File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/FRAM_BUFF.v Line: 91
     Info (12134): Parameter "address_aclr_b" = "NONE"
     Info (12134): Parameter "address_reg_b" = "CLOCK1"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
@@ -3035,34 +3035,34 @@ Info (12133): Instantiated megafunction "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INS
     Info (12134): Parameter "width_b" = "10"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_i4q1.tdf
-    Info (12023): Found entity 1: altsyncram_i4q1 File: D:/Sobel_DE10-master/db/altsyncram_i4q1.tdf Line: 33
+    Info (12023): Found entity 1: altsyncram_i4q1 File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/db/altsyncram_i4q1.tdf Line: 33
 Info (12128): Elaborating entity "altsyncram_i4q1" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|ON_CHIP_FRAM:fra|FRAM_BUFF:GG|altsyncram:altsyncram_component|altsyncram_i4q1:auto_generated" File: e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_3na.tdf
-    Info (12023): Found entity 1: decode_3na File: D:/Sobel_DE10-master/db/decode_3na.tdf Line: 22
-Info (12128): Elaborating entity "decode_3na" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|ON_CHIP_FRAM:fra|FRAM_BUFF:GG|altsyncram:altsyncram_component|altsyncram_i4q1:auto_generated|decode_3na:decode2" File: D:/Sobel_DE10-master/db/altsyncram_i4q1.tdf Line: 46
+    Info (12023): Found entity 1: decode_3na File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/db/decode_3na.tdf Line: 22
+Info (12128): Elaborating entity "decode_3na" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|ON_CHIP_FRAM:fra|FRAM_BUFF:GG|altsyncram:altsyncram_component|altsyncram_i4q1:auto_generated|decode_3na:decode2" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/db/altsyncram_i4q1.tdf Line: 46
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_s2a.tdf
-    Info (12023): Found entity 1: decode_s2a File: D:/Sobel_DE10-master/db/decode_s2a.tdf Line: 22
-Info (12128): Elaborating entity "decode_s2a" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|ON_CHIP_FRAM:fra|FRAM_BUFF:GG|altsyncram:altsyncram_component|altsyncram_i4q1:auto_generated|decode_s2a:rden_decode_b" File: D:/Sobel_DE10-master/db/altsyncram_i4q1.tdf Line: 47
+    Info (12023): Found entity 1: decode_s2a File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/db/decode_s2a.tdf Line: 22
+Info (12128): Elaborating entity "decode_s2a" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|ON_CHIP_FRAM:fra|FRAM_BUFF:GG|altsyncram:altsyncram_component|altsyncram_i4q1:auto_generated|decode_s2a:rden_decode_b" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/db/altsyncram_i4q1.tdf Line: 47
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_sib.tdf
-    Info (12023): Found entity 1: mux_sib File: D:/Sobel_DE10-master/db/mux_sib.tdf Line: 22
-Info (12128): Elaborating entity "mux_sib" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|ON_CHIP_FRAM:fra|FRAM_BUFF:GG|altsyncram:altsyncram_component|altsyncram_i4q1:auto_generated|mux_sib:mux3" File: D:/Sobel_DE10-master/db/altsyncram_i4q1.tdf Line: 49
-Info (12128): Elaborating entity "RAW2RGB_J" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|RAW2RGB_J:u4" File: D:/Sobel_DE10-master/DE10_NANO_D8M_RTL.v Line: 193
-Warning (10230): Verilog HDL assignment warning at RAW2RGB_J.v(34): truncated value with size 32 to match size of target (8) File: D:/Sobel_DE10-master/V_D8M/RAW2RGB_J.v Line: 34
-Warning (10230): Verilog HDL assignment warning at RAW2RGB_J.v(35): truncated value with size 32 to match size of target (8) File: D:/Sobel_DE10-master/V_D8M/RAW2RGB_J.v Line: 35
-Warning (10230): Verilog HDL assignment warning at RAW2RGB_J.v(36): truncated value with size 32 to match size of target (8) File: D:/Sobel_DE10-master/V_D8M/RAW2RGB_J.v Line: 36
-Warning (10230): Verilog HDL assignment warning at RAW2RGB_J.v(48): truncated value with size 32 to match size of target (11) File: D:/Sobel_DE10-master/V_D8M/RAW2RGB_J.v Line: 48
-Warning (10230): Verilog HDL assignment warning at RAW2RGB_J.v(49): truncated value with size 32 to match size of target (11) File: D:/Sobel_DE10-master/V_D8M/RAW2RGB_J.v Line: 49
-Info (12128): Elaborating entity "Line_Buffer_J" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|RAW2RGB_J:u4|Line_Buffer_J:u0" File: D:/Sobel_DE10-master/V_D8M/RAW2RGB_J.v Line: 69
-Warning (10230): Verilog HDL assignment warning at Line_Buffer_J.v(32): truncated value with size 32 to match size of target (2) File: D:/Sobel_DE10-master/V_D8M/Line_Buffer_J.v Line: 32
-Warning (10230): Verilog HDL assignment warning at Line_Buffer_J.v(35): truncated value with size 32 to match size of target (1) File: D:/Sobel_DE10-master/V_D8M/Line_Buffer_J.v Line: 35
-Warning (10230): Verilog HDL assignment warning at Line_Buffer_J.v(36): truncated value with size 32 to match size of target (1) File: D:/Sobel_DE10-master/V_D8M/Line_Buffer_J.v Line: 36
-Warning (10230): Verilog HDL assignment warning at Line_Buffer_J.v(37): truncated value with size 32 to match size of target (1) File: D:/Sobel_DE10-master/V_D8M/Line_Buffer_J.v Line: 37
-Warning (10230): Verilog HDL assignment warning at Line_Buffer_J.v(40): truncated value with size 32 to match size of target (10) File: D:/Sobel_DE10-master/V_D8M/Line_Buffer_J.v Line: 40
-Warning (10230): Verilog HDL assignment warning at Line_Buffer_J.v(47): truncated value with size 32 to match size of target (10) File: D:/Sobel_DE10-master/V_D8M/Line_Buffer_J.v Line: 47
-Info (12128): Elaborating entity "int_line" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|RAW2RGB_J:u4|Line_Buffer_J:u0|int_line:d1" File: D:/Sobel_DE10-master/V_D8M/Line_Buffer_J.v Line: 63
-Info (12128): Elaborating entity "altsyncram" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|RAW2RGB_J:u4|Line_Buffer_J:u0|int_line:d1|altsyncram:altsyncram_component" File: D:/Sobel_DE10-master/V_D8M/int_line.v Line: 91
-Info (12130): Elaborated megafunction instantiation "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|RAW2RGB_J:u4|Line_Buffer_J:u0|int_line:d1|altsyncram:altsyncram_component" File: D:/Sobel_DE10-master/V_D8M/int_line.v Line: 91
-Info (12133): Instantiated megafunction "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|RAW2RGB_J:u4|Line_Buffer_J:u0|int_line:d1|altsyncram:altsyncram_component" with the following parameter: File: D:/Sobel_DE10-master/V_D8M/int_line.v Line: 91
+    Info (12023): Found entity 1: mux_sib File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/db/mux_sib.tdf Line: 22
+Info (12128): Elaborating entity "mux_sib" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|ON_CHIP_FRAM:fra|FRAM_BUFF:GG|altsyncram:altsyncram_component|altsyncram_i4q1:auto_generated|mux_sib:mux3" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/db/altsyncram_i4q1.tdf Line: 49
+Info (12128): Elaborating entity "RAW2RGB_J" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|RAW2RGB_J:u4" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/DE10_NANO_D8M_RTL.v Line: 193
+Warning (10230): Verilog HDL assignment warning at RAW2RGB_J.v(34): truncated value with size 32 to match size of target (8) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/RAW2RGB_J.v Line: 34
+Warning (10230): Verilog HDL assignment warning at RAW2RGB_J.v(35): truncated value with size 32 to match size of target (8) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/RAW2RGB_J.v Line: 35
+Warning (10230): Verilog HDL assignment warning at RAW2RGB_J.v(36): truncated value with size 32 to match size of target (8) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/RAW2RGB_J.v Line: 36
+Warning (10230): Verilog HDL assignment warning at RAW2RGB_J.v(48): truncated value with size 32 to match size of target (11) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/RAW2RGB_J.v Line: 48
+Warning (10230): Verilog HDL assignment warning at RAW2RGB_J.v(49): truncated value with size 32 to match size of target (11) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/RAW2RGB_J.v Line: 49
+Info (12128): Elaborating entity "Line_Buffer_J" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|RAW2RGB_J:u4|Line_Buffer_J:u0" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/RAW2RGB_J.v Line: 69
+Warning (10230): Verilog HDL assignment warning at Line_Buffer_J.v(32): truncated value with size 32 to match size of target (2) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/Line_Buffer_J.v Line: 32
+Warning (10230): Verilog HDL assignment warning at Line_Buffer_J.v(35): truncated value with size 32 to match size of target (1) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/Line_Buffer_J.v Line: 35
+Warning (10230): Verilog HDL assignment warning at Line_Buffer_J.v(36): truncated value with size 32 to match size of target (1) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/Line_Buffer_J.v Line: 36
+Warning (10230): Verilog HDL assignment warning at Line_Buffer_J.v(37): truncated value with size 32 to match size of target (1) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/Line_Buffer_J.v Line: 37
+Warning (10230): Verilog HDL assignment warning at Line_Buffer_J.v(40): truncated value with size 32 to match size of target (10) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/Line_Buffer_J.v Line: 40
+Warning (10230): Verilog HDL assignment warning at Line_Buffer_J.v(47): truncated value with size 32 to match size of target (10) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/Line_Buffer_J.v Line: 47
+Info (12128): Elaborating entity "int_line" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|RAW2RGB_J:u4|Line_Buffer_J:u0|int_line:d1" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/Line_Buffer_J.v Line: 63
+Info (12128): Elaborating entity "altsyncram" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|RAW2RGB_J:u4|Line_Buffer_J:u0|int_line:d1|altsyncram:altsyncram_component" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/int_line.v Line: 91
+Info (12130): Elaborated megafunction instantiation "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|RAW2RGB_J:u4|Line_Buffer_J:u0|int_line:d1|altsyncram:altsyncram_component" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/int_line.v Line: 91
+Info (12133): Instantiated megafunction "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|RAW2RGB_J:u4|Line_Buffer_J:u0|int_line:d1|altsyncram:altsyncram_component" with the following parameter: File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/int_line.v Line: 91
     Info (12134): Parameter "address_aclr_b" = "NONE"
     Info (12134): Parameter "address_reg_b" = "CLOCK1"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
@@ -3082,66 +3082,66 @@ Info (12133): Instantiated megafunction "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INS
     Info (12134): Parameter "width_b" = "10"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_6lq1.tdf
-    Info (12023): Found entity 1: altsyncram_6lq1 File: D:/Sobel_DE10-master/db/altsyncram_6lq1.tdf Line: 27
+    Info (12023): Found entity 1: altsyncram_6lq1 File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/db/altsyncram_6lq1.tdf Line: 27
 Info (12128): Elaborating entity "altsyncram_6lq1" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|RAW2RGB_J:u4|Line_Buffer_J:u0|int_line:d1|altsyncram:altsyncram_component|altsyncram_6lq1:auto_generated" File: e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
-Info (12128): Elaborating entity "RAW_RGB_BIN" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|RAW2RGB_J:u4|RAW_RGB_BIN:bin" File: D:/Sobel_DE10-master/V_D8M/RAW2RGB_J.v Line: 83
-Warning (10230): Verilog HDL assignment warning at RAW_RGB_BIN.v(41): truncated value with size 32 to match size of target (10) File: D:/Sobel_DE10-master/V_D8M/RAW_RGB_BIN.v Line: 41
-Warning (10230): Verilog HDL assignment warning at RAW_RGB_BIN.v(47): truncated value with size 32 to match size of target (10) File: D:/Sobel_DE10-master/V_D8M/RAW_RGB_BIN.v Line: 47
-Warning (10230): Verilog HDL assignment warning at RAW_RGB_BIN.v(53): truncated value with size 32 to match size of target (10) File: D:/Sobel_DE10-master/V_D8M/RAW_RGB_BIN.v Line: 53
-Warning (10230): Verilog HDL assignment warning at RAW_RGB_BIN.v(59): truncated value with size 32 to match size of target (10) File: D:/Sobel_DE10-master/V_D8M/RAW_RGB_BIN.v Line: 59
-Info (12128): Elaborating entity "AUTO_FOCUS_ON" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|AUTO_FOCUS_ON:u9" File: D:/Sobel_DE10-master/DE10_NANO_D8M_RTL.v Line: 199
-Warning (10230): Verilog HDL assignment warning at AUTO_FOCUS_ON.v(19): truncated value with size 32 to match size of target (1) File: D:/Sobel_DE10-master/V_Auto/AUTO_FOCUS_ON.v Line: 19
-Info (12128): Elaborating entity "FOCUS_ADJ" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl" File: D:/Sobel_DE10-master/DE10_NANO_D8M_RTL.v Line: 224
-Info (12128): Elaborating entity "AUTO_SYNC_MODIFY" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|AUTO_SYNC_MODIFY:RE" File: D:/Sobel_DE10-master/V_Auto/FOCUS_ADJ.v Line: 51
-Info (12128): Elaborating entity "MODIFY_SYNC" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|AUTO_SYNC_MODIFY:RE|MODIFY_SYNC:vs" File: D:/Sobel_DE10-master/V_Auto/AUTO_SYNC_MODIFY.v Line: 17
-Warning (10230): Verilog HDL assignment warning at MODIFY_SYNC.v(19): truncated value with size 32 to match size of target (16) File: D:/Sobel_DE10-master/V_Auto/MODIFY_SYNC.v Line: 19
-Info (12128): Elaborating entity "LCD_COUNTER" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|LCD_COUNTER:cv1" File: D:/Sobel_DE10-master/V_Auto/FOCUS_ADJ.v Line: 63
-Warning (10230): Verilog HDL assignment warning at LCD_COUNTER.v(31): truncated value with size 32 to match size of target (16) File: D:/Sobel_DE10-master/V_Auto/LCD_COUNTER.v Line: 31
-Warning (10230): Verilog HDL assignment warning at LCD_COUNTER.v(36): truncated value with size 32 to match size of target (16) File: D:/Sobel_DE10-master/V_Auto/LCD_COUNTER.v Line: 36
-Warning (10230): Verilog HDL assignment warning at LCD_COUNTER.v(39): truncated value with size 32 to match size of target (1) File: D:/Sobel_DE10-master/V_Auto/LCD_COUNTER.v Line: 39
-Warning (10230): Verilog HDL assignment warning at LCD_COUNTER.v(47): truncated value with size 32 to match size of target (1) File: D:/Sobel_DE10-master/V_Auto/LCD_COUNTER.v Line: 47
-Info (12128): Elaborating entity "VCM_CTRL_P" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp" File: D:/Sobel_DE10-master/V_Auto/FOCUS_ADJ.v Line: 84
-Warning (10230): Verilog HDL assignment warning at VCM_CTRL_P.v(24): truncated value with size 32 to match size of target (18) File: D:/Sobel_DE10-master/V_Auto/VCM_CTRL_P.v Line: 24
-Warning (10230): Verilog HDL assignment warning at VCM_CTRL_P.v(53): truncated value with size 32 to match size of target (8) File: D:/Sobel_DE10-master/V_Auto/VCM_CTRL_P.v Line: 53
-Info (12128): Elaborating entity "F_VCM" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f" File: D:/Sobel_DE10-master/V_Auto/VCM_CTRL_P.v Line: 94
-Warning (10230): Verilog HDL assignment warning at F_VCM.v(32): truncated value with size 32 to match size of target (11) File: D:/Sobel_DE10-master/V_Auto/F_VCM.v Line: 32
-Warning (10230): Verilog HDL assignment warning at F_VCM.v(41): truncated value with size 32 to match size of target (11) File: D:/Sobel_DE10-master/V_Auto/F_VCM.v Line: 41
-Warning (10230): Verilog HDL assignment warning at F_VCM.v(49): truncated value with size 32 to match size of target (11) File: D:/Sobel_DE10-master/V_Auto/F_VCM.v Line: 49
-Info (12128): Elaborating entity "I2C_DELAY" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|I2C_DELAY:i2c" File: D:/Sobel_DE10-master/V_Auto/FOCUS_ADJ.v Line: 95
-Warning (10034): Output port "READY1" at I2C_DELAY.v(6) has no driver File: D:/Sobel_DE10-master/V_Auto/I2C_DELAY.v Line: 6
-Info (12128): Elaborating entity "VCM_I2C" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_I2C:i2c2" File: D:/Sobel_DE10-master/V_Auto/FOCUS_ADJ.v Line: 108
-Warning (10230): Verilog HDL assignment warning at VCM_I2C.v(116): truncated value with size 32 to match size of target (8) File: D:/Sobel_DE10-master/V_Auto/VCM_I2C.v Line: 116
-Warning (10230): Verilog HDL assignment warning at VCM_I2C.v(169): truncated value with size 32 to match size of target (8) File: D:/Sobel_DE10-master/V_Auto/VCM_I2C.v Line: 169
-Warning (10230): Verilog HDL assignment warning at VCM_I2C.v(208): truncated value with size 32 to match size of target (1) File: D:/Sobel_DE10-master/V_Auto/VCM_I2C.v Line: 208
-Warning (10034): Output port "TR" at VCM_I2C.v(32) has no driver File: D:/Sobel_DE10-master/V_Auto/VCM_I2C.v Line: 32
-Info (12128): Elaborating entity "VGA_Controller" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|VGA_Controller:u1" File: D:/Sobel_DE10-master/DE10_NANO_D8M_RTL.v Line: 234
-Warning (10230): Verilog HDL assignment warning at VGA_Controller.v(71): truncated value with size 32 to match size of target (22) File: D:/Sobel_DE10-master/VGA_Controller/VGA_Controller.v Line: 71
-Warning (10230): Verilog HDL assignment warning at VGA_Controller.v(74): truncated value with size 32 to match size of target (11) File: D:/Sobel_DE10-master/VGA_Controller/VGA_Controller.v Line: 74
-Warning (10230): Verilog HDL assignment warning at VGA_Controller.v(75): truncated value with size 32 to match size of target (11) File: D:/Sobel_DE10-master/VGA_Controller/VGA_Controller.v Line: 75
-Info (12128): Elaborating entity "HDMI_TX_AD7513" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|HDMI_TX_AD7513:hdmi" File: D:/Sobel_DE10-master/DE10_NANO_D8M_RTL.v Line: 259
-Info (12128): Elaborating entity "I2C_HDMI_Config" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|HDMI_TX_AD7513:hdmi|I2C_HDMI_Config:u_I2C_HDMI_Config" File: D:/Sobel_DE10-master/V_HDMI/HDMI_TX_AD7513.v Line: 43
-Warning (10230): Verilog HDL assignment warning at I2C_HDMI_Config.v(48): truncated value with size 32 to match size of target (16) File: D:/Sobel_DE10-master/V_HDMI/I2C_HDMI_Config.v Line: 48
-Warning (10230): Verilog HDL assignment warning at I2C_HDMI_Config.v(98): truncated value with size 32 to match size of target (6) File: D:/Sobel_DE10-master/V_HDMI/I2C_HDMI_Config.v Line: 98
-Info (12128): Elaborating entity "I2C_Controller" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|HDMI_TX_AD7513:hdmi|I2C_HDMI_Config:u_I2C_HDMI_Config|I2C_Controller:u0" File: D:/Sobel_DE10-master/V_HDMI/I2C_HDMI_Config.v Line: 64
-Warning (10230): Verilog HDL assignment warning at I2C_Controller.v(57): truncated value with size 32 to match size of target (1) File: D:/Sobel_DE10-master/V_HDMI/I2C_Controller.v Line: 57
-Info (12128): Elaborating entity "HDMI_I2C_WRITE_WDATA" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|HDMI_TX_AD7513:hdmi|I2C_HDMI_Config:u_I2C_HDMI_Config|I2C_Controller:u0|HDMI_I2C_WRITE_WDATA:wrd" File: D:/Sobel_DE10-master/V_HDMI/I2C_Controller.v Line: 71
-Warning (10230): Verilog HDL assignment warning at HDMI_I2C_WRITE_WDATA.v(54): truncated value with size 32 to match size of target (8) File: D:/Sobel_DE10-master/V_HDMI/HDMI_I2C_WRITE_WDATA.v Line: 54
-Info (12128): Elaborating entity "AUDIO_IF" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|HDMI_TX_AD7513:hdmi|AUDIO_IF:u_AVG" File: D:/Sobel_DE10-master/V_HDMI/HDMI_TX_AD7513.v Line: 52
-Warning (10230): Verilog HDL assignment warning at AUDIO_IF.v(113): truncated value with size 32 to match size of target (6) File: D:/Sobel_DE10-master/V_HDMI/AUDIO_IF.v Line: 113
-Warning (10230): Verilog HDL assignment warning at AUDIO_IF.v(129): truncated value with size 32 to match size of target (7) File: D:/Sobel_DE10-master/V_HDMI/AUDIO_IF.v Line: 129
-Warning (10230): Verilog HDL assignment warning at AUDIO_IF.v(155): truncated value with size 32 to match size of target (6) File: D:/Sobel_DE10-master/V_HDMI/AUDIO_IF.v Line: 155
-Info (12128): Elaborating entity "tracking" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|tracking:tracking_dut" File: D:/Sobel_DE10-master/DE10_NANO_D8M_RTL.v Line: 303
-Warning (10230): Verilog HDL assignment warning at tracking.sv(154): truncated value with size 32 to match size of target (12) File: D:/Sobel_DE10-master/location_tracking/tracking.sv Line: 154
-Warning (10230): Verilog HDL assignment warning at tracking.sv(155): truncated value with size 32 to match size of target (12) File: D:/Sobel_DE10-master/location_tracking/tracking.sv Line: 155
-Warning (10230): Verilog HDL assignment warning at tracking.sv(163): truncated value with size 32 to match size of target (12) File: D:/Sobel_DE10-master/location_tracking/tracking.sv Line: 163
-Warning (10230): Verilog HDL assignment warning at tracking.sv(164): truncated value with size 32 to match size of target (12) File: D:/Sobel_DE10-master/location_tracking/tracking.sv Line: 164
-Warning (10230): Verilog HDL assignment warning at tracking.sv(165): truncated value with size 32 to match size of target (12) File: D:/Sobel_DE10-master/location_tracking/tracking.sv Line: 165
-Warning (10230): Verilog HDL assignment warning at tracking.sv(166): truncated value with size 32 to match size of target (12) File: D:/Sobel_DE10-master/location_tracking/tracking.sv Line: 166
-Info (12128): Elaborating entity "fifo" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|tracking:tracking_dut|fifo:fifo_in_inst" File: D:/Sobel_DE10-master/location_tracking/tracking.sv Line: 56
-Warning (10230): Verilog HDL assignment warning at fifo.sv(71): truncated value with size 32 to match size of target (11) File: D:/Sobel_DE10-master/location_tracking/fifo.sv Line: 71
-Warning (10230): Verilog HDL assignment warning at fifo.sv(72): truncated value with size 32 to match size of target (11) File: D:/Sobel_DE10-master/location_tracking/fifo.sv Line: 72
+Info (12128): Elaborating entity "RAW_RGB_BIN" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|RAW2RGB_J:u4|RAW_RGB_BIN:bin" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/RAW2RGB_J.v Line: 83
+Warning (10230): Verilog HDL assignment warning at RAW_RGB_BIN.v(41): truncated value with size 32 to match size of target (10) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/RAW_RGB_BIN.v Line: 41
+Warning (10230): Verilog HDL assignment warning at RAW_RGB_BIN.v(47): truncated value with size 32 to match size of target (10) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/RAW_RGB_BIN.v Line: 47
+Warning (10230): Verilog HDL assignment warning at RAW_RGB_BIN.v(53): truncated value with size 32 to match size of target (10) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/RAW_RGB_BIN.v Line: 53
+Warning (10230): Verilog HDL assignment warning at RAW_RGB_BIN.v(59): truncated value with size 32 to match size of target (10) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/RAW_RGB_BIN.v Line: 59
+Info (12128): Elaborating entity "AUTO_FOCUS_ON" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|AUTO_FOCUS_ON:u9" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/DE10_NANO_D8M_RTL.v Line: 199
+Warning (10230): Verilog HDL assignment warning at AUTO_FOCUS_ON.v(19): truncated value with size 32 to match size of target (1) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/AUTO_FOCUS_ON.v Line: 19
+Info (12128): Elaborating entity "FOCUS_ADJ" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/DE10_NANO_D8M_RTL.v Line: 224
+Info (12128): Elaborating entity "AUTO_SYNC_MODIFY" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|AUTO_SYNC_MODIFY:RE" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/FOCUS_ADJ.v Line: 51
+Info (12128): Elaborating entity "MODIFY_SYNC" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|AUTO_SYNC_MODIFY:RE|MODIFY_SYNC:vs" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/AUTO_SYNC_MODIFY.v Line: 17
+Warning (10230): Verilog HDL assignment warning at MODIFY_SYNC.v(19): truncated value with size 32 to match size of target (16) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/MODIFY_SYNC.v Line: 19
+Info (12128): Elaborating entity "LCD_COUNTER" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|LCD_COUNTER:cv1" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/FOCUS_ADJ.v Line: 63
+Warning (10230): Verilog HDL assignment warning at LCD_COUNTER.v(31): truncated value with size 32 to match size of target (16) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/LCD_COUNTER.v Line: 31
+Warning (10230): Verilog HDL assignment warning at LCD_COUNTER.v(36): truncated value with size 32 to match size of target (16) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/LCD_COUNTER.v Line: 36
+Warning (10230): Verilog HDL assignment warning at LCD_COUNTER.v(39): truncated value with size 32 to match size of target (1) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/LCD_COUNTER.v Line: 39
+Warning (10230): Verilog HDL assignment warning at LCD_COUNTER.v(47): truncated value with size 32 to match size of target (1) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/LCD_COUNTER.v Line: 47
+Info (12128): Elaborating entity "VCM_CTRL_P" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/FOCUS_ADJ.v Line: 84
+Warning (10230): Verilog HDL assignment warning at VCM_CTRL_P.v(24): truncated value with size 32 to match size of target (18) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/VCM_CTRL_P.v Line: 24
+Warning (10230): Verilog HDL assignment warning at VCM_CTRL_P.v(53): truncated value with size 32 to match size of target (8) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/VCM_CTRL_P.v Line: 53
+Info (12128): Elaborating entity "F_VCM" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/VCM_CTRL_P.v Line: 94
+Warning (10230): Verilog HDL assignment warning at F_VCM.v(32): truncated value with size 32 to match size of target (11) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/F_VCM.v Line: 32
+Warning (10230): Verilog HDL assignment warning at F_VCM.v(41): truncated value with size 32 to match size of target (11) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/F_VCM.v Line: 41
+Warning (10230): Verilog HDL assignment warning at F_VCM.v(49): truncated value with size 32 to match size of target (11) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/F_VCM.v Line: 49
+Info (12128): Elaborating entity "I2C_DELAY" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|I2C_DELAY:i2c" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/FOCUS_ADJ.v Line: 95
+Warning (10034): Output port "READY1" at I2C_DELAY.v(6) has no driver File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/I2C_DELAY.v Line: 6
+Info (12128): Elaborating entity "VCM_I2C" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_I2C:i2c2" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/FOCUS_ADJ.v Line: 108
+Warning (10230): Verilog HDL assignment warning at VCM_I2C.v(116): truncated value with size 32 to match size of target (8) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/VCM_I2C.v Line: 116
+Warning (10230): Verilog HDL assignment warning at VCM_I2C.v(169): truncated value with size 32 to match size of target (8) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/VCM_I2C.v Line: 169
+Warning (10230): Verilog HDL assignment warning at VCM_I2C.v(208): truncated value with size 32 to match size of target (1) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/VCM_I2C.v Line: 208
+Warning (10034): Output port "TR" at VCM_I2C.v(32) has no driver File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/VCM_I2C.v Line: 32
+Info (12128): Elaborating entity "VGA_Controller" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|VGA_Controller:u1" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/DE10_NANO_D8M_RTL.v Line: 234
+Warning (10230): Verilog HDL assignment warning at VGA_Controller.v(71): truncated value with size 32 to match size of target (22) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/VGA_Controller/VGA_Controller.v Line: 71
+Warning (10230): Verilog HDL assignment warning at VGA_Controller.v(74): truncated value with size 32 to match size of target (11) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/VGA_Controller/VGA_Controller.v Line: 74
+Warning (10230): Verilog HDL assignment warning at VGA_Controller.v(75): truncated value with size 32 to match size of target (11) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/VGA_Controller/VGA_Controller.v Line: 75
+Info (12128): Elaborating entity "HDMI_TX_AD7513" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|HDMI_TX_AD7513:hdmi" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/DE10_NANO_D8M_RTL.v Line: 259
+Info (12128): Elaborating entity "I2C_HDMI_Config" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|HDMI_TX_AD7513:hdmi|I2C_HDMI_Config:u_I2C_HDMI_Config" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_HDMI/HDMI_TX_AD7513.v Line: 43
+Warning (10230): Verilog HDL assignment warning at I2C_HDMI_Config.v(48): truncated value with size 32 to match size of target (16) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_HDMI/I2C_HDMI_Config.v Line: 48
+Warning (10230): Verilog HDL assignment warning at I2C_HDMI_Config.v(98): truncated value with size 32 to match size of target (6) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_HDMI/I2C_HDMI_Config.v Line: 98
+Info (12128): Elaborating entity "I2C_Controller" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|HDMI_TX_AD7513:hdmi|I2C_HDMI_Config:u_I2C_HDMI_Config|I2C_Controller:u0" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_HDMI/I2C_HDMI_Config.v Line: 64
+Warning (10230): Verilog HDL assignment warning at I2C_Controller.v(57): truncated value with size 32 to match size of target (1) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_HDMI/I2C_Controller.v Line: 57
+Info (12128): Elaborating entity "HDMI_I2C_WRITE_WDATA" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|HDMI_TX_AD7513:hdmi|I2C_HDMI_Config:u_I2C_HDMI_Config|I2C_Controller:u0|HDMI_I2C_WRITE_WDATA:wrd" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_HDMI/I2C_Controller.v Line: 71
+Warning (10230): Verilog HDL assignment warning at HDMI_I2C_WRITE_WDATA.v(54): truncated value with size 32 to match size of target (8) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_HDMI/HDMI_I2C_WRITE_WDATA.v Line: 54
+Info (12128): Elaborating entity "AUDIO_IF" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|HDMI_TX_AD7513:hdmi|AUDIO_IF:u_AVG" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_HDMI/HDMI_TX_AD7513.v Line: 52
+Warning (10230): Verilog HDL assignment warning at AUDIO_IF.v(113): truncated value with size 32 to match size of target (6) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_HDMI/AUDIO_IF.v Line: 113
+Warning (10230): Verilog HDL assignment warning at AUDIO_IF.v(129): truncated value with size 32 to match size of target (7) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_HDMI/AUDIO_IF.v Line: 129
+Warning (10230): Verilog HDL assignment warning at AUDIO_IF.v(155): truncated value with size 32 to match size of target (6) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_HDMI/AUDIO_IF.v Line: 155
+Info (12128): Elaborating entity "tracking" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|tracking:tracking_dut" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/DE10_NANO_D8M_RTL.v Line: 303
+Warning (10230): Verilog HDL assignment warning at tracking.sv(154): truncated value with size 32 to match size of target (12) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/location_tracking/tracking.sv Line: 154
+Warning (10230): Verilog HDL assignment warning at tracking.sv(155): truncated value with size 32 to match size of target (12) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/location_tracking/tracking.sv Line: 155
+Warning (10230): Verilog HDL assignment warning at tracking.sv(163): truncated value with size 32 to match size of target (12) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/location_tracking/tracking.sv Line: 163
+Warning (10230): Verilog HDL assignment warning at tracking.sv(164): truncated value with size 32 to match size of target (12) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/location_tracking/tracking.sv Line: 164
+Warning (10230): Verilog HDL assignment warning at tracking.sv(165): truncated value with size 32 to match size of target (12) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/location_tracking/tracking.sv Line: 165
+Warning (10230): Verilog HDL assignment warning at tracking.sv(166): truncated value with size 32 to match size of target (12) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/location_tracking/tracking.sv Line: 166
+Info (12128): Elaborating entity "fifo" for hierarchy "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|tracking:tracking_dut|fifo:fifo_in_inst" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/location_tracking/tracking.sv Line: 56
+Warning (10230): Verilog HDL assignment warning at fifo.sv(71): truncated value with size 32 to match size of target (11) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/location_tracking/fifo.sv Line: 71
+Warning (10230): Verilog HDL assignment warning at fifo.sv(72): truncated value with size 32 to match size of target (11) File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/location_tracking/fifo.sv Line: 72
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
-Info (11172): 2022.05.10.16:28:19 Progress: Loading sld2d1b536e/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2022.05.12.16:04:40 Progress: Loading sld2d1b536e/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -3152,64 +3152,64 @@ Info (11172): Ident: "alt_sld_fab" instantiated altera_connection_identification
 Info (11172): Alt_sld_fab: Done "alt_sld_fab" with 6 modules, 6 files
 Info (11171): Finished IP generation for the debug fabric: alt_sld_fab.
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld2d1b536e/alt_sld_fab.v
-    Info (12023): Found entity 1: alt_sld_fab File: D:/Sobel_DE10-master/db/ip/sld2d1b536e/alt_sld_fab.v Line: 9
+    Info (12023): Found entity 1: alt_sld_fab File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/db/ip/sld2d1b536e/alt_sld_fab.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld2d1b536e/submodules/alt_sld_fab_alt_sld_fab.v
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab File: D:/Sobel_DE10-master/db/ip/sld2d1b536e/submodules/alt_sld_fab_alt_sld_fab.v Line: 9
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/db/ip/sld2d1b536e/submodules/alt_sld_fab_alt_sld_fab.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld2d1b536e/submodules/alt_sld_fab_alt_sld_fab_ident.sv
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_ident File: D:/Sobel_DE10-master/db/ip/sld2d1b536e/submodules/alt_sld_fab_alt_sld_fab_ident.sv Line: 33
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_ident File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/db/ip/sld2d1b536e/submodules/alt_sld_fab_alt_sld_fab_ident.sv Line: 33
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld2d1b536e/submodules/alt_sld_fab_alt_sld_fab_presplit.sv
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_presplit File: D:/Sobel_DE10-master/db/ip/sld2d1b536e/submodules/alt_sld_fab_alt_sld_fab_presplit.sv Line: 3
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_presplit File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/db/ip/sld2d1b536e/submodules/alt_sld_fab_alt_sld_fab_presplit.sv Line: 3
 Info (12021): Found 2 design units, including 1 entities, in source file db/ip/sld2d1b536e/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd
-    Info (12022): Found design unit 1: alt_sld_fab_alt_sld_fab_sldfabric-rtl File: D:/Sobel_DE10-master/db/ip/sld2d1b536e/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 182
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_sldfabric File: D:/Sobel_DE10-master/db/ip/sld2d1b536e/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 11
+    Info (12022): Found design unit 1: alt_sld_fab_alt_sld_fab_sldfabric-rtl File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/db/ip/sld2d1b536e/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 182
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_sldfabric File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/db/ip/sld2d1b536e/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 11
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld2d1b536e/submodules/alt_sld_fab_alt_sld_fab_splitter.sv
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_splitter File: D:/Sobel_DE10-master/db/ip/sld2d1b536e/submodules/alt_sld_fab_alt_sld_fab_splitter.sv Line: 3
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_splitter File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/db/ip/sld2d1b536e/submodules/alt_sld_fab_alt_sld_fab_splitter.sv Line: 3
 Info (276014): Found 1 instances of uninferred RAM logic
-    Info (276004): RAM logic "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|HDMI_TX_AD7513:hdmi|AUDIO_IF:u_AVG|Ram0" is uninferred due to inappropriate RAM size File: D:/Sobel_DE10-master/V_HDMI/AUDIO_IF.v Line: 166
+    Info (276004): RAM logic "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|HDMI_TX_AD7513:hdmi|AUDIO_IF:u_AVG|Ram0" is uninferred due to inappropriate RAM size File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_HDMI/AUDIO_IF.v Line: 166
 Warning (12241): 34 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13034): The following nodes have both tri-state and non-tri-state drivers
-    Warning (13035): Inserted always-enabled tri-state buffer between "HDMI_I2C_SCL" and its non-tri-state driver. File: D:/Sobel_DE10-master/3D_Painting_Top/3d_painting_top.sv Line: 8
-    Warning (13035): Inserted always-enabled tri-state buffer between "HDMI_I2S" and its non-tri-state driver. File: D:/Sobel_DE10-master/3D_Painting_Top/3d_painting_top.sv Line: 10
-    Warning (13035): Inserted always-enabled tri-state buffer between "HDMI_LRCLK" and its non-tri-state driver. File: D:/Sobel_DE10-master/3D_Painting_Top/3d_painting_top.sv Line: 11
-    Warning (13035): Inserted always-enabled tri-state buffer between "HDMI_SCLK" and its non-tri-state driver. File: D:/Sobel_DE10-master/3D_Painting_Top/3d_painting_top.sv Line: 13
-    Warning (13035): Inserted always-enabled tri-state buffer between "CAMERA_I2C_SCL" and its non-tri-state driver. File: D:/Sobel_DE10-master/3D_Painting_Top/3d_painting_top.sv Line: 31
-    Warning (13035): Inserted always-enabled tri-state buffer between "MIPI_I2C_SCL" and its non-tri-state driver. File: D:/Sobel_DE10-master/3D_Painting_Top/3d_painting_top.sv Line: 35
+    Warning (13035): Inserted always-enabled tri-state buffer between "HDMI_I2C_SCL" and its non-tri-state driver. File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/3D_Painting_Top/3d_painting_top.sv Line: 8
+    Warning (13035): Inserted always-enabled tri-state buffer between "HDMI_I2S" and its non-tri-state driver. File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/3D_Painting_Top/3d_painting_top.sv Line: 10
+    Warning (13035): Inserted always-enabled tri-state buffer between "HDMI_LRCLK" and its non-tri-state driver. File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/3D_Painting_Top/3d_painting_top.sv Line: 11
+    Warning (13035): Inserted always-enabled tri-state buffer between "HDMI_SCLK" and its non-tri-state driver. File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/3D_Painting_Top/3d_painting_top.sv Line: 13
+    Warning (13035): Inserted always-enabled tri-state buffer between "CAMERA_I2C_SCL" and its non-tri-state driver. File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/3D_Painting_Top/3d_painting_top.sv Line: 31
+    Warning (13035): Inserted always-enabled tri-state buffer between "MIPI_I2C_SCL" and its non-tri-state driver. File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/3D_Painting_Top/3d_painting_top.sv Line: 35
 Warning (13039): The following bidirectional pins have no drivers
-    Warning (13040): bidirectional pin "HDMI_MCLK" has no driver File: D:/Sobel_DE10-master/3D_Painting_Top/3d_painting_top.sv Line: 12
+    Warning (13040): bidirectional pin "HDMI_MCLK" has no driver File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/3D_Painting_Top/3d_painting_top.sv Line: 12
 Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
-    Warning (13310): Register "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_I2C:i2c2|rTR_IN" is converted into an equivalent circuit using register "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_I2C:i2c2|rTR_IN~_emulated" and latch "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_I2C:i2c2|rTR_IN~1" File: D:/Sobel_DE10-master/V_Auto/VCM_I2C.v Line: 38
-    Warning (13310): Register "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[3]" is converted into an equivalent circuit using register "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[3]~_emulated" and latch "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[3]~1" File: D:/Sobel_DE10-master/V_Auto/F_VCM.v Line: 46
-    Warning (13310): Register "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[2]" is converted into an equivalent circuit using register "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[2]~_emulated" and latch "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[2]~5" File: D:/Sobel_DE10-master/V_Auto/F_VCM.v Line: 46
-    Warning (13310): Register "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[10]" is converted into an equivalent circuit using register "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[10]~_emulated" and latch "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[10]~9" File: D:/Sobel_DE10-master/V_Auto/F_VCM.v Line: 46
-    Warning (13310): Register "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[9]" is converted into an equivalent circuit using register "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[9]~_emulated" and latch "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[9]~13" File: D:/Sobel_DE10-master/V_Auto/F_VCM.v Line: 46
-    Warning (13310): Register "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[8]" is converted into an equivalent circuit using register "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[8]~_emulated" and latch "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[8]~17" File: D:/Sobel_DE10-master/V_Auto/F_VCM.v Line: 46
-    Warning (13310): Register "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[7]" is converted into an equivalent circuit using register "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[7]~_emulated" and latch "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[7]~21" File: D:/Sobel_DE10-master/V_Auto/F_VCM.v Line: 46
-    Warning (13310): Register "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[6]" is converted into an equivalent circuit using register "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[6]~_emulated" and latch "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[6]~25" File: D:/Sobel_DE10-master/V_Auto/F_VCM.v Line: 46
-    Warning (13310): Register "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[5]" is converted into an equivalent circuit using register "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[5]~_emulated" and latch "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[5]~29" File: D:/Sobel_DE10-master/V_Auto/F_VCM.v Line: 46
-    Warning (13310): Register "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[4]" is converted into an equivalent circuit using register "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[4]~_emulated" and latch "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[4]~33" File: D:/Sobel_DE10-master/V_Auto/F_VCM.v Line: 46
-    Warning (13310): Register "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[1]" is converted into an equivalent circuit using register "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[1]~_emulated" and latch "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[1]~37" File: D:/Sobel_DE10-master/V_Auto/F_VCM.v Line: 46
-    Warning (13310): Register "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[0]" is converted into an equivalent circuit using register "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[0]~_emulated" and latch "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[0]~41" File: D:/Sobel_DE10-master/V_Auto/F_VCM.v Line: 46
+    Warning (13310): Register "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_I2C:i2c2|rTR_IN" is converted into an equivalent circuit using register "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_I2C:i2c2|rTR_IN~_emulated" and latch "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_I2C:i2c2|rTR_IN~1" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/VCM_I2C.v Line: 38
+    Warning (13310): Register "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[3]" is converted into an equivalent circuit using register "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[3]~_emulated" and latch "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[3]~1" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/F_VCM.v Line: 46
+    Warning (13310): Register "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[2]" is converted into an equivalent circuit using register "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[2]~_emulated" and latch "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[2]~5" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/F_VCM.v Line: 46
+    Warning (13310): Register "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[10]" is converted into an equivalent circuit using register "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[10]~_emulated" and latch "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[10]~9" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/F_VCM.v Line: 46
+    Warning (13310): Register "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[9]" is converted into an equivalent circuit using register "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[9]~_emulated" and latch "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[9]~13" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/F_VCM.v Line: 46
+    Warning (13310): Register "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[8]" is converted into an equivalent circuit using register "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[8]~_emulated" and latch "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[8]~17" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/F_VCM.v Line: 46
+    Warning (13310): Register "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[7]" is converted into an equivalent circuit using register "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[7]~_emulated" and latch "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[7]~21" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/F_VCM.v Line: 46
+    Warning (13310): Register "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[6]" is converted into an equivalent circuit using register "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[6]~_emulated" and latch "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[6]~25" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/F_VCM.v Line: 46
+    Warning (13310): Register "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[5]" is converted into an equivalent circuit using register "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[5]~_emulated" and latch "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[5]~29" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/F_VCM.v Line: 46
+    Warning (13310): Register "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[4]" is converted into an equivalent circuit using register "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[4]~_emulated" and latch "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[4]~33" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/F_VCM.v Line: 46
+    Warning (13310): Register "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[1]" is converted into an equivalent circuit using register "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[1]~_emulated" and latch "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[1]~37" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/F_VCM.v Line: 46
+    Warning (13310): Register "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[0]" is converted into an equivalent circuit using register "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[0]~_emulated" and latch "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|STEP_f[0]~41" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/F_VCM.v Line: 46
 Warning (13009): TRI or OPNDRN buffers permanently enabled
-    Warning (13010): Node "HDMI_I2C_SCL~synth" File: D:/Sobel_DE10-master/3D_Painting_Top/3d_painting_top.sv Line: 8
-    Warning (13010): Node "HDMI_I2S~synth" File: D:/Sobel_DE10-master/3D_Painting_Top/3d_painting_top.sv Line: 10
-    Warning (13010): Node "HDMI_LRCLK~synth" File: D:/Sobel_DE10-master/3D_Painting_Top/3d_painting_top.sv Line: 11
-    Warning (13010): Node "HDMI_SCLK~synth" File: D:/Sobel_DE10-master/3D_Painting_Top/3d_painting_top.sv Line: 13
-    Warning (13010): Node "CAMERA_I2C_SCL~synth" File: D:/Sobel_DE10-master/3D_Painting_Top/3d_painting_top.sv Line: 31
-    Warning (13010): Node "MIPI_I2C_SCL~synth" File: D:/Sobel_DE10-master/3D_Painting_Top/3d_painting_top.sv Line: 35
+    Warning (13010): Node "HDMI_I2C_SCL~synth" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/3D_Painting_Top/3d_painting_top.sv Line: 8
+    Warning (13010): Node "HDMI_I2S~synth" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/3D_Painting_Top/3d_painting_top.sv Line: 10
+    Warning (13010): Node "HDMI_LRCLK~synth" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/3D_Painting_Top/3d_painting_top.sv Line: 11
+    Warning (13010): Node "HDMI_SCLK~synth" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/3D_Painting_Top/3d_painting_top.sv Line: 13
+    Warning (13010): Node "CAMERA_I2C_SCL~synth" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/3D_Painting_Top/3d_painting_top.sv Line: 31
+    Warning (13010): Node "MIPI_I2C_SCL~synth" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/3D_Painting_Top/3d_painting_top.sv Line: 35
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "CAMERA_PWDN_n" is stuck at VCC File: D:/Sobel_DE10-master/3D_Painting_Top/3d_painting_top.sv Line: 33
-    Warning (13410): Pin "MIPI_CS_n" is stuck at GND File: D:/Sobel_DE10-master/3D_Painting_Top/3d_painting_top.sv Line: 34
-    Warning (13410): Pin "MIPI_MCLK" is stuck at GND File: D:/Sobel_DE10-master/3D_Painting_Top/3d_painting_top.sv Line: 37
+    Warning (13410): Pin "CAMERA_PWDN_n" is stuck at VCC File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/3D_Painting_Top/3d_painting_top.sv Line: 33
+    Warning (13410): Pin "MIPI_CS_n" is stuck at GND File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/3D_Painting_Top/3d_painting_top.sv Line: 34
+    Warning (13410): Pin "MIPI_MCLK" is stuck at GND File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/3D_Painting_Top/3d_painting_top.sv Line: 37
 Info (286031): Timing-Driven Synthesis is running on partition "Top"
 Info (17049): 138 registers lost all their fanouts during netlist optimizations.
-Info (17036): Removed 1 MSB VCC or GND address nodes from RAM block "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|RAW2RGB_J:u4|Line_Buffer_J:u0|int_line:d3|altsyncram:altsyncram_component|altsyncram_6lq1:auto_generated|ALTSYNCRAM" File: D:/Sobel_DE10-master/db/altsyncram_6lq1.tdf Line: 34
-Info (17036): Removed 1 MSB VCC or GND address nodes from RAM block "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|RAW2RGB_J:u4|Line_Buffer_J:u0|int_line:d2|altsyncram:altsyncram_component|altsyncram_6lq1:auto_generated|ALTSYNCRAM" File: D:/Sobel_DE10-master/db/altsyncram_6lq1.tdf Line: 34
-Info (17036): Removed 1 MSB VCC or GND address nodes from RAM block "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|RAW2RGB_J:u4|Line_Buffer_J:u0|int_line:d1|altsyncram:altsyncram_component|altsyncram_6lq1:auto_generated|ALTSYNCRAM" File: D:/Sobel_DE10-master/db/altsyncram_6lq1.tdf Line: 34
+Info (17036): Removed 1 MSB VCC or GND address nodes from RAM block "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|RAW2RGB_J:u4|Line_Buffer_J:u0|int_line:d3|altsyncram:altsyncram_component|altsyncram_6lq1:auto_generated|ALTSYNCRAM" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/db/altsyncram_6lq1.tdf Line: 34
+Info (17036): Removed 1 MSB VCC or GND address nodes from RAM block "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|RAW2RGB_J:u4|Line_Buffer_J:u0|int_line:d2|altsyncram:altsyncram_component|altsyncram_6lq1:auto_generated|ALTSYNCRAM" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/db/altsyncram_6lq1.tdf Line: 34
+Info (17036): Removed 1 MSB VCC or GND address nodes from RAM block "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|RAW2RGB_J:u4|Line_Buffer_J:u0|int_line:d1|altsyncram:altsyncram_component|altsyncram_6lq1:auto_generated|ALTSYNCRAM" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/db/altsyncram_6lq1.tdf Line: 34
 Info (17016): Found the following redundant logic cells in design
-    Info (17048): Logic cell "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_I2C:i2c2|const_zero_sig" File: D:/Sobel_DE10-master/V_Auto/VCM_I2C.v Line: 199
-    Info (17048): Logic cell "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|const_zero_sig" File: D:/Sobel_DE10-master/V_D8M/MIPI_CAMERA_CONFIG.v Line: 217
-    Info (17048): Logic cell "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_BRIDGE_CONFIG:mpiv|const_zero_sig" File: D:/Sobel_DE10-master/V_D8M/MIPI_BRIDGE_CONFIG.v Line: 274
-Info (144001): Generated suppressed messages file D:/Sobel_DE10-master/output_files/DE10_NANO_D8M_RTL.map.smsg
+    Info (17048): Logic cell "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_I2C:i2c2|const_zero_sig" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/VCM_I2C.v Line: 199
+    Info (17048): Logic cell "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|const_zero_sig" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/MIPI_CAMERA_CONFIG.v Line: 217
+    Info (17048): Logic cell "DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_BRIDGE_CONFIG:mpiv|const_zero_sig" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_D8M/MIPI_BRIDGE_CONFIG.v Line: 274
+Info (144001): Generated suppressed messages file E:/GitHub Repo/CE392_Project/Sobel_DE10-master/output_files/DE10_NANO_D8M_RTL.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 21 node(s), including 0 DDIO, 3 PLL, 0 transceiver and 0 LCELL
 Warning: RST port on the PLL is not properly connected on instance DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|VIDEO_PLL:pll2|VIDEO_PLL_0002:video_pll_inst|altera_pll:altera_pll_i|general[1].gpll. The reset port on the PLL should be connected. If the PLL loses lock for any reason, you might need to manually reset the PLL in order to re-establish lock to the reference clock. File: e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altera_pll.v Line: 748
@@ -3219,9 +3219,9 @@ Warning: RST port on the PLL is not properly connected on instance DE10_NANO_D8M
 Warning: RST port on the PLL is not properly connected on instance DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|AUDIO_PLL:pll1|AUDIO_PLL_0002:audio_pll_inst|altera_pll:altera_pll_i|general[0].gpll. The reset port on the PLL should be connected. If the PLL loses lock for any reason, you might need to manually reset the PLL in order to re-establish lock to the reference clock. File: e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altera_pll.v Line: 748
     Info: Must be connected
 Warning (21074): Design contains 3 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "FPGA_CLK3_50" File: D:/Sobel_DE10-master/3D_Painting_Top/3d_painting_top.sv Line: 6
-    Warning (15610): No output dependent on input pin "SW[1]" File: D:/Sobel_DE10-master/3D_Painting_Top/3d_painting_top.sv Line: 28
-    Warning (15610): No output dependent on input pin "SW[2]" File: D:/Sobel_DE10-master/3D_Painting_Top/3d_painting_top.sv Line: 28
+    Warning (15610): No output dependent on input pin "FPGA_CLK3_50" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/3D_Painting_Top/3d_painting_top.sv Line: 6
+    Warning (15610): No output dependent on input pin "SW[1]" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/3D_Painting_Top/3d_painting_top.sv Line: 28
+    Warning (15610): No output dependent on input pin "SW[2]" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/3D_Painting_Top/3d_painting_top.sv Line: 28
 Info (21057): Implemented 4016 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 26 input pins
     Info (21059): Implemented 34 output pins
@@ -3231,15 +3231,15 @@ Info (21057): Implemented 4016 device resources after synthesis - the final reso
     Info (21065): Implemented 3 PLLs
     Info (21062): Implemented 2 DSP elements
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 143 warnings
-    Info: Peak virtual memory: 5014 megabytes
-    Info: Processing ended: Tue May 10 16:29:03 2022
-    Info: Elapsed time: 00:01:13
-    Info: Total CPU time (on all processors): 00:01:23
+    Info: Peak virtual memory: 5010 megabytes
+    Info: Processing ended: Thu May 12 16:05:17 2022
+    Info: Elapsed time: 00:00:58
+    Info: Total CPU time (on all processors): 00:01:31
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in D:/Sobel_DE10-master/output_files/DE10_NANO_D8M_RTL.map.smsg.
+The suppressed messages can be found in E:/GitHub Repo/CE392_Project/Sobel_DE10-master/output_files/DE10_NANO_D8M_RTL.map.smsg.
 
 

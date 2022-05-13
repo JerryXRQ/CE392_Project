@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2_gen2_0' in SOPC Builder design 'RFS_WiFi'
  * SOPC Builder design path: ../../RFS_WiFi.sopcinfo
  *
- * Generated: Thu Dec 29 19:41:20 CST 2016
+ * Generated: Thu May 12 21:15:37 CDT 2022
  */
 
 /*
@@ -51,7 +51,7 @@
 MEMORY
 {
     reset : ORIGIN = 0x40000, LENGTH = 32
-    onchip_memory2 : ORIGIN = 0x40020, LENGTH = 149968
+    onchip_memory2 : ORIGIN = 0x40020, LENGTH = 129968
 }
 
 /* Define symbols for each memory base-address */
@@ -367,7 +367,7 @@ SECTIONS
 /*
  * Don't override this, override the __alt_stack_* symbols instead.
  */
-__alt_data_end = 0x649f0;
+__alt_data_end = 0x5fbd0;
 
 /*
  * The next two symbols define the location of the default stack.  You can
@@ -383,4 +383,4 @@ PROVIDE( __alt_stack_limit   = __alt_stack_base );
  * Override this symbol to put the heap in a different memory.
  */
 PROVIDE( __alt_heap_start    = end );
-PROVIDE( __alt_heap_limit    = 0x649f0 );
+PROVIDE( __alt_heap_limit    = 0x5fbd0 );

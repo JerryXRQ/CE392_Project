@@ -1,9 +1,12 @@
 	RFS_WiFi u0 (
 		.clk_clk                                   (<connected-to-clk_clk>),                                   //                                clk.clk
-		.pio_0_external_connection_export          (<connected-to-pio_0_external_connection_export>),          //          pio_0_external_connection.export
+		.pio_height_external_connection_export     (<connected-to-pio_height_external_connection_export>),     //     pio_height_external_connection.export
 		.pio_key_external_connection_export        (<connected-to-pio_key_external_connection_export>),        //        pio_key_external_connection.export
 		.pio_led_external_connection_export        (<connected-to-pio_led_external_connection_export>),        //        pio_led_external_connection.export
+		.pio_width_external_connection_export      (<connected-to-pio_width_external_connection_export>),      //      pio_width_external_connection.export
 		.pio_wifi_reset_external_connection_export (<connected-to-pio_wifi_reset_external_connection_export>), // pio_wifi_reset_external_connection.export
+		.pio_x_external_connection_export          (<connected-to-pio_x_external_connection_export>),          //          pio_x_external_connection.export
+		.pio_y_external_connection_export          (<connected-to-pio_y_external_connection_export>),          //          pio_y_external_connection.export
 		.reset_reset_n                             (<connected-to-reset_reset_n>),                             //                              reset.reset_n
 		.seg7_if_0_conduit_end_export              (<connected-to-seg7_if_0_conduit_end_export>),              //              seg7_if_0_conduit_end.export
 		.wifi_uart0_external_connection_rxd        (<connected-to-wifi_uart0_external_connection_rxd>),        //     wifi_uart0_external_connection.rxd

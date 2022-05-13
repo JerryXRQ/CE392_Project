@@ -1,20 +1,20 @@
-Fitter Status : Successful - Thu Apr 28 20:39:45 2022
+Fitter Status : Successful - Fri May 13 01:22:05 2022
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : WiFi_Network_Time
 Top-level Entity Name : WiFi_Network_Time
 Family : Cyclone V
 Device : 5CSEBA6U23I7
 Timing Models : Final
-Logic utilization (in ALMs) : 1,651 / 41,910 ( 4 % )
-Total registers : 2516
-Total pins : 51 / 314 ( 16 % )
+Logic utilization (in ALMs) : 15,425 / 41,910 ( 37 % )
+Total registers : 28012
+Total pins : 108 / 314 ( 34 % )
 Total virtual pins : 0
-Total block memory bits : 1,263,936 / 5,662,720 ( 22 % )
-Total RAM Blocks : 175 / 553 ( 32 % )
-Total DSP Blocks : 3 / 112 ( 3 % )
+Total block memory bits : 4,237,376 / 5,662,720 ( 75 % )
+Total RAM Blocks : 524 / 553 ( 95 % )
+Total DSP Blocks : 5 / 112 ( 4 % )
 Total HSSI RX PCSs : 0
 Total HSSI PMA RX Deserializers : 0
 Total HSSI TX PCSs : 0
 Total HSSI PMA TX Serializers : 0
-Total PLLs : 0 / 6 ( 0 % )
+Total PLLs : 2 / 6 ( 33 % )
 Total DLLs : 0 / 4 ( 0 % )

@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2_gen2_0' in SOPC Builder design 'RFS_WiFi'
  * SOPC Builder design path: ../../RFS_WiFi.sopcinfo
  *
- * Generated: Thu Apr 28 19:31:49 CDT 2022
+ * Generated: Thu May 12 21:15:37 CDT 2022
  */
 
 /*
@@ -181,19 +181,19 @@
 #define ALT_NUM_INTERNAL_INTERRUPT_CONTROLLERS 1
 #define ALT_NUM_INTERRUPT_CONTROLLERS 1
 #define ALT_STDERR "/dev/jtag_uart"
-#define ALT_STDERR_BASE 0x810a8
+#define ALT_STDERR_BASE 0x810d8
 #define ALT_STDERR_DEV jtag_uart
 #define ALT_STDERR_IS_JTAG_UART
 #define ALT_STDERR_PRESENT
 #define ALT_STDERR_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDIN "/dev/jtag_uart"
-#define ALT_STDIN_BASE 0x810a8
+#define ALT_STDIN_BASE 0x810d8
 #define ALT_STDIN_DEV jtag_uart
 #define ALT_STDIN_IS_JTAG_UART
 #define ALT_STDIN_PRESENT
 #define ALT_STDIN_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDOUT "/dev/jtag_uart"
-#define ALT_STDOUT_BASE 0x810a8
+#define ALT_STDOUT_BASE 0x810d8
 #define ALT_STDOUT_DEV jtag_uart
 #define ALT_STDOUT_IS_JTAG_UART
 #define ALT_STDOUT_PRESENT
@@ -218,7 +218,7 @@
  */
 
 #define ALT_MODULE_CLASS_jtag_uart altera_avalon_jtag_uart
-#define JTAG_UART_BASE 0x810a8
+#define JTAG_UART_BASE 0x810d8
 #define JTAG_UART_IRQ 3
 #define JTAG_UART_IRQ_INTERRUPT_CONTROLLER_ID 0
 #define JTAG_UART_NAME "/dev/jtag_uart"
@@ -253,37 +253,37 @@
 #define ONCHIP_MEMORY2_READ_DURING_WRITE_MODE "DONT_CARE"
 #define ONCHIP_MEMORY2_SINGLE_CLOCK_OP 0
 #define ONCHIP_MEMORY2_SIZE_MULTIPLE 1
-#define ONCHIP_MEMORY2_SIZE_VALUE 150000
-#define ONCHIP_MEMORY2_SPAN 150000
+#define ONCHIP_MEMORY2_SIZE_VALUE 130000
+#define ONCHIP_MEMORY2_SPAN 130000
 #define ONCHIP_MEMORY2_TYPE "altera_avalon_onchip_memory2"
 #define ONCHIP_MEMORY2_WRITABLE 1
 
 
 /*
- * pio_0 configuration
+ * pio_height configuration
  *
  */
 
-#define ALT_MODULE_CLASS_pio_0 altera_avalon_pio
-#define PIO_0_BASE 0x81060
-#define PIO_0_BIT_CLEARING_EDGE_REGISTER 0
-#define PIO_0_BIT_MODIFYING_OUTPUT_REGISTER 0
-#define PIO_0_CAPTURE 0
-#define PIO_0_DATA_WIDTH 4
-#define PIO_0_DO_TEST_BENCH_WIRING 0
-#define PIO_0_DRIVEN_SIM_VALUE 0
-#define PIO_0_EDGE_TYPE "NONE"
-#define PIO_0_FREQ 50000000
-#define PIO_0_HAS_IN 1
-#define PIO_0_HAS_OUT 0
-#define PIO_0_HAS_TRI 0
-#define PIO_0_IRQ -1
-#define PIO_0_IRQ_INTERRUPT_CONTROLLER_ID -1
-#define PIO_0_IRQ_TYPE "NONE"
-#define PIO_0_NAME "/dev/pio_0"
-#define PIO_0_RESET_VALUE 0
-#define PIO_0_SPAN 16
-#define PIO_0_TYPE "altera_avalon_pio"
+#define ALT_MODULE_CLASS_pio_height altera_avalon_pio
+#define PIO_HEIGHT_BASE 0x81060
+#define PIO_HEIGHT_BIT_CLEARING_EDGE_REGISTER 0
+#define PIO_HEIGHT_BIT_MODIFYING_OUTPUT_REGISTER 0
+#define PIO_HEIGHT_CAPTURE 0
+#define PIO_HEIGHT_DATA_WIDTH 12
+#define PIO_HEIGHT_DO_TEST_BENCH_WIRING 0
+#define PIO_HEIGHT_DRIVEN_SIM_VALUE 0
+#define PIO_HEIGHT_EDGE_TYPE "NONE"
+#define PIO_HEIGHT_FREQ 50000000
+#define PIO_HEIGHT_HAS_IN 1
+#define PIO_HEIGHT_HAS_OUT 0
+#define PIO_HEIGHT_HAS_TRI 0
+#define PIO_HEIGHT_IRQ -1
+#define PIO_HEIGHT_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define PIO_HEIGHT_IRQ_TYPE "NONE"
+#define PIO_HEIGHT_NAME "/dev/pio_height"
+#define PIO_HEIGHT_RESET_VALUE 0
+#define PIO_HEIGHT_SPAN 16
+#define PIO_HEIGHT_TYPE "altera_avalon_pio"
 
 
 /*
@@ -292,7 +292,7 @@
  */
 
 #define ALT_MODULE_CLASS_pio_key altera_avalon_pio
-#define PIO_KEY_BASE 0x81090
+#define PIO_KEY_BASE 0x810c0
 #define PIO_KEY_BIT_CLEARING_EDGE_REGISTER 0
 #define PIO_KEY_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define PIO_KEY_CAPTURE 1
@@ -319,7 +319,7 @@
  */
 
 #define ALT_MODULE_CLASS_pio_led altera_avalon_pio
-#define PIO_LED_BASE 0x81070
+#define PIO_LED_BASE 0x810a0
 #define PIO_LED_BIT_CLEARING_EDGE_REGISTER 0
 #define PIO_LED_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define PIO_LED_CAPTURE 0
@@ -341,12 +341,39 @@
 
 
 /*
+ * pio_width configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_pio_width altera_avalon_pio
+#define PIO_WIDTH_BASE 0x81070
+#define PIO_WIDTH_BIT_CLEARING_EDGE_REGISTER 0
+#define PIO_WIDTH_BIT_MODIFYING_OUTPUT_REGISTER 0
+#define PIO_WIDTH_CAPTURE 0
+#define PIO_WIDTH_DATA_WIDTH 12
+#define PIO_WIDTH_DO_TEST_BENCH_WIRING 0
+#define PIO_WIDTH_DRIVEN_SIM_VALUE 0
+#define PIO_WIDTH_EDGE_TYPE "NONE"
+#define PIO_WIDTH_FREQ 50000000
+#define PIO_WIDTH_HAS_IN 1
+#define PIO_WIDTH_HAS_OUT 0
+#define PIO_WIDTH_HAS_TRI 0
+#define PIO_WIDTH_IRQ -1
+#define PIO_WIDTH_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define PIO_WIDTH_IRQ_TYPE "NONE"
+#define PIO_WIDTH_NAME "/dev/pio_width"
+#define PIO_WIDTH_RESET_VALUE 0
+#define PIO_WIDTH_SPAN 16
+#define PIO_WIDTH_TYPE "altera_avalon_pio"
+
+
+/*
  * pio_wifi_reset configuration
  *
  */
 
 #define ALT_MODULE_CLASS_pio_wifi_reset altera_avalon_pio
-#define PIO_WIFI_RESET_BASE 0x81080
+#define PIO_WIFI_RESET_BASE 0x810b0
 #define PIO_WIFI_RESET_BIT_CLEARING_EDGE_REGISTER 0
 #define PIO_WIFI_RESET_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define PIO_WIFI_RESET_CAPTURE 0
@@ -368,18 +395,72 @@
 
 
 /*
+ * pio_x configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_pio_x altera_avalon_pio
+#define PIO_X_BASE 0x81090
+#define PIO_X_BIT_CLEARING_EDGE_REGISTER 0
+#define PIO_X_BIT_MODIFYING_OUTPUT_REGISTER 0
+#define PIO_X_CAPTURE 0
+#define PIO_X_DATA_WIDTH 12
+#define PIO_X_DO_TEST_BENCH_WIRING 0
+#define PIO_X_DRIVEN_SIM_VALUE 0
+#define PIO_X_EDGE_TYPE "NONE"
+#define PIO_X_FREQ 50000000
+#define PIO_X_HAS_IN 1
+#define PIO_X_HAS_OUT 0
+#define PIO_X_HAS_TRI 0
+#define PIO_X_IRQ -1
+#define PIO_X_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define PIO_X_IRQ_TYPE "NONE"
+#define PIO_X_NAME "/dev/pio_x"
+#define PIO_X_RESET_VALUE 0
+#define PIO_X_SPAN 16
+#define PIO_X_TYPE "altera_avalon_pio"
+
+
+/*
+ * pio_y configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_pio_y altera_avalon_pio
+#define PIO_Y_BASE 0x81080
+#define PIO_Y_BIT_CLEARING_EDGE_REGISTER 0
+#define PIO_Y_BIT_MODIFYING_OUTPUT_REGISTER 0
+#define PIO_Y_CAPTURE 0
+#define PIO_Y_DATA_WIDTH 12
+#define PIO_Y_DO_TEST_BENCH_WIRING 0
+#define PIO_Y_DRIVEN_SIM_VALUE 0
+#define PIO_Y_EDGE_TYPE "NONE"
+#define PIO_Y_FREQ 50000000
+#define PIO_Y_HAS_IN 1
+#define PIO_Y_HAS_OUT 0
+#define PIO_Y_HAS_TRI 0
+#define PIO_Y_IRQ -1
+#define PIO_Y_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define PIO_Y_IRQ_TYPE "NONE"
+#define PIO_Y_NAME "/dev/pio_y"
+#define PIO_Y_RESET_VALUE 0
+#define PIO_Y_SPAN 16
+#define PIO_Y_TYPE "altera_avalon_pio"
+
+
+/*
  * sysid_qsys configuration
  *
  */
 
 #define ALT_MODULE_CLASS_sysid_qsys altera_avalon_sysid_qsys
-#define SYSID_QSYS_BASE 0x810a0
+#define SYSID_QSYS_BASE 0x810d0
 #define SYSID_QSYS_ID 0
 #define SYSID_QSYS_IRQ -1
 #define SYSID_QSYS_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SYSID_QSYS_NAME "/dev/sysid_qsys"
 #define SYSID_QSYS_SPAN 8
-#define SYSID_QSYS_TIMESTAMP 1651191442
+#define SYSID_QSYS_TIMESTAMP 1652407859
 #define SYSID_QSYS_TYPE "altera_avalon_sysid_qsys"
 
 

@@ -2,9 +2,9 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Apr 28, 2022 8:02:03 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1651194123932</BspGeneratedUnixTimeStamp>
-        <BspGeneratedLocation>C:\Users\dell\Desktop\DE10_Nano_WiFi_Network_Time\software\RFS_WiFi_bsp</BspGeneratedLocation>
+        <BspGeneratedTimeStamp>May 13, 2022 1:09:38 AM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1652422178426</BspGeneratedUnixTimeStamp>
+        <BspGeneratedLocation>E:\CE392\DE10_Nano_Merge\software\RFS_WiFi_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>..\..\RFS_WiFi.sopcinfo</SopcDesignFile>
         <JdiFile>default</JdiFile>
@@ -924,8 +924,8 @@
         </Setting>
         <MemoryMap>
                 <slaveDescriptor>onchip_memory2</slaveDescriptor>
-                <addressRange>0x00040000 - 0x000649EF</addressRange>
-                <addressSpan>150000</addressSpan>
+                <addressRange>0x00040000 - 0x0005FBCF</addressRange>
+                <addressSpan>130000</addressSpan>
                 <attributes>memory</attributes>
         </MemoryMap>
         <MemoryMap>
@@ -947,38 +947,56 @@
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>pio_0</slaveDescriptor>
+                <slaveDescriptor>pio_height</slaveDescriptor>
                 <addressRange>0x00081060 - 0x0008106F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>pio_led</slaveDescriptor>
+                <slaveDescriptor>pio_width</slaveDescriptor>
                 <addressRange>0x00081070 - 0x0008107F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>pio_wifi_reset</slaveDescriptor>
+                <slaveDescriptor>pio_y</slaveDescriptor>
                 <addressRange>0x00081080 - 0x0008108F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>pio_key</slaveDescriptor>
+                <slaveDescriptor>pio_x</slaveDescriptor>
                 <addressRange>0x00081090 - 0x0008109F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
+                <slaveDescriptor>pio_led</slaveDescriptor>
+                <addressRange>0x000810A0 - 0x000810AF</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>pio_wifi_reset</slaveDescriptor>
+                <addressRange>0x000810B0 - 0x000810BF</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>pio_key</slaveDescriptor>
+                <addressRange>0x000810C0 - 0x000810CF</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
                 <slaveDescriptor>sysid_qsys</slaveDescriptor>
-                <addressRange>0x000810A0 - 0x000810A7</addressRange>
+                <addressRange>0x000810D0 - 0x000810D7</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>jtag_uart</slaveDescriptor>
-                <addressRange>0x000810A8 - 0x000810AF</addressRange>
+                <addressRange>0x000810D8 - 0x000810DF</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes>printable</attributes>
         </MemoryMap>

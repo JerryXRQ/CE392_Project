@@ -1,8 +1,8 @@
-Warning (10273): Verilog HDL warning at tracking.sv(163): extended using "x" or "z" File: D:/Sobel_DE10-master/location_tracking/tracking.sv Line: 163
-Warning (10273): Verilog HDL warning at tracking.sv(164): extended using "x" or "z" File: D:/Sobel_DE10-master/location_tracking/tracking.sv Line: 164
-Warning (10273): Verilog HDL warning at tracking.sv(165): extended using "x" or "z" File: D:/Sobel_DE10-master/location_tracking/tracking.sv Line: 165
-Warning (10273): Verilog HDL warning at tracking.sv(166): extended using "x" or "z" File: D:/Sobel_DE10-master/location_tracking/tracking.sv Line: 166
-Info (10281): Verilog HDL Declaration information at tracking.sv(2): object "WIDTH" differs only in case from object "width" in the same scope File: D:/Sobel_DE10-master/location_tracking/tracking.sv Line: 2
-Info (10281): Verilog HDL Declaration information at tracking.sv(4): object "HEIGHT" differs only in case from object "height" in the same scope File: D:/Sobel_DE10-master/location_tracking/tracking.sv Line: 4
-Info (10281): Verilog HDL Declaration information at AUTO_SYNC_MODIFY.v(4): object "VS" differs only in case from object "vs" in the same scope File: D:/Sobel_DE10-master/V_Auto/AUTO_SYNC_MODIFY.v Line: 4
-Info (10281): Verilog HDL Declaration information at AUTO_SYNC_MODIFY.v(5): object "HS" differs only in case from object "hs" in the same scope File: D:/Sobel_DE10-master/V_Auto/AUTO_SYNC_MODIFY.v Line: 5
+Warning (10273): Verilog HDL warning at tracking.sv(163): extended using "x" or "z" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/location_tracking/tracking.sv Line: 163
+Warning (10273): Verilog HDL warning at tracking.sv(164): extended using "x" or "z" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/location_tracking/tracking.sv Line: 164
+Warning (10273): Verilog HDL warning at tracking.sv(165): extended using "x" or "z" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/location_tracking/tracking.sv Line: 165
+Warning (10273): Verilog HDL warning at tracking.sv(166): extended using "x" or "z" File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/location_tracking/tracking.sv Line: 166
+Info (10281): Verilog HDL Declaration information at tracking.sv(2): object "WIDTH" differs only in case from object "width" in the same scope File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/location_tracking/tracking.sv Line: 2
+Info (10281): Verilog HDL Declaration information at tracking.sv(4): object "HEIGHT" differs only in case from object "height" in the same scope File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/location_tracking/tracking.sv Line: 4
+Info (10281): Verilog HDL Declaration information at AUTO_SYNC_MODIFY.v(4): object "VS" differs only in case from object "vs" in the same scope File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/AUTO_SYNC_MODIFY.v Line: 4
+Info (10281): Verilog HDL Declaration information at AUTO_SYNC_MODIFY.v(5): object "HS" differs only in case from object "hs" in the same scope File: E:/GitHub Repo/CE392_Project/Sobel_DE10-master/V_Auto/AUTO_SYNC_MODIFY.v Line: 5

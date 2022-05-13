@@ -1,10 +1,13 @@
 
 module RFS_WiFi (
 	clk_clk,
-	pio_0_external_connection_export,
+	pio_height_external_connection_export,
 	pio_key_external_connection_export,
 	pio_led_external_connection_export,
+	pio_width_external_connection_export,
 	pio_wifi_reset_external_connection_export,
+	pio_x_external_connection_export,
+	pio_y_external_connection_export,
 	reset_reset_n,
 	seg7_if_0_conduit_end_export,
 	wifi_uart0_external_connection_rxd,
@@ -13,10 +16,13 @@ module RFS_WiFi (
 	wifi_uart0_external_connection_rts_n);	
 
 	input		clk_clk;
-	input	[3:0]	pio_0_external_connection_export;
+	input	[11:0]	pio_height_external_connection_export;
 	input	[1:0]	pio_key_external_connection_export;
 	output	[3:0]	pio_led_external_connection_export;
+	input	[11:0]	pio_width_external_connection_export;
 	output		pio_wifi_reset_external_connection_export;
+	input	[11:0]	pio_x_external_connection_export;
+	input	[11:0]	pio_y_external_connection_export;
 	input		reset_reset_n;
 	output	[47:0]	seg7_if_0_conduit_end_export;
 	input		wifi_uart0_external_connection_rxd;
