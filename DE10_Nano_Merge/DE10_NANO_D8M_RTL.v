@@ -288,8 +288,9 @@ tracking #(
     .WIDTH(640),
     .HEIGHT(480)
 ) tracking_dut (
-    .clock(FPGA_CLK1_50),
-    .reset(SW[3]),
+    .clock_25 (HDMI_TX_CLK),
+    .clock_50(FPGA_CLK1_50),
+    .reset(RESET_N),
     .in_wr_en(IN_wr_en),
     .oR(VGA_R),
     .oG(VGA_G),

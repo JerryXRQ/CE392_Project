@@ -2,7 +2,8 @@ module tracking #(
     parameter WIDTH = 640,
     parameter HEIGHT = 480
 ) (
-    input  logic        clock,
+    input  logic        clock_25,
+    input  logic        clock_50,
     input  logic        reset,
 
     // // fifo_gs2sob_empty
@@ -45,18 +46,18 @@ fifo #(
     .FIFO_DATA_WIDTH(24)
 ) fifo_in_inst (
     .reset(reset),
-    .wr_clk(clock),
+    .wr_clk(clock_25),
     .wr_en(in_wr_en),
     .din({oR, oG, oB}),
     .full(in_full),
-    .rd_clk(clock),
+    .rd_clk(clock_50),
     .rd_en(in_rd_en),
     .dout(in_dout),
     .empty(in_empty)
 );
 
-always_ff @(posedge clock or posedge reset) begin
-    if (reset == 1'b1)
+always_ff @(posedge clock_50 or negedge reset) begin
+    if (reset == 1'b0)
     begin
         center_x <= 'b1;
         center_y <= 'b1;
