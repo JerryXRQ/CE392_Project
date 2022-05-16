@@ -1,6 +1,6 @@
 Timing Analyzer report for WiFi_Network_Time
-Fri May 13 01:23:57 2022
-Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Sun May 15 20:47:50 2022
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
 ---------------------
@@ -64,9 +64,9 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2018  Intel Corporation. All rights reserved.
+Copyright (C) 2020  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and its AMPP partner logic 
+and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
@@ -76,14 +76,15 @@ the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details.
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
 
 
 
 +-----------------------------------------------------------------------------+
 ; Timing Analyzer Summary                                                     ;
 +-----------------------+-----------------------------------------------------+
-; Quartus Prime Version ; Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Quartus Prime Version ; Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Timing Analyzer       ; Legacy Timing Analyzer                              ;
 ; Revision Name         ; WiFi_Network_Time                                   ;
 ; Device Family         ; Cyclone V                                           ;
@@ -99,17 +100,17 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
+; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 2.77        ;
+; Average used               ; 2.66        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  60.4%      ;
-;     Processor 3            ;  58.8%      ;
-;     Processor 4            ;  57.4%      ;
+;     Processor 2            ;  56.9%      ;
+;     Processor 3            ;  54.5%      ;
+;     Processor 4            ;  54.3%      ;
 +----------------------------+-------------+
 
 
@@ -118,9 +119,9 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------+--------+--------------------------+
 ; SDC File Path                                               ; Status ; Read at                  ;
 +-------------------------------------------------------------+--------+--------------------------+
-; RFS_WiFi/synthesis/submodules/altera_reset_controller.sdc   ; OK     ; Fri May 13 01:22:59 2022 ;
-; RFS_WiFi/synthesis/submodules/RFS_WiFi_nios2_gen2_0_cpu.sdc ; OK     ; Fri May 13 01:22:59 2022 ;
-; WiFi_Network_Time.sdc                                       ; OK     ; Fri May 13 01:22:59 2022 ;
+; RFS_WiFi/synthesis/submodules/altera_reset_controller.sdc   ; OK     ; Sun May 15 20:46:32 2022 ;
+; RFS_WiFi/synthesis/submodules/RFS_WiFi_nios2_gen2_0_cpu.sdc ; OK     ; Sun May 15 20:46:32 2022 ;
+; WiFi_Network_Time.sdc                                       ; OK     ; Sun May 15 20:46:33 2022 ;
 +-------------------------------------------------------------+--------+--------------------------+
 
 
@@ -146,10 +147,10 @@ refer to the applicable agreement for further details.
 +------------+-----------------+------------------------------------------------------------------------------------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                                                                                           ; Note ;
 +------------+-----------------+------------------------------------------------------------------------------------------------------+------+
-; 45.08 MHz  ; 45.08 MHz       ; altera_reserved_tck                                                                                  ;      ;
-; 52.12 MHz  ; 52.12 MHz       ; pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk ;      ;
-; 65.36 MHz  ; 65.36 MHz       ; FPGA_CLK1_50                                                                                         ;      ;
-; 212.59 MHz ; 212.59 MHz      ; pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;      ;
+; 45.56 MHz  ; 45.56 MHz       ; pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk ;      ;
+; 48.02 MHz  ; 48.02 MHz       ; altera_reserved_tck                                                                                  ;      ;
+; 67.94 MHz  ; 67.94 MHz       ; FPGA_CLK1_50                                                                                         ;      ;
+; 263.78 MHz ; 263.78 MHz      ; pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;      ;
 +------------+-----------------+------------------------------------------------------------------------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -165,10 +166,10 @@ HTML report is unavailable in plain text report export.
 +------------------------------------------------------------------------------------------------------+---------+---------------+
 ; Clock                                                                                                ; Slack   ; End Point TNS ;
 +------------------------------------------------------------------------------------------------------+---------+---------------+
-; FPGA_CLK1_50                                                                                         ; 3.826   ; 0.000         ;
-; altera_reserved_tck                                                                                  ; 8.909   ; 0.000         ;
-; pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk ; 11.953  ; 0.000         ;
-; pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 648.096 ; 0.000         ;
+; FPGA_CLK1_50                                                                                         ; 2.110   ; 0.000         ;
+; pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk ; 5.223   ; 0.000         ;
+; altera_reserved_tck                                                                                  ; 9.588   ; 0.000         ;
+; pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 649.009 ; 0.000         ;
 +------------------------------------------------------------------------------------------------------+---------+---------------+
 
 
@@ -177,10 +178,10 @@ HTML report is unavailable in plain text report export.
 +------------------------------------------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                                                ; Slack ; End Point TNS ;
 +------------------------------------------------------------------------------------------------------+-------+---------------+
-; FPGA_CLK1_50                                                                                         ; 0.339 ; 0.000         ;
-; altera_reserved_tck                                                                                  ; 0.370 ; 0.000         ;
-; pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.415 ; 0.000         ;
-; pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.507 ; 0.000         ;
+; FPGA_CLK1_50                                                                                         ; 0.341 ; 0.000         ;
+; pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.368 ; 0.000         ;
+; altera_reserved_tck                                                                                  ; 0.452 ; 0.000         ;
+; pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.619 ; 0.000         ;
 +------------------------------------------------------------------------------------------------------+-------+---------------+
 
 
@@ -189,9 +190,10 @@ HTML report is unavailable in plain text report export.
 +------------------------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                                ; Slack  ; End Point TNS ;
 +------------------------------------------------------------------------------------------------------+--------+---------------+
-; pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -5.198 ; -72.676       ;
-; FPGA_CLK1_50                                                                                         ; 12.935 ; 0.000         ;
-; altera_reserved_tck                                                                                  ; 17.834 ; 0.000         ;
+; pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -5.321 ; -94.554       ;
+; FPGA_CLK1_50                                                                                         ; 10.104 ; 0.000         ;
+; pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk ; 13.248 ; 0.000         ;
+; altera_reserved_tck                                                                                  ; 17.204 ; 0.000         ;
 +------------------------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -200,9 +202,10 @@ HTML report is unavailable in plain text report export.
 +------------------------------------------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                                                ; Slack ; End Point TNS ;
 +------------------------------------------------------------------------------------------------------+-------+---------------+
-; FPGA_CLK1_50                                                                                         ; 0.820 ; 0.000         ;
-; altera_reserved_tck                                                                                  ; 0.992 ; 0.000         ;
-; pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 1.267 ; 0.000         ;
+; FPGA_CLK1_50                                                                                         ; 0.719 ; 0.000         ;
+; altera_reserved_tck                                                                                  ; 0.971 ; 0.000         ;
+; pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 1.468 ; 0.000         ;
+; pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk ; 1.597 ; 0.000         ;
 +------------------------------------------------------------------------------------------------------+-------+---------------+
 
 
@@ -213,11 +216,11 @@ HTML report is unavailable in plain text report export.
 +------------------------------------------------------------------------------------------------------+---------+---------------+
 ; pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; 1.600   ; 0.000         ;
 ; pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; 1.666   ; 0.000         ;
-; FPGA_CLK1_50                                                                                         ; 8.815   ; 0.000         ;
+; FPGA_CLK1_50                                                                                         ; 8.811   ; 0.000         ;
 ; FPGA_CLK2_50                                                                                         ; 9.730   ; 0.000         ;
 ; pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk ; 18.553  ; 0.000         ;
-; altera_reserved_tck                                                                                  ; 18.798  ; 0.000         ;
-; pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 325.421 ; 0.000         ;
+; altera_reserved_tck                                                                                  ; 18.789  ; 0.000         ;
+; pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 325.417 ; 0.000         ;
 +------------------------------------------------------------------------------------------------------+---------+---------------+
 
 
@@ -230,7 +233,7 @@ Typical MTBF of Design is 1e+09 years or 3.15e+16 seconds.
 Number of Synchronizer Chains Found: 12
 Shortest Synchronizer Chain: 2 Registers
 Fraction of Chains for which MTBFs Could Not be Calculated: 0.500
-Worst Case Available Settling Time: 18.730 ns
+Worst Case Available Settling Time: 18.288 ns
 
 Worst-Case MTBF values are calculated based on the worst-case silicon characteristics, with worst-case operating conditions.
   - Under worst-case conditions, an increase of 100ps in available settling time will increase MTBF values by a factor of 8.0
@@ -244,10 +247,10 @@ Typical MTBF values are calculated based on the nominal silicon characteristics,
 +------------+-----------------+------------------------------------------------------------------------------------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                                                                                           ; Note ;
 +------------+-----------------+------------------------------------------------------------------------------------------------------+------+
-; 47.38 MHz  ; 47.38 MHz       ; altera_reserved_tck                                                                                  ;      ;
-; 52.84 MHz  ; 52.84 MHz       ; pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk ;      ;
-; 64.95 MHz  ; 64.95 MHz       ; FPGA_CLK1_50                                                                                         ;      ;
-; 216.22 MHz ; 216.22 MHz      ; pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;      ;
+; 45.77 MHz  ; 45.77 MHz       ; pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk ;      ;
+; 48.64 MHz  ; 48.64 MHz       ; altera_reserved_tck                                                                                  ;      ;
+; 67.45 MHz  ; 67.45 MHz       ; FPGA_CLK1_50                                                                                         ;      ;
+; 257.33 MHz ; 257.33 MHz      ; pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;      ;
 +------------+-----------------+------------------------------------------------------------------------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -257,10 +260,10 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +------------------------------------------------------------------------------------------------------+---------+---------------+
 ; Clock                                                                                                ; Slack   ; End Point TNS ;
 +------------------------------------------------------------------------------------------------------+---------+---------------+
-; FPGA_CLK1_50                                                                                         ; 4.128   ; 0.000         ;
-; altera_reserved_tck                                                                                  ; 9.446   ; 0.000         ;
-; pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk ; 12.295  ; 0.000         ;
-; pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 648.175 ; 0.000         ;
+; FPGA_CLK1_50                                                                                         ; 2.096   ; 0.000         ;
+; pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk ; 6.444   ; 0.000         ;
+; altera_reserved_tck                                                                                  ; 9.721   ; 0.000         ;
+; pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 648.914 ; 0.000         ;
 +------------------------------------------------------------------------------------------------------+---------+---------------+
 
 
@@ -269,10 +272,10 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +------------------------------------------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                                                ; Slack ; End Point TNS ;
 +------------------------------------------------------------------------------------------------------+-------+---------------+
-; FPGA_CLK1_50                                                                                         ; 0.302 ; 0.000         ;
-; altera_reserved_tck                                                                                  ; 0.356 ; 0.000         ;
-; pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.438 ; 0.000         ;
-; pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.552 ; 0.000         ;
+; FPGA_CLK1_50                                                                                         ; 0.321 ; 0.000         ;
+; pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.346 ; 0.000         ;
+; altera_reserved_tck                                                                                  ; 0.429 ; 0.000         ;
+; pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.699 ; 0.000         ;
 +------------------------------------------------------------------------------------------------------+-------+---------------+
 
 
@@ -281,9 +284,10 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +------------------------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                                ; Slack  ; End Point TNS ;
 +------------------------------------------------------------------------------------------------------+--------+---------------+
-; pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -4.579 ; -64.037       ;
-; FPGA_CLK1_50                                                                                         ; 13.255 ; 0.000         ;
-; altera_reserved_tck                                                                                  ; 18.049 ; 0.000         ;
+; pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -4.824 ; -85.880       ;
+; FPGA_CLK1_50                                                                                         ; 10.641 ; 0.000         ;
+; pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk ; 13.839 ; 0.000         ;
+; altera_reserved_tck                                                                                  ; 17.404 ; 0.000         ;
 +------------------------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -292,9 +296,10 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +------------------------------------------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                                                ; Slack ; End Point TNS ;
 +------------------------------------------------------------------------------------------------------+-------+---------------+
-; FPGA_CLK1_50                                                                                         ; 0.677 ; 0.000         ;
-; altera_reserved_tck                                                                                  ; 0.896 ; 0.000         ;
-; pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.938 ; 0.000         ;
+; FPGA_CLK1_50                                                                                         ; 0.639 ; 0.000         ;
+; altera_reserved_tck                                                                                  ; 0.923 ; 0.000         ;
+; pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 1.260 ; 0.000         ;
+; pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk ; 1.277 ; 0.000         ;
 +------------------------------------------------------------------------------------------------------+-------+---------------+
 
 
@@ -305,11 +310,11 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +------------------------------------------------------------------------------------------------------+---------+---------------+
 ; pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; 1.600   ; 0.000         ;
 ; pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; 1.666   ; 0.000         ;
-; FPGA_CLK1_50                                                                                         ; 8.801   ; 0.000         ;
+; FPGA_CLK1_50                                                                                         ; 8.809   ; 0.000         ;
 ; FPGA_CLK2_50                                                                                         ; 9.754   ; 0.000         ;
 ; pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk ; 18.536  ; 0.000         ;
 ; altera_reserved_tck                                                                                  ; 18.797  ; 0.000         ;
-; pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 325.435 ; 0.000         ;
+; pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 325.432 ; 0.000         ;
 +------------------------------------------------------------------------------------------------------+---------+---------------+
 
 
@@ -322,7 +327,7 @@ Typical MTBF of Design is 1e+09 years or 3.15e+16 seconds.
 Number of Synchronizer Chains Found: 12
 Shortest Synchronizer Chain: 2 Registers
 Fraction of Chains for which MTBFs Could Not be Calculated: 0.500
-Worst Case Available Settling Time: 18.740 ns
+Worst Case Available Settling Time: 18.300 ns
 
 Worst-Case MTBF values are calculated based on the worst-case silicon characteristics, with worst-case operating conditions.
   - Under worst-case conditions, an increase of 100ps in available settling time will increase MTBF values by a factor of 1.7
@@ -336,10 +341,10 @@ Typical MTBF values are calculated based on the nominal silicon characteristics,
 +------------------------------------------------------------------------------------------------------+---------+---------------+
 ; Clock                                                                                                ; Slack   ; End Point TNS ;
 +------------------------------------------------------------------------------------------------------+---------+---------------+
-; FPGA_CLK1_50                                                                                         ; 7.098   ; 0.000         ;
-; altera_reserved_tck                                                                                  ; 11.911  ; 0.000         ;
-; pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk ; 15.180  ; 0.000         ;
-; pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 650.452 ; 0.000         ;
+; FPGA_CLK1_50                                                                                         ; 7.619   ; 0.000         ;
+; pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk ; 9.817   ; 0.000         ;
+; altera_reserved_tck                                                                                  ; 12.295  ; 0.000         ;
+; pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 651.114 ; 0.000         ;
 +------------------------------------------------------------------------------------------------------+---------+---------------+
 
 
@@ -348,10 +353,10 @@ Typical MTBF values are calculated based on the nominal silicon characteristics,
 +------------------------------------------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                                                ; Slack ; End Point TNS ;
 +------------------------------------------------------------------------------------------------------+-------+---------------+
-; altera_reserved_tck                                                                                  ; 0.122 ; 0.000         ;
+; altera_reserved_tck                                                                                  ; 0.158 ; 0.000         ;
 ; FPGA_CLK1_50                                                                                         ; 0.178 ; 0.000         ;
-; pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.197 ; 0.000         ;
-; pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.355 ; 0.000         ;
+; pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.189 ; 0.000         ;
+; pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.402 ; 0.000         ;
 +------------------------------------------------------------------------------------------------------+-------+---------------+
 
 
@@ -360,9 +365,10 @@ Typical MTBF values are calculated based on the nominal silicon characteristics,
 +------------------------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                                ; Slack  ; End Point TNS ;
 +------------------------------------------------------------------------------------------------------+--------+---------------+
-; pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -3.355 ; -46.911       ;
-; FPGA_CLK1_50                                                                                         ; 15.759 ; 0.000         ;
-; altera_reserved_tck                                                                                  ; 19.335 ; 0.000         ;
+; pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -3.298 ; -59.216       ;
+; FPGA_CLK1_50                                                                                         ; 13.496 ; 0.000         ;
+; pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk ; 15.030 ; 0.000         ;
+; altera_reserved_tck                                                                                  ; 18.925 ; 0.000         ;
 +------------------------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -371,9 +377,10 @@ Typical MTBF values are calculated based on the nominal silicon characteristics,
 +------------------------------------------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                                                ; Slack ; End Point TNS ;
 +------------------------------------------------------------------------------------------------------+-------+---------------+
-; altera_reserved_tck                                                                                  ; 0.377 ; 0.000         ;
-; FPGA_CLK1_50                                                                                         ; 0.471 ; 0.000         ;
-; pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.996 ; 0.000         ;
+; FPGA_CLK1_50                                                                                         ; 0.333 ; 0.000         ;
+; altera_reserved_tck                                                                                  ; 0.344 ; 0.000         ;
+; pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 1.119 ; 0.000         ;
+; pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk ; 1.426 ; 0.000         ;
 +------------------------------------------------------------------------------------------------------+-------+---------------+
 
 
@@ -384,11 +391,11 @@ Typical MTBF values are calculated based on the nominal silicon characteristics,
 +------------------------------------------------------------------------------------------------------+---------+---------------+
 ; pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; 1.600   ; 0.000         ;
 ; pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; 1.666   ; 0.000         ;
-; FPGA_CLK1_50                                                                                         ; 8.488   ; 0.000         ;
+; FPGA_CLK1_50                                                                                         ; 8.489   ; 0.000         ;
 ; FPGA_CLK2_50                                                                                         ; 9.347   ; 0.000         ;
-; altera_reserved_tck                                                                                  ; 18.724  ; 0.000         ;
+; altera_reserved_tck                                                                                  ; 18.725  ; 0.000         ;
 ; pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk ; 18.880  ; 0.000         ;
-; pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 325.945 ; 0.000         ;
+; pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 325.926 ; 0.000         ;
 +------------------------------------------------------------------------------------------------------+---------+---------------+
 
 
@@ -401,7 +408,7 @@ Typical MTBF of Design is 1e+09 years or 3.15e+16 seconds.
 Number of Synchronizer Chains Found: 12
 Shortest Synchronizer Chain: 2 Registers
 Fraction of Chains for which MTBFs Could Not be Calculated: 0.500
-Worst Case Available Settling Time: 19.336 ns
+Worst Case Available Settling Time: 19.046 ns
 
 Worst-Case MTBF values are calculated based on the worst-case silicon characteristics, with worst-case operating conditions.
   - Under worst-case conditions, an increase of 100ps in available settling time will increase MTBF values by a factor of 8.0
@@ -415,10 +422,10 @@ Typical MTBF values are calculated based on the nominal silicon characteristics,
 +------------------------------------------------------------------------------------------------------+---------+---------------+
 ; Clock                                                                                                ; Slack   ; End Point TNS ;
 +------------------------------------------------------------------------------------------------------+---------+---------------+
-; FPGA_CLK1_50                                                                                         ; 7.751   ; 0.000         ;
-; altera_reserved_tck                                                                                  ; 12.504  ; 0.000         ;
-; pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk ; 16.180  ; 0.000         ;
-; pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 650.775 ; 0.000         ;
+; FPGA_CLK1_50                                                                                         ; 8.072   ; 0.000         ;
+; pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk ; 12.163  ; 0.000         ;
+; altera_reserved_tck                                                                                  ; 12.676  ; 0.000         ;
+; pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 651.281 ; 0.000         ;
 +------------------------------------------------------------------------------------------------------+---------+---------------+
 
 
@@ -427,10 +434,10 @@ Typical MTBF values are calculated based on the nominal silicon characteristics,
 +------------------------------------------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                                                ; Slack ; End Point TNS ;
 +------------------------------------------------------------------------------------------------------+-------+---------------+
-; altera_reserved_tck                                                                                  ; 0.085 ; 0.000         ;
-; FPGA_CLK1_50                                                                                         ; 0.131 ; 0.000         ;
-; pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.182 ; 0.000         ;
-; pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.331 ; 0.000         ;
+; altera_reserved_tck                                                                                  ; 0.117 ; 0.000         ;
+; FPGA_CLK1_50                                                                                         ; 0.152 ; 0.000         ;
+; pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.166 ; 0.000         ;
+; pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.383 ; 0.000         ;
 +------------------------------------------------------------------------------------------------------+-------+---------------+
 
 
@@ -439,9 +446,10 @@ Typical MTBF values are calculated based on the nominal silicon characteristics,
 +------------------------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                                ; Slack  ; End Point TNS ;
 +------------------------------------------------------------------------------------------------------+--------+---------------+
-; pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -2.363 ; -33.043       ;
-; FPGA_CLK1_50                                                                                         ; 16.485 ; 0.000         ;
-; altera_reserved_tck                                                                                  ; 19.570 ; 0.000         ;
+; pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -2.355 ; -42.348       ;
+; FPGA_CLK1_50                                                                                         ; 14.748 ; 0.000         ;
+; pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk ; 16.220 ; 0.000         ;
+; altera_reserved_tck                                                                                  ; 19.250 ; 0.000         ;
 +------------------------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -450,9 +458,10 @@ Typical MTBF values are calculated based on the nominal silicon characteristics,
 +------------------------------------------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                                                ; Slack ; End Point TNS ;
 +------------------------------------------------------------------------------------------------------+-------+---------------+
-; altera_reserved_tck                                                                                  ; 0.301 ; 0.000         ;
-; FPGA_CLK1_50                                                                                         ; 0.305 ; 0.000         ;
-; pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.515 ; 0.000         ;
+; FPGA_CLK1_50                                                                                         ; 0.250 ; 0.000         ;
+; altera_reserved_tck                                                                                  ; 0.283 ; 0.000         ;
+; pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.606 ; 0.000         ;
+; pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.881 ; 0.000         ;
 +------------------------------------------------------------------------------------------------------+-------+---------------+
 
 
@@ -463,11 +472,11 @@ Typical MTBF values are calculated based on the nominal silicon characteristics,
 +------------------------------------------------------------------------------------------------------+---------+---------------+
 ; pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; 1.600   ; 0.000         ;
 ; pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; 1.666   ; 0.000         ;
-; FPGA_CLK1_50                                                                                         ; 8.417   ; 0.000         ;
+; FPGA_CLK1_50                                                                                         ; 8.416   ; 0.000         ;
 ; FPGA_CLK2_50                                                                                         ; 9.274   ; 0.000         ;
-; altera_reserved_tck                                                                                  ; 18.735  ; 0.000         ;
+; altera_reserved_tck                                                                                  ; 18.731  ; 0.000         ;
 ; pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk ; 18.885  ; 0.000         ;
-; pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 325.939 ; 0.000         ;
+; pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 325.935 ; 0.000         ;
 +------------------------------------------------------------------------------------------------------+---------+---------------+
 
 
@@ -480,7 +489,7 @@ Typical MTBF of Design is 1e+09 years or 3.15e+16 seconds.
 Number of Synchronizer Chains Found: 12
 Shortest Synchronizer Chain: 2 Registers
 Fraction of Chains for which MTBFs Could Not be Calculated: 0.500
-Worst Case Available Settling Time: 19.380 ns
+Worst Case Available Settling Time: 19.152 ns
 
 Worst-Case MTBF values are calculated based on the worst-case silicon characteristics, with worst-case operating conditions.
   - Under worst-case conditions, an increase of 100ps in available settling time will increase MTBF values by a factor of 1.7
@@ -494,22 +503,22 @@ Typical MTBF values are calculated based on the nominal silicon characteristics,
 +-------------------------------------------------------------------------------------------------------+---------+-------+----------+---------+---------------------+
 ; Clock                                                                                                 ; Setup   ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
 +-------------------------------------------------------------------------------------------------------+---------+-------+----------+---------+---------------------+
-; Worst-case Slack                                                                                      ; 3.826   ; 0.085 ; -5.198   ; 0.301   ; 1.600               ;
-;  FPGA_CLK1_50                                                                                         ; 3.826   ; 0.131 ; 12.935   ; 0.305   ; 8.417               ;
+; Worst-case Slack                                                                                      ; 2.096   ; 0.117 ; -5.321   ; 0.250   ; 1.600               ;
+;  FPGA_CLK1_50                                                                                         ; 2.096   ; 0.152 ; 10.104   ; 0.250   ; 8.416               ;
 ;  FPGA_CLK2_50                                                                                         ; N/A     ; N/A   ; N/A      ; N/A     ; 9.274               ;
-;  altera_reserved_tck                                                                                  ; 8.909   ; 0.085 ; 17.834   ; 0.301   ; 18.724              ;
+;  altera_reserved_tck                                                                                  ; 9.588   ; 0.117 ; 17.204   ; 0.283   ; 18.725              ;
 ;  pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; N/A     ; N/A   ; N/A      ; N/A     ; 1.600               ;
-;  pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 648.096 ; 0.331 ; -5.198   ; 0.515   ; 325.421             ;
+;  pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 648.914 ; 0.383 ; -5.321   ; 0.606   ; 325.417             ;
 ;  pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; N/A     ; N/A   ; N/A      ; N/A     ; 1.666               ;
-;  pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk ; 11.953  ; 0.182 ; N/A      ; N/A     ; 18.536              ;
-; Design-wide TNS                                                                                       ; 0.0     ; 0.0   ; -72.676  ; 0.0     ; 0.0                 ;
+;  pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk ; 5.223   ; 0.166 ; 13.248   ; 0.881   ; 18.536              ;
+; Design-wide TNS                                                                                       ; 0.0     ; 0.0   ; -94.554  ; 0.0     ; 0.0                 ;
 ;  FPGA_CLK1_50                                                                                         ; 0.000   ; 0.000 ; 0.000    ; 0.000   ; 0.000               ;
 ;  FPGA_CLK2_50                                                                                         ; N/A     ; N/A   ; N/A      ; N/A     ; 0.000               ;
 ;  altera_reserved_tck                                                                                  ; 0.000   ; 0.000 ; 0.000    ; 0.000   ; 0.000               ;
 ;  pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; N/A     ; N/A   ; N/A      ; N/A     ; 0.000               ;
-;  pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.000   ; 0.000 ; -72.676  ; 0.000   ; 0.000               ;
+;  pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.000   ; 0.000 ; -94.554  ; 0.000   ; 0.000               ;
 ;  pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; N/A     ; N/A   ; N/A      ; N/A     ; 0.000               ;
-;  pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.000   ; 0.000 ; N/A      ; N/A     ; 0.000               ;
+;  pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.000   ; 0.000 ; 0.000    ; 0.000   ; 0.000               ;
 +-------------------------------------------------------------------------------------------------------+---------+-------+----------+---------+---------------------+
 
 
@@ -1012,14 +1021,14 @@ Typical MTBF values are calculated based on the nominal silicon characteristics,
 +------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------+------------+------------+----------+----------+
 ; From Clock                                                                                           ; To Clock                                                                                             ; RR Paths   ; FR Paths   ; RF Paths ; FF Paths ;
 +------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------+------------+------------+----------+----------+
-; altera_reserved_tck                                                                                  ; altera_reserved_tck                                                                                  ; 3970       ; 144        ; 87       ; 4        ;
+; altera_reserved_tck                                                                                  ; altera_reserved_tck                                                                                  ; 3936       ; 141        ; 80       ; 3        ;
 ; FPGA_CLK1_50                                                                                         ; altera_reserved_tck                                                                                  ; false path ; 0          ; 0        ; 0        ;
 ; altera_reserved_tck                                                                                  ; FPGA_CLK1_50                                                                                         ; false path ; false path ; 0        ; 0        ;
-; FPGA_CLK1_50                                                                                         ; FPGA_CLK1_50                                                                                         ; 1445851    ; 8          ; 1376     ; 48       ;
-; pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk ; FPGA_CLK1_50                                                                                         ; 23552      ; 0          ; 0        ; 0        ;
-; pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0          ; 0          ; 0        ; 141      ;
-; FPGA_CLK1_50                                                                                         ; pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk ; 1776       ; 0          ; 0        ; 0        ;
-; pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk ; pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk ; 602803     ; 0          ; 0        ; 0        ;
+; FPGA_CLK1_50                                                                                         ; FPGA_CLK1_50                                                                                         ; 495959     ; 8          ; 1376     ; 48       ;
+; pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk ; FPGA_CLK1_50                                                                                         ; 196351     ; 0          ; 0        ; 0        ;
+; pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0          ; 0          ; 0        ; 172      ;
+; FPGA_CLK1_50                                                                                         ; pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk ; 260969     ; 0          ; 0        ; 0        ;
+; pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk ; pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk ; 1121342    ; 0          ; 0        ; 0        ;
 +------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------+------------+------------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -1029,14 +1038,14 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------+------------+------------+----------+----------+
 ; From Clock                                                                                           ; To Clock                                                                                             ; RR Paths   ; FR Paths   ; RF Paths ; FF Paths ;
 +------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------+------------+------------+----------+----------+
-; altera_reserved_tck                                                                                  ; altera_reserved_tck                                                                                  ; 3970       ; 144        ; 87       ; 4        ;
+; altera_reserved_tck                                                                                  ; altera_reserved_tck                                                                                  ; 3936       ; 141        ; 80       ; 3        ;
 ; FPGA_CLK1_50                                                                                         ; altera_reserved_tck                                                                                  ; false path ; 0          ; 0        ; 0        ;
 ; altera_reserved_tck                                                                                  ; FPGA_CLK1_50                                                                                         ; false path ; false path ; 0        ; 0        ;
-; FPGA_CLK1_50                                                                                         ; FPGA_CLK1_50                                                                                         ; 1445851    ; 8          ; 1376     ; 48       ;
-; pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk ; FPGA_CLK1_50                                                                                         ; 23552      ; 0          ; 0        ; 0        ;
-; pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0          ; 0          ; 0        ; 141      ;
-; FPGA_CLK1_50                                                                                         ; pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk ; 1776       ; 0          ; 0        ; 0        ;
-; pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk ; pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk ; 602803     ; 0          ; 0        ; 0        ;
+; FPGA_CLK1_50                                                                                         ; FPGA_CLK1_50                                                                                         ; 495959     ; 8          ; 1376     ; 48       ;
+; pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk ; FPGA_CLK1_50                                                                                         ; 196351     ; 0          ; 0        ; 0        ;
+; pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0          ; 0          ; 0        ; 172      ;
+; FPGA_CLK1_50                                                                                         ; pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk ; 260969     ; 0          ; 0        ; 0        ;
+; pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk ; pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk ; 1121342    ; 0          ; 0        ; 0        ;
 +------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------+------------+------------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -1046,9 +1055,10 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +---------------------+------------------------------------------------------------------------------------------------------+----------+----------+----------+----------+
 ; From Clock          ; To Clock                                                                                             ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +---------------------+------------------------------------------------------------------------------------------------------+----------+----------+----------+----------+
-; altera_reserved_tck ; altera_reserved_tck                                                                                  ; 175      ; 0        ; 3        ; 0        ;
-; FPGA_CLK1_50        ; FPGA_CLK1_50                                                                                         ; 2177     ; 0        ; 0        ; 0        ;
-; FPGA_CLK1_50        ; pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0        ; 0        ; 14       ; 0        ;
+; altera_reserved_tck ; altera_reserved_tck                                                                                  ; 169      ; 0        ; 3        ; 0        ;
+; FPGA_CLK1_50        ; FPGA_CLK1_50                                                                                         ; 2311     ; 0        ; 0        ; 0        ;
+; FPGA_CLK1_50        ; pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0        ; 0        ; 18       ; 0        ;
+; FPGA_CLK1_50        ; pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk ; 11       ; 0        ; 0        ; 0        ;
 +---------------------+------------------------------------------------------------------------------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -1058,9 +1068,10 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +---------------------+------------------------------------------------------------------------------------------------------+----------+----------+----------+----------+
 ; From Clock          ; To Clock                                                                                             ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +---------------------+------------------------------------------------------------------------------------------------------+----------+----------+----------+----------+
-; altera_reserved_tck ; altera_reserved_tck                                                                                  ; 175      ; 0        ; 3        ; 0        ;
-; FPGA_CLK1_50        ; FPGA_CLK1_50                                                                                         ; 2177     ; 0        ; 0        ; 0        ;
-; FPGA_CLK1_50        ; pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0        ; 0        ; 14       ; 0        ;
+; altera_reserved_tck ; altera_reserved_tck                                                                                  ; 169      ; 0        ; 3        ; 0        ;
+; FPGA_CLK1_50        ; FPGA_CLK1_50                                                                                         ; 2311     ; 0        ; 0        ; 0        ;
+; FPGA_CLK1_50        ; pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0        ; 0        ; 18       ; 0        ;
+; FPGA_CLK1_50        ; pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk ; 11       ; 0        ; 0        ; 0        ;
 +---------------------+------------------------------------------------------------------------------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -1085,9 +1096,9 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 11    ; 11   ;
 ; Unconstrained Input Ports       ; 22    ; 22   ;
-; Unconstrained Input Port Paths  ; 354   ; 354  ;
+; Unconstrained Input Port Paths  ; 195   ; 195  ;
 ; Unconstrained Output Ports      ; 49    ; 49   ;
-; Unconstrained Output Port Paths ; 480   ; 480  ;
+; Unconstrained Output Port Paths ; 456   ; 456  ;
 +---------------------------------+-------+------+
 
 
@@ -1298,8 +1309,8 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +--------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
-    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Fri May 13 01:22:50 2022
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Processing started: Sun May 15 20:46:20 2022
 Info: Command: quartus_sta WiFi_Network_Time -c WiFi_Network_Time
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -1308,17 +1319,17 @@ Info (21077): Low junction temperature is -40 degrees C
 Info (21077): High junction temperature is 100 degrees C
 Warning (335093): The Timing Analyzer is analyzing 12 combinational loops as latches. For more details, run the Check Timing command in the Timing Analyzer or view the "User-Specified and Inferred Latches" table in the Analysis & Synthesis report.
 Info (332164): Evaluating HDL-embedded SDC commands
-    Info (332165): Entity GHVD5181
-        Info (332166): set_disable_timing [get_cells -hierarchical QXXQ6833_0]
-        Info (332166): set_disable_timing [get_cells -hierarchical JEQQ5299_0]
-        Info (332166): set_disable_timing [get_cells -hierarchical JEQQ5299_1]
-        Info (332166): set_disable_timing [get_cells -hierarchical JEQQ5299_2]
-        Info (332166): set_disable_timing [get_cells -hierarchical JEQQ5299_3]
-        Info (332166): set_disable_timing [get_cells -hierarchical JEQQ5299_4]
-        Info (332166): set_disable_timing [get_cells -hierarchical JEQQ5299_5]
-        Info (332166): set_disable_timing [get_cells -hierarchical JEQQ5299_6]
-        Info (332166): set_disable_timing [get_cells -hierarchical JEQQ5299_7]
-        Info (332166): set_disable_timing [get_cells -hierarchical BITP7563_0]
+    Info (332165): Entity YPHP7743
+        Info (332166): set_disable_timing [get_cells -hierarchical VVYU6267_0]
+        Info (332166): set_disable_timing [get_cells -hierarchical XWCN9723_0]
+        Info (332166): set_disable_timing [get_cells -hierarchical XWCN9723_1]
+        Info (332166): set_disable_timing [get_cells -hierarchical XWCN9723_2]
+        Info (332166): set_disable_timing [get_cells -hierarchical XWCN9723_3]
+        Info (332166): set_disable_timing [get_cells -hierarchical XWCN9723_4]
+        Info (332166): set_disable_timing [get_cells -hierarchical XWCN9723_5]
+        Info (332166): set_disable_timing [get_cells -hierarchical XWCN9723_6]
+        Info (332166): set_disable_timing [get_cells -hierarchical XWCN9723_7]
+        Info (332166): set_disable_timing [get_cells -hierarchical BVXN3148_0]
     Info (332165): Entity alt_jtag_atlantic
         Info (332166): set_false_path -from [get_registers {*|alt_jtag_atlantic:*|jupdate}] -to [get_registers {*|alt_jtag_atlantic:*|jupdate1*}] 
         Info (332166): set_false_path -from [get_registers {*|alt_jtag_atlantic:*|rdata[*]}] -to [get_registers {*|alt_jtag_atlantic*|td_shift[*]}]
@@ -1368,7 +1379,7 @@ Info (332151): Clock uncertainty is not calculated until you update the timing n
 Warning (332060): Node: painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|VGA_Controller:u1|oVGA_HS was determined to be a clock but was found without an associated clock assignment.
     Info (13166): Register painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|VGA_Controller:u1|V_Cont[10] is being clocked by painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|VGA_Controller:u1|oVGA_HS
 Warning (332060): Node: MIPI_PIXEL_CLK was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|ON_CHIP_FRAM:fra|FRAM_BUFF:GG|altsyncram:altsyncram_component|altsyncram_kmj1:auto_generated|ram_block1a225~porta_address_reg6 is being clocked by MIPI_PIXEL_CLK
+    Info (13166): Register painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|ON_CHIP_FRAM:fra|FRAM_BUFF:GG|altsyncram:altsyncram_component|altsyncram_kmj1:auto_generated|ram_block1a215~porta_address_reg6 is being clocked by MIPI_PIXEL_CLK
 Warning (332060): Node: painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|CLOCKMEM:c1|CK_1HZ was determined to be a clock but was found without an associated clock assignment.
     Info (13166): Register painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|ST[3] is being clocked by painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|CLOCKMEM:c1|CK_1HZ
 Warning (332060): Node: painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_BRIDGE_CONFIG:mpiv|CLOCKMEM:c1|CK_1HZ was determined to be a clock but was found without an associated clock assignment.
@@ -1382,11 +1393,11 @@ Warning (332060): Node: painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST
 Warning (332060): Node: painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|HDMI_TX_AD7513:hdmi|I2C_HDMI_Config:u_I2C_HDMI_Config|mI2C_CTRL_CLK was determined to be a clock but was found without an associated clock assignment.
     Info (13166): Register painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|HDMI_TX_AD7513:hdmi|I2C_HDMI_Config:u_I2C_HDMI_Config|I2C_Controller:u0|HDMI_I2C_WRITE_WDATA:wrd|CNT[3] is being clocked by painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|HDMI_TX_AD7513:hdmi|I2C_HDMI_Config:u_I2C_HDMI_Config|mI2C_CTRL_CLK
 Warning (332060): Node: painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|AUTO_SYNC_MODIFY:RE|MODIFY_SYNC:vs|MS was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|VCM_END is being clocked by painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|AUTO_SYNC_MODIFY:RE|MODIFY_SYNC:vs|MS
+    Info (13166): Register painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|GO_F is being clocked by painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|AUTO_SYNC_MODIFY:RE|MODIFY_SYNC:vs|MS
 Warning (332060): Node: painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|I2C_DELAY:i2c|READY was determined to be a clock but was found without an associated clock assignment.
     Info (13166): Latch painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_I2C:i2c2|rTR_IN~1 is being clocked by painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|I2C_DELAY:i2c|READY
 Warning (332060): Node: painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|HDMI_TX_AD7513:hdmi|AUDIO_IF:u_AVG|lrclk was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|HDMI_TX_AD7513:hdmi|AUDIO_IF:u_AVG|SIN_Cont[1]~DUPLICATE is being clocked by painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|HDMI_TX_AD7513:hdmi|AUDIO_IF:u_AVG|lrclk
+    Info (13166): Register painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|HDMI_TX_AD7513:hdmi|AUDIO_IF:u_AVG|SIN_Cont[2] is being clocked by painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|HDMI_TX_AD7513:hdmi|AUDIO_IF:u_AVG|lrclk
 Info (332097): The following timing edges are non-unate.  The Timing Analyzer will assume pos-unate behavior for these edges in the clock network.
     Info (332098): Cell: pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL  from: refclkin  to: fbclk
     Info (332098): Cell: pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER  from: vco0ph[0]  to: divclk
@@ -1399,44 +1410,46 @@ Info (332097): The following timing edges are non-unate.  The Timing Analyzer wi
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1100mV 100C Model
-Info (332146): Worst-case setup slack is 3.826
+Info (332146): Worst-case setup slack is 2.110
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     3.826               0.000 FPGA_CLK1_50 
-    Info (332119):     8.909               0.000 altera_reserved_tck 
-    Info (332119):    11.953               0.000 pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):   648.096               0.000 pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-Info (332146): Worst-case hold slack is 0.339
+    Info (332119):     2.110               0.000 FPGA_CLK1_50 
+    Info (332119):     5.223               0.000 pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     9.588               0.000 altera_reserved_tck 
+    Info (332119):   649.009               0.000 pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+Info (332146): Worst-case hold slack is 0.341
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.339               0.000 FPGA_CLK1_50 
-    Info (332119):     0.370               0.000 altera_reserved_tck 
-    Info (332119):     0.415               0.000 pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     0.507               0.000 pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.341               0.000 FPGA_CLK1_50 
+    Info (332119):     0.368               0.000 pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.452               0.000 altera_reserved_tck 
+    Info (332119):     0.619               0.000 pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case recovery slack is -5.198
+Info (332146): Worst-case recovery slack is -5.321
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -5.198             -72.676 pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):    12.935               0.000 FPGA_CLK1_50 
-    Info (332119):    17.834               0.000 altera_reserved_tck 
-Info (332146): Worst-case removal slack is 0.820
+    Info (332119):    -5.321             -94.554 pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    10.104               0.000 FPGA_CLK1_50 
+    Info (332119):    13.248               0.000 pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    17.204               0.000 altera_reserved_tck 
+Info (332146): Worst-case removal slack is 0.719
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.820               0.000 FPGA_CLK1_50 
-    Info (332119):     0.992               0.000 altera_reserved_tck 
-    Info (332119):     1.267               0.000 pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.719               0.000 FPGA_CLK1_50 
+    Info (332119):     0.971               0.000 altera_reserved_tck 
+    Info (332119):     1.468               0.000 pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     1.597               0.000 pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk 
 Info (332146): Worst-case minimum pulse width slack is 1.600
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):     1.600               0.000 pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
     Info (332119):     1.666               0.000 pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
-    Info (332119):     8.815               0.000 FPGA_CLK1_50 
+    Info (332119):     8.811               0.000 FPGA_CLK1_50 
     Info (332119):     9.730               0.000 FPGA_CLK2_50 
     Info (332119):    18.553               0.000 pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):    18.798               0.000 altera_reserved_tck 
-    Info (332119):   325.421               0.000 pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    18.789               0.000 altera_reserved_tck 
+    Info (332119):   325.417               0.000 pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
 Info (332114): Report Metastability: Found 12 synchronizer chains.
     Info (332114): Worst-Case MTBF of Design is 1e+09 years or 3.15e+16 seconds.
     Info (332114): Typical MTBF of Design is 1e+09 years or 3.15e+16 seconds.
@@ -1444,7 +1457,7 @@ Info (332114): Report Metastability: Found 12 synchronizer chains.
     Info (332114): Number of Synchronizer Chains Found: 12
     Info (332114): Shortest Synchronizer Chain: 2 Registers
     Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 0.500
-    Info (332114): Worst Case Available Settling Time: 18.730 ns
+    Info (332114): Worst Case Available Settling Time: 18.288 ns
     Info (332114): 
     Info (332114): Worst-Case MTBF values are calculated based on the worst-case silicon characteristics, with worst-case operating conditions.
     Info (332114):   - Under worst-case conditions, an increase of 100ps in available settling time will increase MTBF values by a factor of 8.0
@@ -1456,7 +1469,7 @@ Info (334004): Delay annotation completed successfully
 Warning (332060): Node: painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|VGA_Controller:u1|oVGA_HS was determined to be a clock but was found without an associated clock assignment.
     Info (13166): Register painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|VGA_Controller:u1|V_Cont[10] is being clocked by painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|VGA_Controller:u1|oVGA_HS
 Warning (332060): Node: MIPI_PIXEL_CLK was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|ON_CHIP_FRAM:fra|FRAM_BUFF:GG|altsyncram:altsyncram_component|altsyncram_kmj1:auto_generated|ram_block1a225~porta_address_reg6 is being clocked by MIPI_PIXEL_CLK
+    Info (13166): Register painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|ON_CHIP_FRAM:fra|FRAM_BUFF:GG|altsyncram:altsyncram_component|altsyncram_kmj1:auto_generated|ram_block1a215~porta_address_reg6 is being clocked by MIPI_PIXEL_CLK
 Warning (332060): Node: painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|CLOCKMEM:c1|CK_1HZ was determined to be a clock but was found without an associated clock assignment.
     Info (13166): Register painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|ST[3] is being clocked by painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|CLOCKMEM:c1|CK_1HZ
 Warning (332060): Node: painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_BRIDGE_CONFIG:mpiv|CLOCKMEM:c1|CK_1HZ was determined to be a clock but was found without an associated clock assignment.
@@ -1470,11 +1483,11 @@ Warning (332060): Node: painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST
 Warning (332060): Node: painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|HDMI_TX_AD7513:hdmi|I2C_HDMI_Config:u_I2C_HDMI_Config|mI2C_CTRL_CLK was determined to be a clock but was found without an associated clock assignment.
     Info (13166): Register painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|HDMI_TX_AD7513:hdmi|I2C_HDMI_Config:u_I2C_HDMI_Config|I2C_Controller:u0|HDMI_I2C_WRITE_WDATA:wrd|CNT[3] is being clocked by painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|HDMI_TX_AD7513:hdmi|I2C_HDMI_Config:u_I2C_HDMI_Config|mI2C_CTRL_CLK
 Warning (332060): Node: painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|AUTO_SYNC_MODIFY:RE|MODIFY_SYNC:vs|MS was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|VCM_END is being clocked by painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|AUTO_SYNC_MODIFY:RE|MODIFY_SYNC:vs|MS
+    Info (13166): Register painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|GO_F is being clocked by painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|AUTO_SYNC_MODIFY:RE|MODIFY_SYNC:vs|MS
 Warning (332060): Node: painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|I2C_DELAY:i2c|READY was determined to be a clock but was found without an associated clock assignment.
     Info (13166): Latch painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_I2C:i2c2|rTR_IN~1 is being clocked by painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|I2C_DELAY:i2c|READY
 Warning (332060): Node: painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|HDMI_TX_AD7513:hdmi|AUDIO_IF:u_AVG|lrclk was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|HDMI_TX_AD7513:hdmi|AUDIO_IF:u_AVG|SIN_Cont[1]~DUPLICATE is being clocked by painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|HDMI_TX_AD7513:hdmi|AUDIO_IF:u_AVG|lrclk
+    Info (13166): Register painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|HDMI_TX_AD7513:hdmi|AUDIO_IF:u_AVG|SIN_Cont[2] is being clocked by painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|HDMI_TX_AD7513:hdmi|AUDIO_IF:u_AVG|lrclk
 Info (332097): The following timing edges are non-unate.  The Timing Analyzer will assume pos-unate behavior for these edges in the clock network.
     Info (332098): Cell: pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL  from: refclkin  to: fbclk
     Info (332098): Cell: pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER  from: vco0ph[0]  to: divclk
@@ -1485,44 +1498,46 @@ Info (332097): The following timing edges are non-unate.  The Timing Analyzer wi
     Info (332098): Cell: pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER  from: vco0ph[0]  to: divclk
     Info (332098): From: u0|nios2_gen2_0|cpu|the_RFS_WiFi_nios2_gen2_0_cpu_nios2_oci|the_RFS_WiFi_nios2_gen2_0_cpu_nios2_ocimem|RFS_WiFi_nios2_gen2_0_cpu_ociram_sp_ram|the_altsyncram|auto_generated|ram_block1a8|clk0  to: RFS_WiFi:u0|RFS_WiFi_nios2_gen2_0:nios2_gen2_0|RFS_WiFi_nios2_gen2_0_cpu:cpu|RFS_WiFi_nios2_gen2_0_cpu_nios2_oci:the_RFS_WiFi_nios2_gen2_0_cpu_nios2_oci|RFS_WiFi_nios2_gen2_0_cpu_nios2_ocimem:the_RFS_WiFi_nios2_gen2_0_cpu_nios2_ocimem|RFS_WiFi_nios2_gen2_0_cpu_ociram_sp_ram_module:RFS_WiFi_nios2_gen2_0_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_s471:auto_generated|ram_block1a8~CLOCK1_ENABLE1_0
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
-Info (332146): Worst-case setup slack is 4.128
+Info (332146): Worst-case setup slack is 2.096
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     4.128               0.000 FPGA_CLK1_50 
-    Info (332119):     9.446               0.000 altera_reserved_tck 
-    Info (332119):    12.295               0.000 pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):   648.175               0.000 pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-Info (332146): Worst-case hold slack is 0.302
+    Info (332119):     2.096               0.000 FPGA_CLK1_50 
+    Info (332119):     6.444               0.000 pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     9.721               0.000 altera_reserved_tck 
+    Info (332119):   648.914               0.000 pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+Info (332146): Worst-case hold slack is 0.321
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.302               0.000 FPGA_CLK1_50 
-    Info (332119):     0.356               0.000 altera_reserved_tck 
-    Info (332119):     0.438               0.000 pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     0.552               0.000 pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.321               0.000 FPGA_CLK1_50 
+    Info (332119):     0.346               0.000 pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.429               0.000 altera_reserved_tck 
+    Info (332119):     0.699               0.000 pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case recovery slack is -4.579
+Info (332146): Worst-case recovery slack is -4.824
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -4.579             -64.037 pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):    13.255               0.000 FPGA_CLK1_50 
-    Info (332119):    18.049               0.000 altera_reserved_tck 
-Info (332146): Worst-case removal slack is 0.677
+    Info (332119):    -4.824             -85.880 pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    10.641               0.000 FPGA_CLK1_50 
+    Info (332119):    13.839               0.000 pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    17.404               0.000 altera_reserved_tck 
+Info (332146): Worst-case removal slack is 0.639
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.677               0.000 FPGA_CLK1_50 
-    Info (332119):     0.896               0.000 altera_reserved_tck 
-    Info (332119):     0.938               0.000 pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.639               0.000 FPGA_CLK1_50 
+    Info (332119):     0.923               0.000 altera_reserved_tck 
+    Info (332119):     1.260               0.000 pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     1.277               0.000 pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk 
 Info (332146): Worst-case minimum pulse width slack is 1.600
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):     1.600               0.000 pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
     Info (332119):     1.666               0.000 pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
-    Info (332119):     8.801               0.000 FPGA_CLK1_50 
+    Info (332119):     8.809               0.000 FPGA_CLK1_50 
     Info (332119):     9.754               0.000 FPGA_CLK2_50 
     Info (332119):    18.536               0.000 pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk 
     Info (332119):    18.797               0.000 altera_reserved_tck 
-    Info (332119):   325.435               0.000 pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):   325.432               0.000 pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
 Info (332114): Report Metastability: Found 12 synchronizer chains.
     Info (332114): Worst-Case MTBF of Design is 1e+09 years or 3.15e+16 seconds.
     Info (332114): Typical MTBF of Design is 1e+09 years or 3.15e+16 seconds.
@@ -1530,7 +1545,7 @@ Info (332114): Report Metastability: Found 12 synchronizer chains.
     Info (332114): Number of Synchronizer Chains Found: 12
     Info (332114): Shortest Synchronizer Chain: 2 Registers
     Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 0.500
-    Info (332114): Worst Case Available Settling Time: 18.740 ns
+    Info (332114): Worst Case Available Settling Time: 18.300 ns
     Info (332114): 
     Info (332114): Worst-Case MTBF values are calculated based on the worst-case silicon characteristics, with worst-case operating conditions.
     Info (332114):   - Under worst-case conditions, an increase of 100ps in available settling time will increase MTBF values by a factor of 1.7
@@ -1542,7 +1557,7 @@ Info (334004): Delay annotation completed successfully
 Warning (332060): Node: painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|VGA_Controller:u1|oVGA_HS was determined to be a clock but was found without an associated clock assignment.
     Info (13166): Register painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|VGA_Controller:u1|V_Cont[10] is being clocked by painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|VGA_Controller:u1|oVGA_HS
 Warning (332060): Node: MIPI_PIXEL_CLK was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|ON_CHIP_FRAM:fra|FRAM_BUFF:GG|altsyncram:altsyncram_component|altsyncram_kmj1:auto_generated|ram_block1a225~porta_address_reg6 is being clocked by MIPI_PIXEL_CLK
+    Info (13166): Register painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|ON_CHIP_FRAM:fra|FRAM_BUFF:GG|altsyncram:altsyncram_component|altsyncram_kmj1:auto_generated|ram_block1a215~porta_address_reg6 is being clocked by MIPI_PIXEL_CLK
 Warning (332060): Node: painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|CLOCKMEM:c1|CK_1HZ was determined to be a clock but was found without an associated clock assignment.
     Info (13166): Register painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|ST[3] is being clocked by painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|CLOCKMEM:c1|CK_1HZ
 Warning (332060): Node: painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_BRIDGE_CONFIG:mpiv|CLOCKMEM:c1|CK_1HZ was determined to be a clock but was found without an associated clock assignment.
@@ -1556,11 +1571,11 @@ Warning (332060): Node: painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST
 Warning (332060): Node: painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|HDMI_TX_AD7513:hdmi|I2C_HDMI_Config:u_I2C_HDMI_Config|mI2C_CTRL_CLK was determined to be a clock but was found without an associated clock assignment.
     Info (13166): Register painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|HDMI_TX_AD7513:hdmi|I2C_HDMI_Config:u_I2C_HDMI_Config|I2C_Controller:u0|HDMI_I2C_WRITE_WDATA:wrd|CNT[3] is being clocked by painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|HDMI_TX_AD7513:hdmi|I2C_HDMI_Config:u_I2C_HDMI_Config|mI2C_CTRL_CLK
 Warning (332060): Node: painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|AUTO_SYNC_MODIFY:RE|MODIFY_SYNC:vs|MS was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|VCM_END is being clocked by painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|AUTO_SYNC_MODIFY:RE|MODIFY_SYNC:vs|MS
+    Info (13166): Register painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|GO_F is being clocked by painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|AUTO_SYNC_MODIFY:RE|MODIFY_SYNC:vs|MS
 Warning (332060): Node: painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|I2C_DELAY:i2c|READY was determined to be a clock but was found without an associated clock assignment.
     Info (13166): Latch painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_I2C:i2c2|rTR_IN~1 is being clocked by painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|I2C_DELAY:i2c|READY
 Warning (332060): Node: painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|HDMI_TX_AD7513:hdmi|AUDIO_IF:u_AVG|lrclk was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|HDMI_TX_AD7513:hdmi|AUDIO_IF:u_AVG|SIN_Cont[1]~DUPLICATE is being clocked by painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|HDMI_TX_AD7513:hdmi|AUDIO_IF:u_AVG|lrclk
+    Info (13166): Register painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|HDMI_TX_AD7513:hdmi|AUDIO_IF:u_AVG|SIN_Cont[2] is being clocked by painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|HDMI_TX_AD7513:hdmi|AUDIO_IF:u_AVG|lrclk
 Info (332097): The following timing edges are non-unate.  The Timing Analyzer will assume pos-unate behavior for these edges in the clock network.
     Info (332098): Cell: pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL  from: refclkin  to: fbclk
     Info (332098): Cell: pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER  from: vco0ph[0]  to: divclk
@@ -1571,44 +1586,46 @@ Info (332097): The following timing edges are non-unate.  The Timing Analyzer wi
     Info (332098): Cell: pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER  from: vco0ph[0]  to: divclk
     Info (332098): From: u0|nios2_gen2_0|cpu|the_RFS_WiFi_nios2_gen2_0_cpu_nios2_oci|the_RFS_WiFi_nios2_gen2_0_cpu_nios2_ocimem|RFS_WiFi_nios2_gen2_0_cpu_ociram_sp_ram|the_altsyncram|auto_generated|ram_block1a8|clk0  to: RFS_WiFi:u0|RFS_WiFi_nios2_gen2_0:nios2_gen2_0|RFS_WiFi_nios2_gen2_0_cpu:cpu|RFS_WiFi_nios2_gen2_0_cpu_nios2_oci:the_RFS_WiFi_nios2_gen2_0_cpu_nios2_oci|RFS_WiFi_nios2_gen2_0_cpu_nios2_ocimem:the_RFS_WiFi_nios2_gen2_0_cpu_nios2_ocimem|RFS_WiFi_nios2_gen2_0_cpu_ociram_sp_ram_module:RFS_WiFi_nios2_gen2_0_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_s471:auto_generated|ram_block1a8~CLOCK1_ENABLE1_0
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
-Info (332146): Worst-case setup slack is 7.098
+Info (332146): Worst-case setup slack is 7.619
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     7.098               0.000 FPGA_CLK1_50 
-    Info (332119):    11.911               0.000 altera_reserved_tck 
-    Info (332119):    15.180               0.000 pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):   650.452               0.000 pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-Info (332146): Worst-case hold slack is 0.122
+    Info (332119):     7.619               0.000 FPGA_CLK1_50 
+    Info (332119):     9.817               0.000 pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    12.295               0.000 altera_reserved_tck 
+    Info (332119):   651.114               0.000 pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+Info (332146): Worst-case hold slack is 0.158
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.122               0.000 altera_reserved_tck 
+    Info (332119):     0.158               0.000 altera_reserved_tck 
     Info (332119):     0.178               0.000 FPGA_CLK1_50 
-    Info (332119):     0.197               0.000 pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     0.355               0.000 pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.189               0.000 pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.402               0.000 pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case recovery slack is -3.355
+Info (332146): Worst-case recovery slack is -3.298
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.355             -46.911 pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):    15.759               0.000 FPGA_CLK1_50 
-    Info (332119):    19.335               0.000 altera_reserved_tck 
-Info (332146): Worst-case removal slack is 0.377
+    Info (332119):    -3.298             -59.216 pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    13.496               0.000 FPGA_CLK1_50 
+    Info (332119):    15.030               0.000 pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    18.925               0.000 altera_reserved_tck 
+Info (332146): Worst-case removal slack is 0.333
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.377               0.000 altera_reserved_tck 
-    Info (332119):     0.471               0.000 FPGA_CLK1_50 
-    Info (332119):     0.996               0.000 pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.333               0.000 FPGA_CLK1_50 
+    Info (332119):     0.344               0.000 altera_reserved_tck 
+    Info (332119):     1.119               0.000 pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     1.426               0.000 pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk 
 Info (332146): Worst-case minimum pulse width slack is 1.600
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):     1.600               0.000 pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
     Info (332119):     1.666               0.000 pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
-    Info (332119):     8.488               0.000 FPGA_CLK1_50 
+    Info (332119):     8.489               0.000 FPGA_CLK1_50 
     Info (332119):     9.347               0.000 FPGA_CLK2_50 
-    Info (332119):    18.724               0.000 altera_reserved_tck 
+    Info (332119):    18.725               0.000 altera_reserved_tck 
     Info (332119):    18.880               0.000 pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):   325.945               0.000 pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):   325.926               0.000 pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
 Info (332114): Report Metastability: Found 12 synchronizer chains.
     Info (332114): Worst-Case MTBF of Design is 1e+09 years or 3.15e+16 seconds.
     Info (332114): Typical MTBF of Design is 1e+09 years or 3.15e+16 seconds.
@@ -1616,7 +1633,7 @@ Info (332114): Report Metastability: Found 12 synchronizer chains.
     Info (332114): Number of Synchronizer Chains Found: 12
     Info (332114): Shortest Synchronizer Chain: 2 Registers
     Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 0.500
-    Info (332114): Worst Case Available Settling Time: 19.336 ns
+    Info (332114): Worst Case Available Settling Time: 19.046 ns
     Info (332114): 
     Info (332114): Worst-Case MTBF values are calculated based on the worst-case silicon characteristics, with worst-case operating conditions.
     Info (332114):   - Under worst-case conditions, an increase of 100ps in available settling time will increase MTBF values by a factor of 8.0
@@ -1626,7 +1643,7 @@ Info: Analyzing Fast 1100mV -40C Model
 Warning (332060): Node: painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|VGA_Controller:u1|oVGA_HS was determined to be a clock but was found without an associated clock assignment.
     Info (13166): Register painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|VGA_Controller:u1|V_Cont[10] is being clocked by painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|VGA_Controller:u1|oVGA_HS
 Warning (332060): Node: MIPI_PIXEL_CLK was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|ON_CHIP_FRAM:fra|FRAM_BUFF:GG|altsyncram:altsyncram_component|altsyncram_kmj1:auto_generated|ram_block1a225~porta_address_reg6 is being clocked by MIPI_PIXEL_CLK
+    Info (13166): Register painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|ON_CHIP_FRAM:fra|FRAM_BUFF:GG|altsyncram:altsyncram_component|altsyncram_kmj1:auto_generated|ram_block1a215~porta_address_reg6 is being clocked by MIPI_PIXEL_CLK
 Warning (332060): Node: painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|CLOCKMEM:c1|CK_1HZ was determined to be a clock but was found without an associated clock assignment.
     Info (13166): Register painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|ST[3] is being clocked by painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_CAMERA_CONFIG:camiv|CLOCKMEM:c1|CK_1HZ
 Warning (332060): Node: painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|MIPI_BRIDGE_CAMERA_Config:cfin|MIPI_BRIDGE_CONFIG:mpiv|CLOCKMEM:c1|CK_1HZ was determined to be a clock but was found without an associated clock assignment.
@@ -1640,11 +1657,11 @@ Warning (332060): Node: painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST
 Warning (332060): Node: painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|HDMI_TX_AD7513:hdmi|I2C_HDMI_Config:u_I2C_HDMI_Config|mI2C_CTRL_CLK was determined to be a clock but was found without an associated clock assignment.
     Info (13166): Register painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|HDMI_TX_AD7513:hdmi|I2C_HDMI_Config:u_I2C_HDMI_Config|I2C_Controller:u0|HDMI_I2C_WRITE_WDATA:wrd|CNT[3] is being clocked by painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|HDMI_TX_AD7513:hdmi|I2C_HDMI_Config:u_I2C_HDMI_Config|mI2C_CTRL_CLK
 Warning (332060): Node: painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|AUTO_SYNC_MODIFY:RE|MODIFY_SYNC:vs|MS was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|VCM_END is being clocked by painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|AUTO_SYNC_MODIFY:RE|MODIFY_SYNC:vs|MS
+    Info (13166): Register painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_CTRL_P:pp|F_VCM:f|GO_F is being clocked by painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|AUTO_SYNC_MODIFY:RE|MODIFY_SYNC:vs|MS
 Warning (332060): Node: painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|I2C_DELAY:i2c|READY was determined to be a clock but was found without an associated clock assignment.
     Info (13166): Latch painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|VCM_I2C:i2c2|rTR_IN~1 is being clocked by painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|FOCUS_ADJ:adl|I2C_DELAY:i2c|READY
 Warning (332060): Node: painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|HDMI_TX_AD7513:hdmi|AUDIO_IF:u_AVG|lrclk was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|HDMI_TX_AD7513:hdmi|AUDIO_IF:u_AVG|SIN_Cont[1]~DUPLICATE is being clocked by painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|HDMI_TX_AD7513:hdmi|AUDIO_IF:u_AVG|lrclk
+    Info (13166): Register painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|HDMI_TX_AD7513:hdmi|AUDIO_IF:u_AVG|SIN_Cont[2] is being clocked by painting_top:pt|DE10_NANO_D8M_RTL:DE10_NANO_D8M_RTL_INST|HDMI_TX_AD7513:hdmi|AUDIO_IF:u_AVG|lrclk
 Info (332097): The following timing edges are non-unate.  The Timing Analyzer will assume pos-unate behavior for these edges in the clock network.
     Info (332098): Cell: pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL  from: refclkin  to: fbclk
     Info (332098): Cell: pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER  from: vco0ph[0]  to: divclk
@@ -1655,44 +1672,46 @@ Info (332097): The following timing edges are non-unate.  The Timing Analyzer wi
     Info (332098): Cell: pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER  from: vco0ph[0]  to: divclk
     Info (332098): From: u0|nios2_gen2_0|cpu|the_RFS_WiFi_nios2_gen2_0_cpu_nios2_oci|the_RFS_WiFi_nios2_gen2_0_cpu_nios2_ocimem|RFS_WiFi_nios2_gen2_0_cpu_ociram_sp_ram|the_altsyncram|auto_generated|ram_block1a8|clk0  to: RFS_WiFi:u0|RFS_WiFi_nios2_gen2_0:nios2_gen2_0|RFS_WiFi_nios2_gen2_0_cpu:cpu|RFS_WiFi_nios2_gen2_0_cpu_nios2_oci:the_RFS_WiFi_nios2_gen2_0_cpu_nios2_oci|RFS_WiFi_nios2_gen2_0_cpu_nios2_ocimem:the_RFS_WiFi_nios2_gen2_0_cpu_nios2_ocimem|RFS_WiFi_nios2_gen2_0_cpu_ociram_sp_ram_module:RFS_WiFi_nios2_gen2_0_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_s471:auto_generated|ram_block1a8~CLOCK1_ENABLE1_0
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
-Info (332146): Worst-case setup slack is 7.751
+Info (332146): Worst-case setup slack is 8.072
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     7.751               0.000 FPGA_CLK1_50 
-    Info (332119):    12.504               0.000 altera_reserved_tck 
-    Info (332119):    16.180               0.000 pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):   650.775               0.000 pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-Info (332146): Worst-case hold slack is 0.085
+    Info (332119):     8.072               0.000 FPGA_CLK1_50 
+    Info (332119):    12.163               0.000 pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    12.676               0.000 altera_reserved_tck 
+    Info (332119):   651.281               0.000 pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+Info (332146): Worst-case hold slack is 0.117
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.085               0.000 altera_reserved_tck 
-    Info (332119):     0.131               0.000 FPGA_CLK1_50 
-    Info (332119):     0.182               0.000 pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     0.331               0.000 pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.117               0.000 altera_reserved_tck 
+    Info (332119):     0.152               0.000 FPGA_CLK1_50 
+    Info (332119):     0.166               0.000 pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.383               0.000 pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case recovery slack is -2.363
+Info (332146): Worst-case recovery slack is -2.355
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.363             -33.043 pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):    16.485               0.000 FPGA_CLK1_50 
-    Info (332119):    19.570               0.000 altera_reserved_tck 
-Info (332146): Worst-case removal slack is 0.301
+    Info (332119):    -2.355             -42.348 pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    14.748               0.000 FPGA_CLK1_50 
+    Info (332119):    16.220               0.000 pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    19.250               0.000 altera_reserved_tck 
+Info (332146): Worst-case removal slack is 0.250
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.301               0.000 altera_reserved_tck 
-    Info (332119):     0.305               0.000 FPGA_CLK1_50 
-    Info (332119):     0.515               0.000 pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.250               0.000 FPGA_CLK1_50 
+    Info (332119):     0.283               0.000 altera_reserved_tck 
+    Info (332119):     0.606               0.000 pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.881               0.000 pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk 
 Info (332146): Worst-case minimum pulse width slack is 1.600
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):     1.600               0.000 pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
     Info (332119):     1.666               0.000 pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
-    Info (332119):     8.417               0.000 FPGA_CLK1_50 
+    Info (332119):     8.416               0.000 FPGA_CLK1_50 
     Info (332119):     9.274               0.000 FPGA_CLK2_50 
-    Info (332119):    18.735               0.000 altera_reserved_tck 
+    Info (332119):    18.731               0.000 altera_reserved_tck 
     Info (332119):    18.885               0.000 pt|DE10_NANO_D8M_RTL_INST|pll2|video_pll_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):   325.939               0.000 pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):   325.935               0.000 pt|DE10_NANO_D8M_RTL_INST|pll1|audio_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
 Info (332114): Report Metastability: Found 12 synchronizer chains.
     Info (332114): Worst-Case MTBF of Design is 1e+09 years or 3.15e+16 seconds.
     Info (332114): Typical MTBF of Design is 1e+09 years or 3.15e+16 seconds.
@@ -1700,7 +1719,7 @@ Info (332114): Report Metastability: Found 12 synchronizer chains.
     Info (332114): Number of Synchronizer Chains Found: 12
     Info (332114): Shortest Synchronizer Chain: 2 Registers
     Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 0.500
-    Info (332114): Worst Case Available Settling Time: 19.380 ns
+    Info (332114): Worst Case Available Settling Time: 19.152 ns
     Info (332114): 
     Info (332114): Worst-Case MTBF values are calculated based on the worst-case silicon characteristics, with worst-case operating conditions.
     Info (332114):   - Under worst-case conditions, an increase of 100ps in available settling time will increase MTBF values by a factor of 1.7
@@ -1709,9 +1728,9 @@ Info (332114): Report Metastability: Found 12 synchronizer chains.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 51 warnings
-    Info: Peak virtual memory: 5957 megabytes
-    Info: Processing ended: Fri May 13 01:23:57 2022
-    Info: Elapsed time: 00:01:07
-    Info: Total CPU time (on all processors): 00:02:50
+    Info: Peak virtual memory: 5941 megabytes
+    Info: Processing ended: Sun May 15 20:47:50 2022
+    Info: Elapsed time: 00:01:30
+    Info: Total CPU time (on all processors): 00:02:58
 
 
