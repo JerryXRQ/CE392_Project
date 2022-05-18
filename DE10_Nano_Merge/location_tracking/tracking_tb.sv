@@ -50,12 +50,12 @@ tracking #(
     .WIDTH(WIDTH),
     .HEIGHT(HEIGHT)
 ) tracking_dut (
-    .clock(clock),
+    .clock_25(clock),
+    .clock_50(clock),
     .reset(reset),
     .in_wr_en(in_wr_en),
-    .oR(in_din[23:16]),
-    .oG(in_din[15:8]),
-    .oB(in_din[7:0]),
+
+    .in_din(in_din),
     .in_full(in_full),
     .valid(valid_out),
     .center_x(center_x_out),

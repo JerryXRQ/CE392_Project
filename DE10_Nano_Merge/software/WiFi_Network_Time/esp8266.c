@@ -15,6 +15,10 @@
 #include <string.h>
 #include <altera_avalon_pio_regs.h>
 
+#include <errno.h>
+extern int errno;
+
+
 #define esp8266_uart WIFI_UART0_NAME
 //#define ESP8266_DEBUG
 
@@ -34,7 +38,9 @@ void set_esp8266_file_blocking(bool blocking)
 bool esp8266_init(bool reset)
 {
     bool bSuccess = true;
+    //esp8266_file = fopen("/dev/null", "rw+");
     esp8266_file = fopen(esp8266_uart, "rw+");
+    //printf("Value of errno: %d\n", errno);
     if (esp8266_file == NULL) {
         printf("Open UART_0 failed\n");
         return false;

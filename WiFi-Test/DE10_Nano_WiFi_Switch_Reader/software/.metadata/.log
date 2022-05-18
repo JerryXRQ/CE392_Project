@@ -254,3 +254,161 @@ javax.net.ssl.SSLHandshakeException: Received fatal alert: handshake_failure
 
 !ENTRY com.altera.sbtgui.launch 1 0 2022-04-28 20:34:30.813
 !MESSAGE Executing: [E:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --sidp=0x810a0 --id=0x0 --timestamp=1651192844 /cygdrive/c/Users/dell/Desktop/DE10_Nano_WiFi_Network_Time/software/WiFi_Network_Time/WiFi_Network_Time.elf]
+!SESSION 2022-05-17 22:25:05.222 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization E:/intelfpga_lite/18.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization E:/intelfpga_lite/18.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-05-17 22:25:24.860
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 16 2022-05-17 22:25:32.032
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: Received fatal alert: handshake_failure. ; version: 1.100.0.v20160217-0435
+!STACK 0
+javax.net.ssl.SSLHandshakeException: Received fatal alert: handshake_failure
+	at sun.security.ssl.Alerts.getSSLException(Unknown Source)
+	at sun.security.ssl.Alerts.getSSLException(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.recvAlert(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.readRecord(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:290)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:259)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:125)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.request(IO.java:205)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:68)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:101)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2022-05-17 22:25:36.138
+!MESSAGE Executing: [E:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --sidp=0x810a0 --id=0x0 --timestamp=1651192844]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2022-05-17 22:25:38.659
+!MESSAGE ELF file not specified for download for WiFi_Network_Time Nios II Hardware configuration
+
+!ENTRY com.altera.sbtgui.launch 1 0 2022-05-17 22:25:59.241
+!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2022-05-17 22:25:59.570
+!MESSAGE Executing: [E:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --sidp=0x810a0 --id=0x0 --timestamp=1651192844]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2022-05-17 22:26:02.056
+!MESSAGE Executing: [E:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --sidp=0x810a0 --id=0x0 --timestamp=1651192844 /cygdrive/e/GitHub Repo/CE392_Project/WiFi-Test/DE10_Nano_WiFi_Switch_Reader/software/WiFi_Network_Time/WiFi_Network_Time.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2022-05-17 22:26:03.693
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --go, --sidp=0x810a0, --id=0x0, --timestamp=1651192844, /cygdrive/e/GitHub Repo/CE392_Project/WiFi-Test/DE10_Nano_WiFi_Switch_Reader/software/WiFi_Network_Time/WiFi_Network_Time.elf] return code: 16
+
+!ENTRY com.altera.sbtgui.launch 4 0 2022-05-17 22:26:03.693
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2022-05-17 22:26:20.397
+!MESSAGE Executing: [E:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --sidp=0x810a0 --id=0x0 --timestamp=1651192844]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2022-05-17 22:26:22.665
+!MESSAGE Executing: [E:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --sidp=0x810a0 --id=0x0 --timestamp=1651192844 /cygdrive/e/GitHub Repo/CE392_Project/WiFi-Test/DE10_Nano_WiFi_Switch_Reader/software/WiFi_Network_Time/WiFi_Network_Time.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2022-05-17 22:26:24.304
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --go, --sidp=0x810a0, --id=0x0, --timestamp=1651192844, /cygdrive/e/GitHub Repo/CE392_Project/WiFi-Test/DE10_Nano_WiFi_Switch_Reader/software/WiFi_Network_Time/WiFi_Network_Time.elf] return code: 16
+
+!ENTRY com.altera.sbtgui.launch 4 0 2022-05-17 22:26:24.305
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2022-05-17 22:26:28.820
+!MESSAGE Executing: [E:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --sidp=0x810a0 --id=0x0 --timestamp=1651192844]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2022-05-17 22:26:31.073
+!MESSAGE Executing: [E:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --sidp=0x810a0 --id=0x0 --timestamp=1651192844 /cygdrive/e/GitHub Repo/CE392_Project/WiFi-Test/DE10_Nano_WiFi_Switch_Reader/software/WiFi_Network_Time/WiFi_Network_Time.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2022-05-17 22:26:32.704
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --go, --sidp=0x810a0, --id=0x0, --timestamp=1651192844, /cygdrive/e/GitHub Repo/CE392_Project/WiFi-Test/DE10_Nano_WiFi_Switch_Reader/software/WiFi_Network_Time/WiFi_Network_Time.elf] return code: 16
+
+!ENTRY com.altera.sbtgui.launch 4 0 2022-05-17 22:26:32.705
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2022-05-17 22:26:48.384
+!MESSAGE Executing: [E:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --sidp=0x810a0 --id=0x0 --timestamp=1651192844]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2022-05-17 22:26:50.666
+!MESSAGE Executing: [E:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --sidp=0x810a0 --id=0x0 --timestamp=1651192844 /cygdrive/e/GitHub Repo/CE392_Project/WiFi-Test/DE10_Nano_WiFi_Switch_Reader/software/WiFi_Network_Time/WiFi_Network_Time.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2022-05-17 22:26:52.304
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --go, --sidp=0x810a0, --id=0x0, --timestamp=1651192844, /cygdrive/e/GitHub Repo/CE392_Project/WiFi-Test/DE10_Nano_WiFi_Switch_Reader/software/WiFi_Network_Time/WiFi_Network_Time.elf] return code: 16
+
+!ENTRY com.altera.sbtgui.launch 4 0 2022-05-17 22:26:52.306
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2022-05-17 22:27:20.968
+!MESSAGE Executing: [E:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --sidp=0x810a0 --id=0x0 --timestamp=1651192844]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2022-05-17 22:27:23.215
+!MESSAGE Executing: [E:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --sidp=0x810a0 --id=0x0 --timestamp=1651192844 /cygdrive/e/GitHub Repo/CE392_Project/WiFi-Test/DE10_Nano_WiFi_Switch_Reader/software/WiFi_Network_Time/WiFi_Network_Time.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2022-05-17 22:27:24.864
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --go, --sidp=0x810a0, --id=0x0, --timestamp=1651192844, /cygdrive/e/GitHub Repo/CE392_Project/WiFi-Test/DE10_Nano_WiFi_Switch_Reader/software/WiFi_Network_Time/WiFi_Network_Time.elf] return code: 16
+
+!ENTRY com.altera.sbtgui.launch 4 0 2022-05-17 22:27:24.864
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2022-05-17 22:27:49.034
+!MESSAGE Executing: [E:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --sidp=0x810a0 --id=0x0 --timestamp=1651192844]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2022-05-17 22:27:51.332
+!MESSAGE Executing: [E:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --sidp=0x810a0 --id=0x0 --timestamp=1651192844 /cygdrive/e/GitHub Repo/CE392_Project/WiFi-Test/DE10_Nano_WiFi_Switch_Reader/software/WiFi_Network_Time/WiFi_Network_Time.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2022-05-17 22:27:52.994
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --go, --sidp=0x810a0, --id=0x0, --timestamp=1651192844, /cygdrive/e/GitHub Repo/CE392_Project/WiFi-Test/DE10_Nano_WiFi_Switch_Reader/software/WiFi_Network_Time/WiFi_Network_Time.elf] return code: 16
+
+!ENTRY com.altera.sbtgui.launch 4 0 2022-05-17 22:27:52.995
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2022-05-17 22:27:57.814
+!MESSAGE Executing: [E:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --sidp=0x810a0 --id=0x0 --timestamp=1651192844]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2022-05-17 22:28:00.051
+!MESSAGE Executing: [E:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --sidp=0x810a0 --id=0x0 --timestamp=1651192844 /cygdrive/e/GitHub Repo/CE392_Project/WiFi-Test/DE10_Nano_WiFi_Switch_Reader/software/WiFi_Network_Time/WiFi_Network_Time.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2022-05-17 22:28:01.806
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --go, --sidp=0x810a0, --id=0x0, --timestamp=1651192844, /cygdrive/e/GitHub Repo/CE392_Project/WiFi-Test/DE10_Nano_WiFi_Switch_Reader/software/WiFi_Network_Time/WiFi_Network_Time.elf] return code: 16
+
+!ENTRY com.altera.sbtgui.launch 4 0 2022-05-17 22:28:01.807
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2022-05-17 22:28:06.233
+!MESSAGE Executing: [E:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --sidp=0x810a0 --id=0x0 --timestamp=1651192844]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2022-05-17 22:28:08.525
+!MESSAGE Executing: [E:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --sidp=0x810a0 --id=0x0 --timestamp=1651192844 /cygdrive/e/GitHub Repo/CE392_Project/WiFi-Test/DE10_Nano_WiFi_Switch_Reader/software/WiFi_Network_Time/WiFi_Network_Time.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2022-05-17 22:28:10.205
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --go, --sidp=0x810a0, --id=0x0, --timestamp=1651192844, /cygdrive/e/GitHub Repo/CE392_Project/WiFi-Test/DE10_Nano_WiFi_Switch_Reader/software/WiFi_Network_Time/WiFi_Network_Time.elf] return code: 16
+
+!ENTRY com.altera.sbtgui.launch 4 0 2022-05-17 22:28:10.205
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2022-05-17 22:29:15.744
+!MESSAGE Executing: [E:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop --sidp=0x810a0 --id=0x0 --timestamp=1651192844]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2022-05-17 22:29:18.081
+!MESSAGE Executing: [E:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go --sidp=0x810a0 --id=0x0 --timestamp=1651192844 /cygdrive/e/GitHub Repo/CE392_Project/WiFi-Test/DE10_Nano_WiFi_Switch_Reader/software/WiFi_Network_Time/WiFi_Network_Time.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2022-05-17 22:29:19.785
+!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --go, --sidp=0x810a0, --id=0x0, --timestamp=1651192844, /cygdrive/e/GitHub Repo/CE392_Project/WiFi-Test/DE10_Nano_WiFi_Switch_Reader/software/WiFi_Network_Time/WiFi_Network_Time.elf] return code: 16
+
+!ENTRY com.altera.sbtgui.launch 4 0 2022-05-17 22:29:19.786
+!MESSAGE Downloading ELF Process failed

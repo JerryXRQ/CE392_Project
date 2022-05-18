@@ -134,7 +134,7 @@ module RFS_WiFi_mm_interconnect_0_router_001
     // Figure out the number of bits to mask off for each slave span
     // during address decoding
     // -------------------------------------------------------
-    localparam PAD0 = log2ceil(64'h60000 - 64'h40000); 
+    localparam PAD0 = log2ceil(64'h80000 - 64'h40000); 
     localparam PAD1 = log2ceil(64'h81000 - 64'h80800); 
     // -------------------------------------------------------
     // Work out which address bits are significant based on the
@@ -189,7 +189,7 @@ module RFS_WiFi_mm_interconnect_0_router_001
         // Sets the channel and destination ID based on the address
         // --------------------------------------------------
 
-    // ( 0x40000 .. 0x60000 )
+    // ( 0x40000 .. 0x80000 )
     if ( {address[RG:PAD0],{PAD0{1'b0}}} == 20'h40000   ) begin
             src_channel = 14'b10;
             src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 3;

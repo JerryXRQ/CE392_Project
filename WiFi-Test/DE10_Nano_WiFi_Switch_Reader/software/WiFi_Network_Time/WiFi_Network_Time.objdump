@@ -35,45 +35,43 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY
   8 .debug_aranges 000015a8  00000000  00000000  0001e020  2**3
                   CONTENTS, READONLY, DEBUGGING
-  9 .debug_info   00039b39  00000000  00000000  0001f5c8  2**0
+  9 .debug_info   00039b6f  00000000  00000000  0001f5c8  2**0
                   CONTENTS, READONLY, DEBUGGING
- 10 .debug_abbrev 0000e489  00000000  00000000  00059101  2**0
+ 10 .debug_abbrev 0000e489  00000000  00000000  00059137  2**0
                   CONTENTS, READONLY, DEBUGGING
- 11 .debug_line   00012785  00000000  00000000  0006758a  2**0
+ 11 .debug_line   00012785  00000000  00000000  000675c0  2**0
                   CONTENTS, READONLY, DEBUGGING
- 12 .debug_frame  0000317c  00000000  00000000  00079d10  2**2
+ 12 .debug_frame  0000317c  00000000  00000000  00079d48  2**2
                   CONTENTS, READONLY, DEBUGGING
- 13 .debug_str    00004ab5  00000000  00000000  0007ce8c  2**0
+ 13 .debug_str    00004ad9  00000000  00000000  0007cec4  2**0
                   CONTENTS, READONLY, DEBUGGING
- 14 .debug_loc    00026791  00000000  00000000  00081941  2**0
+ 14 .debug_loc    00026791  00000000  00000000  0008199d  2**0
                   CONTENTS, READONLY, DEBUGGING
- 15 .debug_alt_sim_info 00000060  00000000  00000000  000a80d4  2**2
+ 15 .debug_alt_sim_info 00000060  00000000  00000000  000a8130  2**2
                   CONTENTS, READONLY, DEBUGGING
- 16 .debug_ranges 000022b0  00000000  00000000  000a8138  2**3
+ 16 .debug_ranges 000022b0  00000000  00000000  000a8190  2**3
                   CONTENTS, READONLY, DEBUGGING
- 17 .thread_model 00000003  00000000  00000000  000ae574  2**0
+ 17 .thread_model 00000003  00000000  00000000  000ae59a  2**0
                   CONTENTS, READONLY
- 18 .cpu          0000000c  00000000  00000000  000ae577  2**0
+ 18 .cpu          0000000c  00000000  00000000  000ae59d  2**0
                   CONTENTS, READONLY
- 19 .qsys         00000001  00000000  00000000  000ae583  2**0
+ 19 .qsys         00000001  00000000  00000000  000ae5a9  2**0
                   CONTENTS, READONLY
- 20 .simulation_enabled 00000001  00000000  00000000  000ae584  2**0
+ 20 .simulation_enabled 00000001  00000000  00000000  000ae5aa  2**0
                   CONTENTS, READONLY
- 21 .sysid_hash   00000004  00000000  00000000  000ae585  2**0
+ 21 .sysid_hash   00000004  00000000  00000000  000ae5ab  2**0
                   CONTENTS, READONLY
- 22 .sysid_base   00000004  00000000  00000000  000ae589  2**0
+ 22 .sysid_base   00000004  00000000  00000000  000ae5af  2**0
                   CONTENTS, READONLY
- 23 .sysid_time   00000004  00000000  00000000  000ae58d  2**0
+ 23 .sysid_time   00000004  00000000  00000000  000ae5b3  2**0
                   CONTENTS, READONLY
- 24 .stderr_dev   00000009  00000000  00000000  000ae591  2**0
+ 24 .stderr_dev   00000009  00000000  00000000  000ae5b7  2**0
                   CONTENTS, READONLY
- 25 .stdin_dev    00000009  00000000  00000000  000ae59a  2**0
+ 25 .stdin_dev    00000009  00000000  00000000  000ae5c0  2**0
                   CONTENTS, READONLY
- 26 .stdout_dev   00000009  00000000  00000000  000ae5a3  2**0
+ 26 .stdout_dev   00000009  00000000  00000000  000ae5c9  2**0
                   CONTENTS, READONLY
- 27 .sopc_system_name 00000008  00000000  00000000  000ae5ac  2**0
-                  CONTENTS, READONLY
- 28 .sopcinfo     0005b475  00000000  00000000  000ae5b4  2**0
+ 27 .sopc_system_name 00000008  00000000  00000000  000ae5d2  2**0
                   CONTENTS, READONLY
 SYMBOL TABLE:
 00040000 l    d  .entry	00000000 .entry

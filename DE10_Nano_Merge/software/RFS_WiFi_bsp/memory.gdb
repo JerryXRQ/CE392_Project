@@ -3,7 +3,7 @@
 # Machine generated for CPU 'nios2_gen2_0' in SOPC Builder design 'RFS_WiFi'
 # SOPC Builder design path: ../../RFS_WiFi.sopcinfo
 #
-# Generated: Thu May 12 21:15:37 CDT 2022
+# Generated: Wed May 18 02:10:37 CDT 2022
 
 # DO NOT MODIFY THIS FILE
 #
@@ -47,4 +47,4 @@
 # by allowing GDB to cache memory contents on the host.
 
 # onchip_memory2
-memory 0x40000 0x5fbd0 cache
+memory 0x40000 0x622e0 cache

@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2_gen2_0' in SOPC Builder design 'RFS_WiFi'
  * SOPC Builder design path: ../../RFS_WiFi.sopcinfo
  *
- * Generated: Thu May 12 21:15:37 CDT 2022
+ * Generated: Wed May 18 02:10:37 CDT 2022
  */
 
 /*
@@ -66,7 +66,7 @@
  */
 
 #define ONCHIP_MEMORY2_REGION_BASE 0x40020
-#define ONCHIP_MEMORY2_REGION_SPAN 129968
+#define ONCHIP_MEMORY2_REGION_SPAN 139968
 #define RESET_REGION_BASE 0x40000
 #define RESET_REGION_SPAN 32
 

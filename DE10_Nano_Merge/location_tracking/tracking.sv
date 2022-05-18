@@ -9,7 +9,7 @@ module tracking #(
     // // fifo_gs2sob_empty
     // input  logic        ready,
 
-    input  logic        in_wr_en, 
+    input  logic        in_wr_en,
 
     input logic [23:0] in_din,
 
@@ -19,7 +19,7 @@ module tracking #(
     output logic         valid,
     output logic [11:0]  center_x,
     output logic [11:0]  center_y,
-    
+
     output logic [11:0]  width,
     output logic [11:0]  height
 );
@@ -95,7 +95,7 @@ end
 always_comb begin
     center_x_c = center_x;
     center_y_c = center_y;
-    coord_x_c  = coord_x; 
+    coord_x_c  = coord_x;
     coord_y_c  = coord_y;
     width_c    = width;
     height_c   = height;
@@ -108,7 +108,7 @@ always_comb begin
     state_c    = state;
 
     in_rd_en   = 1'b0;
-    
+
     case (state)
         s0: begin
             if ( in_empty == 1'b0 ) begin
@@ -122,8 +122,11 @@ always_comb begin
                     end
                 end
                 state_c = s2;
-					 
+
             end
+				if (in_full == 1'b1) begin
+					center_x_c = 88;
+				end
 			/*
 			else begin
 				center_y_c = counter;
@@ -136,18 +139,18 @@ always_comb begin
                 if (start==1'b1) begin
                     valid_c = 1'b1;
                     center_x_c = (a_x+(b_x? b_x:a_x))>>1;
-                    center_y_c = (a_y+(b_y? b_y:a_y))>>1;    
+                    center_y_c = (a_y+(b_y? b_y:a_y))>>1;
                     width_c = (b_x? b_x:a_x)-a_x+1;
                     height_c = (b_y? b_y:a_y)-a_y+1;
                 end
             end
         end
-        
+
         s2: begin
             state_c = s0;
-            if ((in_dout[23:16]<=8'd50) && 
-                (in_dout[15:8]>=8'd50) &&
-                (in_dout[7:0]<=8'd50)
+            if (($unsigned(in_dout[23:16])<=8'd50) &&
+                ($unsigned(in_dout[15:8])>=8'd100) &&
+                ($unsigned(in_dout[7:0])<=8'd50)
             ) begin
                 if (start==1'b0) begin
                     start_c = 1'b1;
@@ -156,8 +159,12 @@ always_comb begin
                 end else begin
                     b_x_c = coord_x;
                     b_y_c = coord_y;
-                end                
+                end
             end
+				
+				if (in_full == 1'b1) begin
+					center_x_c = 88;
+				end
         end
 
         default: begin

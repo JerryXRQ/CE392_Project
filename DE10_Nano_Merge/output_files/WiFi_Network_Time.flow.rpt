@@ -1,5 +1,5 @@
 Flow report for WiFi_Network_Time
-Tue May 17 19:59:52 2022
+Wed May 18 11:31:42 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,18 +40,18 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Tue May 17 19:58:30 2022       ;
+; Flow Status                     ; Successful - Wed May 18 11:30:34 2022       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; WiFi_Network_Time                           ;
 ; Top-level Entity Name           ; WiFi_Network_Time                           ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CSEBA6U23I7                                ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 15,389 / 41,910 ( 37 % )                    ;
-; Total registers                 ; 28057                                       ;
+; Logic utilization (in ALMs)     ; 15,247 / 41,910 ( 36 % )                    ;
+; Total registers                 ; 26998                                       ;
 ; Total pins                      ; 108 / 314 ( 34 % )                          ;
 ; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 4,237,376 / 5,662,720 ( 75 % )              ;
+; Total block memory bits         ; 4,317,376 / 5,662,720 ( 76 % )              ;
 ; Total DSP Blocks                ; 5 / 112 ( 4 % )                             ;
 ; Total HSSI RX PCSs              ; 0                                           ;
 ; Total HSSI PMA RX Deserializers ; 0                                           ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/17/2022 19:43:22 ;
+; Start date & time ; 05/18/2022 11:19:21 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; WiFi_Network_Time   ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ refer to the applicable agreement for further details.
 ; Assignment Name                                        ; Value                                                      ; Default Value ; Entity Name ; Section Id ;
 +--------------------------------------------------------+------------------------------------------------------------+---------------+-------------+------------+
 ; BLOCK_RAM_AND_MLAB_EQUIVALENT_PAUSED_READ_CAPABILITIES ; Dont Care                                                  ; Care          ; --          ; --         ;
-; COMPILER_SIGNATURE_ID                                  ; 174508021099471.165283460126472                            ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID                                  ; 174508021099471.165289076008224                            ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP                                 ; 100                                                        ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP                                 ; -40                                                        ; --            ; --          ; --         ;
 ; MISC_FILE                                              ; V_D8M/FRAM_BUFF_bb.v                                       ; --            ; --          ; --         ;
@@ -97,7 +97,7 @@ refer to the applicable agreement for further details.
 ; PROJECT_OUTPUT_DIRECTORY                               ; output_files                                               ; --            ; --          ; --         ;
 ; SLD_FILE                                               ; RFS_WiFi/synthesis/RFS_WiFi.regmap                         ; --            ; --          ; --         ;
 ; SLD_FILE                                               ; RFS_WiFi/synthesis/RFS_WiFi.debuginfo                      ; --            ; --          ; --         ;
-; SLD_INFO                                               ; QSYS_NAME RFS_WiFi HAS_SOPCINFO 1 GENERATION_ID 1652407859 ; --            ; RFS_WiFi    ; --         ;
+; SLD_INFO                                               ; QSYS_NAME RFS_WiFi HAS_SOPCINFO 1 GENERATION_ID 1652857515 ; --            ; RFS_WiFi    ; --         ;
 ; SOPCINFO_FILE                                          ; RFS_WiFi/synthesis/../../RFS_WiFi.sopcinfo                 ; --            ; --          ; --         ;
 ; SPD_FILE                                               ; V/VIDEO_PLL.spd                                            ; --            ; --          ; --         ;
 ; SPD_FILE                                               ; V/AUDIO_PLL.spd                                            ; --            ; --          ; --         ;
@@ -112,11 +112,11 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:02:03     ; 1.0                     ; 5217 MB             ; 00:02:34                           ;
-; Fitter               ; 00:12:09     ; 1.4                     ; 7147 MB             ; 00:27:46                           ;
-; Assembler            ; 00:00:33     ; 1.0                     ; 5178 MB             ; 00:00:33                           ;
-; Timing Analyzer      ; 00:01:20     ; 2.8                     ; 5950 MB             ; 00:03:27                           ;
-; Total                ; 00:16:05     ; --                      ; --                  ; 00:34:20                           ;
+; Analysis & Synthesis ; 00:01:18     ; 1.6                     ; 5217 MB             ; 00:02:04                           ;
+; Fitter               ; 00:09:04     ; 1.3                     ; 7194 MB             ; 00:22:32                           ;
+; Assembler            ; 00:00:31     ; 1.0                     ; 5173 MB             ; 00:00:28                           ;
+; Timing Analyzer      ; 00:01:07     ; 2.8                     ; 5938 MB             ; 00:02:42                           ;
+; Total                ; 00:12:00     ; --                      ; --                  ; 00:27:46                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

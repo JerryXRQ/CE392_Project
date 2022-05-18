@@ -93,7 +93,7 @@ module RFS_WiFi (
 	wire   [1:0] mm_interconnect_0_pio_height_s1_address;                    // mm_interconnect_0:pio_height_s1_address -> pio_height:address
 	wire         mm_interconnect_0_onchip_memory2_s1_chipselect;             // mm_interconnect_0:onchip_memory2_s1_chipselect -> onchip_memory2:chipselect
 	wire  [31:0] mm_interconnect_0_onchip_memory2_s1_readdata;               // onchip_memory2:readdata -> mm_interconnect_0:onchip_memory2_s1_readdata
-	wire  [14:0] mm_interconnect_0_onchip_memory2_s1_address;                // mm_interconnect_0:onchip_memory2_s1_address -> onchip_memory2:address
+	wire  [15:0] mm_interconnect_0_onchip_memory2_s1_address;                // mm_interconnect_0:onchip_memory2_s1_address -> onchip_memory2:address
 	wire   [3:0] mm_interconnect_0_onchip_memory2_s1_byteenable;             // mm_interconnect_0:onchip_memory2_s1_byteenable -> onchip_memory2:byteenable
 	wire         mm_interconnect_0_onchip_memory2_s1_write;                  // mm_interconnect_0:onchip_memory2_s1_write -> onchip_memory2:write
 	wire  [31:0] mm_interconnect_0_onchip_memory2_s1_writedata;              // mm_interconnect_0:onchip_memory2_s1_writedata -> onchip_memory2:writedata

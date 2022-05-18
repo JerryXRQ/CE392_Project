@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2_gen2_0' in SOPC Builder design 'RFS_WiFi'
  * SOPC Builder design path: ../../RFS_WiFi.sopcinfo
  *
- * Generated: Thu May 12 21:15:37 CDT 2022
+ * Generated: Wed May 18 02:10:37 CDT 2022
  */
 
 /*
@@ -253,8 +253,8 @@
 #define ONCHIP_MEMORY2_READ_DURING_WRITE_MODE "DONT_CARE"
 #define ONCHIP_MEMORY2_SINGLE_CLOCK_OP 0
 #define ONCHIP_MEMORY2_SIZE_MULTIPLE 1
-#define ONCHIP_MEMORY2_SIZE_VALUE 130000
-#define ONCHIP_MEMORY2_SPAN 130000
+#define ONCHIP_MEMORY2_SIZE_VALUE 140000
+#define ONCHIP_MEMORY2_SPAN 140000
 #define ONCHIP_MEMORY2_TYPE "altera_avalon_onchip_memory2"
 #define ONCHIP_MEMORY2_WRITABLE 1
 
@@ -460,7 +460,7 @@
 #define SYSID_QSYS_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SYSID_QSYS_NAME "/dev/sysid_qsys"
 #define SYSID_QSYS_SPAN 8
-#define SYSID_QSYS_TIMESTAMP 1652407859
+#define SYSID_QSYS_TIMESTAMP 1652857515
 #define SYSID_QSYS_TYPE "altera_avalon_sysid_qsys"
 
 

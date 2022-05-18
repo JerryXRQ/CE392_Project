@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>May 13, 2022 1:09:38 AM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1652422178426</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>May 18, 2022 2:18:46 AM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1652858326479</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>E:\CE392\DE10_Nano_Merge\software\RFS_WiFi_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>..\..\RFS_WiFi.sopcinfo</SopcDesignFile>
@@ -924,8 +924,8 @@
         </Setting>
         <MemoryMap>
                 <slaveDescriptor>onchip_memory2</slaveDescriptor>
-                <addressRange>0x00040000 - 0x0005FBCF</addressRange>
-                <addressSpan>130000</addressSpan>
+                <addressRange>0x00040000 - 0x000622DF</addressRange>
+                <addressSpan>140000</addressSpan>
                 <attributes>memory</attributes>
         </MemoryMap>
         <MemoryMap>

@@ -19,20 +19,20 @@ preplace inst RFS_WiFi.sysid_qsys -pg 1 -lvl 3 -y 410
 preplace inst RFS_WiFi.pio_wifi_reset -pg 1 -lvl 3 -y 930
 preplace inst RFS_WiFi.pio_width -pg 1 -lvl 3 -y 130
 preplace inst RFS_WiFi.SEG7_IF_0 -pg 1 -lvl 3 -y 1030
-preplace netloc EXPORT<net_container>RFS_WiFi</net_container>(SLAVE)RFS_WiFi.pio_led_external_connection,(SLAVE)pio_led.external_connection) 1 0 3 NJ 1160 NJ 1160 NJ
-preplace netloc INTERCONNECT<net_container>RFS_WiFi</net_container>(MASTER)nios2_gen2_0.debug_reset_request,(SLAVE)pio_key.reset,(SLAVE)pio_wifi_reset.reset,(SLAVE)nios2_gen2_0.reset,(SLAVE)SEG7_IF_0.clock_sink_reset,(SLAVE)pio_led.reset,(SLAVE)pio_x.reset,(SLAVE)timer.reset,(SLAVE)wifi_uart0.reset,(MASTER)clk_50.clk_reset,(SLAVE)onchip_memory2.reset1,(SLAVE)pio_height.reset,(SLAVE)pio_y.reset,(SLAVE)jtag_uart.reset,(SLAVE)pio_width.reset,(SLAVE)sysid_qsys.reset) 1 1 2 430 540 850
-preplace netloc EXPORT<net_container>RFS_WiFi</net_container>(SLAVE)RFS_WiFi.pio_y_external_connection,(SLAVE)pio_y.external_connection) 1 0 3 NJ 1360 NJ 1360 NJ
-preplace netloc FAN_OUT<net_container>RFS_WiFi</net_container>(SLAVE)pio_key.clk,(SLAVE)SEG7_IF_0.clock_sink,(SLAVE)pio_y.clk,(MASTER)clk_50.clk,(SLAVE)pio_wifi_reset.clk,(SLAVE)sysid_qsys.clk,(SLAVE)pio_height.clk,(SLAVE)pio_x.clk,(SLAVE)pio_width.clk,(SLAVE)wifi_uart0.clk,(SLAVE)nios2_gen2_0.clk,(SLAVE)onchip_memory2.clk1,(SLAVE)timer.clk,(SLAVE)pio_led.clk,(SLAVE)jtag_uart.clk) 1 1 2 410 500 810
+preplace netloc EXPORT<net_container>RFS_WiFi</net_container>(SLAVE)pio_led.external_connection,(SLAVE)RFS_WiFi.pio_led_external_connection) 1 0 3 NJ 1160 NJ 1160 NJ
+preplace netloc INTERCONNECT<net_container>RFS_WiFi</net_container>(SLAVE)timer.s1,(SLAVE)pio_y.s1,(SLAVE)sysid_qsys.control_slave,(SLAVE)onchip_memory2.s1,(SLAVE)jtag_uart.avalon_jtag_slave,(MASTER)nios2_gen2_0.data_master,(SLAVE)pio_width.s1,(SLAVE)wifi_uart0.s1,(MASTER)nios2_gen2_0.instruction_master,(SLAVE)SEG7_IF_0.avalon_slave,(SLAVE)nios2_gen2_0.debug_mem_slave,(SLAVE)pio_key.s1,(SLAVE)pio_wifi_reset.s1,(SLAVE)pio_x.s1,(SLAVE)pio_led.s1,(SLAVE)pio_height.s1) 1 1 2 450 520 830
 preplace netloc EXPORT<net_container>RFS_WiFi</net_container>(SLAVE)RFS_WiFi.wifi_uart0_external_connection,(SLAVE)wifi_uart0.external_connection) 1 0 3 NJ 840 NJ 840 NJ
-preplace netloc EXPORT<net_container>RFS_WiFi</net_container>(SLAVE)pio_height.external_connection,(SLAVE)RFS_WiFi.pio_height_external_connection) 1 0 3 NJ 60 NJ 60 NJ
-preplace netloc EXPORT<net_container>RFS_WiFi</net_container>(SLAVE)SEG7_IF_0.conduit_end,(SLAVE)RFS_WiFi.seg7_if_0_conduit_end) 1 0 3 NJ 1100 NJ 1100 NJ
+preplace netloc EXPORT<net_container>RFS_WiFi</net_container>(SLAVE)pio_x.external_connection,(SLAVE)RFS_WiFi.pio_x_external_connection) 1 0 3 NJ 1260 NJ 1260 NJ
+preplace netloc EXPORT<net_container>RFS_WiFi</net_container>(SLAVE)RFS_WiFi.pio_wifi_reset_external_connection,(SLAVE)pio_wifi_reset.external_connection) 1 0 3 NJ 960 NJ 960 NJ
 preplace netloc EXPORT<net_container>RFS_WiFi</net_container>(SLAVE)RFS_WiFi.pio_key_external_connection,(SLAVE)pio_key.external_connection) 1 0 3 NJ 720 NJ 720 NJ
 preplace netloc EXPORT<net_container>RFS_WiFi</net_container>(SLAVE)clk_50.clk_in,(SLAVE)RFS_WiFi.clk) 1 0 1 NJ
+preplace netloc INTERCONNECT<net_container>RFS_WiFi</net_container>(SLAVE)pio_x.reset,(SLAVE)pio_width.reset,(SLAVE)pio_key.reset,(SLAVE)pio_y.reset,(SLAVE)wifi_uart0.reset,(SLAVE)timer.reset,(SLAVE)jtag_uart.reset,(SLAVE)onchip_memory2.reset1,(MASTER)clk_50.clk_reset,(SLAVE)nios2_gen2_0.reset,(SLAVE)pio_height.reset,(MASTER)nios2_gen2_0.debug_reset_request,(SLAVE)sysid_qsys.reset,(SLAVE)pio_led.reset,(SLAVE)SEG7_IF_0.clock_sink_reset,(SLAVE)pio_wifi_reset.reset) 1 1 2 430 540 850
 preplace netloc EXPORT<net_container>RFS_WiFi</net_container>(SLAVE)RFS_WiFi.reset,(SLAVE)clk_50.clk_in_reset) 1 0 1 NJ
-preplace netloc EXPORT<net_container>RFS_WiFi</net_container>(SLAVE)pio_wifi_reset.external_connection,(SLAVE)RFS_WiFi.pio_wifi_reset_external_connection) 1 0 3 NJ 960 NJ 960 NJ
-preplace netloc INTERCONNECT<net_container>RFS_WiFi</net_container>(SLAVE)pio_key.s1,(SLAVE)jtag_uart.avalon_jtag_slave,(SLAVE)nios2_gen2_0.debug_mem_slave,(SLAVE)SEG7_IF_0.avalon_slave,(SLAVE)sysid_qsys.control_slave,(MASTER)nios2_gen2_0.instruction_master,(SLAVE)pio_led.s1,(SLAVE)wifi_uart0.s1,(SLAVE)pio_x.s1,(SLAVE)onchip_memory2.s1,(MASTER)nios2_gen2_0.data_master,(SLAVE)pio_width.s1,(SLAVE)pio_height.s1,(SLAVE)timer.s1,(SLAVE)pio_y.s1,(SLAVE)pio_wifi_reset.s1) 1 1 2 450 520 830
-preplace netloc EXPORT<net_container>RFS_WiFi</net_container>(SLAVE)RFS_WiFi.pio_x_external_connection,(SLAVE)pio_x.external_connection) 1 0 3 NJ 1260 NJ 1260 NJ
-preplace netloc EXPORT<net_container>RFS_WiFi</net_container>(SLAVE)pio_width.external_connection,(SLAVE)RFS_WiFi.pio_width_external_connection) 1 0 3 NJ 160 NJ 160 NJ
-preplace netloc FAN_OUT<net_container>RFS_WiFi</net_container>(SLAVE)pio_key.irq,(MASTER)nios2_gen2_0.irq,(SLAVE)timer.irq,(SLAVE)jtag_uart.irq,(SLAVE)wifi_uart0.irq) 1 2 1 870
+preplace netloc EXPORT<net_container>RFS_WiFi</net_container>(SLAVE)RFS_WiFi.pio_height_external_connection,(SLAVE)pio_height.external_connection) 1 0 3 NJ 60 NJ 60 NJ
+preplace netloc FAN_OUT<net_container>RFS_WiFi</net_container>(SLAVE)wifi_uart0.irq,(MASTER)nios2_gen2_0.irq,(SLAVE)jtag_uart.irq,(SLAVE)timer.irq,(SLAVE)pio_key.irq) 1 2 1 870
+preplace netloc EXPORT<net_container>RFS_WiFi</net_container>(SLAVE)pio_y.external_connection,(SLAVE)RFS_WiFi.pio_y_external_connection) 1 0 3 NJ 1360 NJ 1360 NJ
+preplace netloc EXPORT<net_container>RFS_WiFi</net_container>(SLAVE)RFS_WiFi.pio_width_external_connection,(SLAVE)pio_width.external_connection) 1 0 3 NJ 160 NJ 160 NJ
+preplace netloc FAN_OUT<net_container>RFS_WiFi</net_container>(SLAVE)nios2_gen2_0.clk,(SLAVE)pio_led.clk,(SLAVE)jtag_uart.clk,(SLAVE)sysid_qsys.clk,(SLAVE)pio_wifi_reset.clk,(SLAVE)pio_height.clk,(SLAVE)pio_x.clk,(SLAVE)timer.clk,(SLAVE)wifi_uart0.clk,(SLAVE)onchip_memory2.clk1,(SLAVE)pio_key.clk,(SLAVE)SEG7_IF_0.clock_sink,(MASTER)clk_50.clk,(SLAVE)pio_y.clk,(SLAVE)pio_width.clk) 1 1 2 410 500 810
+preplace netloc EXPORT<net_container>RFS_WiFi</net_container>(SLAVE)RFS_WiFi.seg7_if_0_conduit_end,(SLAVE)SEG7_IF_0.conduit_end) 1 0 3 NJ 1100 NJ 1100 NJ
 levelinfo -pg 1 0 200 1090
 levelinfo -hier RFS_WiFi 210 240 570 930 1080

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="RFS_WiFi" kind="RFS_WiFi" version="1.0" fabric="QSYS">
  <!-- Format version 18.1 625 (Future versions may contain additional information.) -->
- <!-- 2022.05.12.21:10:59 -->
+ <!-- 2022.05.18.02:05:16 -->
  <!-- A collection of modules and connections -->
  <parameter name="AUTO_GENERATION_ID">
   <type>java.lang.Integer</type>
-  <value>1652407859</value>
+  <value>1652857515</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>false</visible>
@@ -3395,7 +3395,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="instSlaveMapParam">
    <type>java.lang.String</type>
-   <value><![CDATA[<address-map><slave name='onchip_memory2.s1' start='0x40000' end='0x5FBD0' type='altera_avalon_onchip_memory2.s1' /><slave name='nios2_gen2_0.debug_mem_slave' start='0x80800' end='0x81000' type='altera_nios2_gen2.debug_mem_slave' /></address-map>]]></value>
+   <value><![CDATA[<address-map><slave name='onchip_memory2.s1' start='0x40000' end='0x622E0' type='altera_avalon_onchip_memory2.s1' /><slave name='nios2_gen2_0.debug_mem_slave' start='0x80800' end='0x81000' type='altera_nios2_gen2.debug_mem_slave' /></address-map>]]></value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -3415,7 +3415,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="dataSlaveMapParam">
    <type>java.lang.String</type>
-   <value><![CDATA[<address-map><slave name='onchip_memory2.s1' start='0x40000' end='0x5FBD0' type='altera_avalon_onchip_memory2.s1' /><slave name='nios2_gen2_0.debug_mem_slave' start='0x80800' end='0x81000' type='altera_nios2_gen2.debug_mem_slave' /><slave name='wifi_uart0.s1' start='0x81000' end='0x81020' type='altera_avalon_uart.s1' /><slave name='timer.s1' start='0x81020' end='0x81040' type='altera_avalon_timer.s1' /><slave name='SEG7_IF_0.avalon_slave' start='0x81040' end='0x81060' type='SEG7_IF.avalon_slave' /><slave name='pio_height.s1' start='0x81060' end='0x81070' type='altera_avalon_pio.s1' /><slave name='pio_width.s1' start='0x81070' end='0x81080' type='altera_avalon_pio.s1' /><slave name='pio_y.s1' start='0x81080' end='0x81090' type='altera_avalon_pio.s1' /><slave name='pio_x.s1' start='0x81090' end='0x810A0' type='altera_avalon_pio.s1' /><slave name='pio_led.s1' start='0x810A0' end='0x810B0' type='altera_avalon_pio.s1' /><slave name='pio_wifi_reset.s1' start='0x810B0' end='0x810C0' type='altera_avalon_pio.s1' /><slave name='pio_key.s1' start='0x810C0' end='0x810D0' type='altera_avalon_pio.s1' /><slave name='sysid_qsys.control_slave' start='0x810D0' end='0x810D8' type='altera_avalon_sysid_qsys.control_slave' /><slave name='jtag_uart.avalon_jtag_slave' start='0x810D8' end='0x810E0' type='altera_avalon_jtag_uart.avalon_jtag_slave' /></address-map>]]></value>
+   <value><![CDATA[<address-map><slave name='onchip_memory2.s1' start='0x40000' end='0x622E0' type='altera_avalon_onchip_memory2.s1' /><slave name='nios2_gen2_0.debug_mem_slave' start='0x80800' end='0x81000' type='altera_nios2_gen2.debug_mem_slave' /><slave name='wifi_uart0.s1' start='0x81000' end='0x81020' type='altera_avalon_uart.s1' /><slave name='timer.s1' start='0x81020' end='0x81040' type='altera_avalon_timer.s1' /><slave name='SEG7_IF_0.avalon_slave' start='0x81040' end='0x81060' type='SEG7_IF.avalon_slave' /><slave name='pio_height.s1' start='0x81060' end='0x81070' type='altera_avalon_pio.s1' /><slave name='pio_width.s1' start='0x81070' end='0x81080' type='altera_avalon_pio.s1' /><slave name='pio_y.s1' start='0x81080' end='0x81090' type='altera_avalon_pio.s1' /><slave name='pio_x.s1' start='0x81090' end='0x810A0' type='altera_avalon_pio.s1' /><slave name='pio_led.s1' start='0x810A0' end='0x810B0' type='altera_avalon_pio.s1' /><slave name='pio_wifi_reset.s1' start='0x810B0' end='0x810C0' type='altera_avalon_pio.s1' /><slave name='pio_key.s1' start='0x810C0' end='0x810D0' type='altera_avalon_pio.s1' /><slave name='sysid_qsys.control_slave' start='0x810D0' end='0x810D8' type='altera_avalon_sysid_qsys.control_slave' /><slave name='jtag_uart.avalon_jtag_slave' start='0x810D8' end='0x810E0' type='altera_avalon_jtag_uart.avalon_jtag_slave' /></address-map>]]></value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -4197,7 +4197,7 @@ parameters are a RESULT of the module parameters. -->
     <slaveName>s1</slaveName>
     <name>onchip_memory2.s1</name>
     <baseAddress>262144</baseAddress>
-    <span>130000</span>
+    <span>140000</span>
    </memoryBlock>
   </interface>
   <interface name="instruction_master" kind="avalon_master" version="18.1">
@@ -4506,7 +4506,7 @@ parameters are a RESULT of the module parameters. -->
     <slaveName>s1</slaveName>
     <name>onchip_memory2.s1</name>
     <baseAddress>262144</baseAddress>
-    <span>130000</span>
+    <span>140000</span>
    </memoryBlock>
   </interface>
   <interface name="irq" kind="interrupt_receiver" version="18.1">
@@ -5192,7 +5192,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.SIZE_VALUE</name>
-   <value>130000</value>
+   <value>140000</value>
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.WRITABLE</name>
@@ -5324,7 +5324,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="memorySize">
    <type>long</type>
-   <value>130000</value>
+   <value>140000</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -5463,7 +5463,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="derived_set_addr_width">
    <type>int</type>
-   <value>15</value>
+   <value>16</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -5471,7 +5471,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="derived_set_addr_width2">
    <type>int</type>
-   <value>15</value>
+   <value>16</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -5608,7 +5608,7 @@ parameters are a RESULT of the module parameters. -->
    </parameter>
    <parameter name="addressSpan">
     <type>java.math.BigInteger</type>
-    <value>130000</value>
+    <value>140000</value>
     <derived>true</derived>
     <enabled>true</enabled>
     <visible>false</visible>
@@ -5696,7 +5696,7 @@ parameters are a RESULT of the module parameters. -->
    </parameter>
    <parameter name="explicitAddressSpan">
     <type>java.math.BigInteger</type>
-    <value>130000</value>
+    <value>140000</value>
     <derived>false</derived>
     <enabled>true</enabled>
     <visible>true</visible>
@@ -5907,7 +5907,7 @@ parameters are a RESULT of the module parameters. -->
    <port>
     <name>address</name>
     <direction>Input</direction>
-    <width>15</width>
+    <width>16</width>
     <role>address</role>
    </port>
    <port>
@@ -11467,7 +11467,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.TIMESTAMP</name>
-   <value>1652407859</value>
+   <value>1652857515</value>
   </assignment>
   <assignment>
    <name>embeddedsw.dts.compatible</name>
@@ -11487,7 +11487,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.dts.params.timestamp</name>
-   <value>1652407859</value>
+   <value>1652857515</value>
   </assignment>
   <assignment>
    <name>embeddedsw.dts.vendor</name>
@@ -11503,7 +11503,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="timestamp">
    <type>int</type>
-   <value>1652407859</value>
+   <value>1652857515</value>
    <derived>true</derived>
    <enabled>false</enabled>
    <visible>false</visible>
