@@ -282,19 +282,18 @@ HDMI_TX_AD7513 hdmi (
 
  
 wire IN_full;
-wire IN_wr_en;
+reg IN_wr_en;
+reg [23:0] IN_din;
 
 tracking #(
     .WIDTH(640),
     .HEIGHT(480)
 ) tracking_dut (
     .clock_25 (HDMI_TX_CLK),
-    .clock_50(FPGA_CLK1_50),
+    .clock_50(FPGA_CLK3_50),
     .reset(RESET_N),
     .in_wr_en(IN_wr_en),
-    .oR(VGA_R),
-    .oG(VGA_G),
-    .oB(VGA_B),
+    .in_din(IN_din),
     .in_full(IN_full),
     .valid(valid_out),
     .center_x(center_x_out),
@@ -303,8 +302,10 @@ tracking #(
     .height(height_out)
 );
 
-assign IN_wr_en = IN_full ? 1'b0 : 1'b1;
-
+always @ ( posedge HDMI_TX_CLK ) begin
+    IN_wr_en <= IN_full ? 1'b0 : 1'b1;
+    IN_din <= {VGA_R,VGA_G,VGA_B};
+end
 
 
 // //---VGA TIMG TO HDMI  ----  

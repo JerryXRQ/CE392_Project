@@ -11,9 +11,8 @@ module tracking #(
 
     input  logic        in_wr_en, 
 
-    input  logic [7:0]  oR,
-    input  logic [7:0]  oG,
-    input  logic [7:0]  oB,
+    input logic [23:0] in_din,
+
 
     output logic        in_full,
 
@@ -40,15 +39,18 @@ logic start_c, start;
 
 logic in_rd_en, in_empty;
 logic [23:0] in_dout;
+logic fifo_reset;
+
+assign fifo_reset = ~reset;
 
 fifo #(
     .FIFO_BUFFER_SIZE(1024),
     .FIFO_DATA_WIDTH(24)
 ) fifo_in_inst (
-    .reset(reset),
+    .reset(fifo_reset),
     .wr_clk(clock_25),
     .wr_en(in_wr_en),
-    .din({oR, oG, oB}),
+    .din(in_din),
     .full(in_full),
     .rd_clk(clock_50),
     .rd_en(in_rd_en),
@@ -59,8 +61,8 @@ fifo #(
 always_ff @(posedge clock_50 or negedge reset) begin
     if (reset == 1'b0)
     begin
-        center_x <= 'b1;
-        center_y <= 'b1;
+        center_x <= 2;
+        center_y <= 2;
         coord_x  <= 'b0;
         coord_y  <= 'b0;
         width    <= 'b0;
@@ -120,13 +122,20 @@ always_comb begin
                     end
                 end
                 state_c = s1;
+					 
             end
+			/*
+			else begin
+				center_y_c = counter;
+				height_c = in_dout;
+			end
+			*/
         end
-
+        
         s1: begin
             state_c = s2;
         end
-
+        
         s2: begin
             if ((in_dout[23:16]<=8'd50) && 
                 (in_dout[15:8]>=8'd50) &&
@@ -143,7 +152,7 @@ always_comb begin
             end
             state_c = s3;
         end
-
+        
         s3: begin
             state_c = s0;
             if (coord_x==WIDTH-1 && coord_y==HEIGHT-1) begin
@@ -156,6 +165,7 @@ always_comb begin
                     height_c = (b_y? b_y:a_y)-a_y+1;
                 end
             end
+				
         end
 
         default: begin

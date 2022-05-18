@@ -50,8 +50,7 @@ tracking #(
     .WIDTH(WIDTH),
     .HEIGHT(HEIGHT)
 ) tracking_dut (
-    .clock_25(clock),
-    .clock_50(clock),
+    .clock(clock),
     .reset(reset),
     .in_wr_en(in_wr_en),
     .oR(in_din[23:16]),

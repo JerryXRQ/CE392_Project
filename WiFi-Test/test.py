@@ -35,6 +35,14 @@ def main():
 
         print(clientMsg)
         print(clientIP)
+        msg = str(message)
+        print("X_Coordinate: %d",message[:msg.find('\n')])
+        msg = msg[msg.find('\n')+1:]
+        print("Y_Coordinate: %d", message[:msg.find('\n')])
+        msg = msg[msg.find('\n') + 1:]
+        print("Width: %d", message[:msg.find('\n')])
+        msg = msg[msg.find('\n') + 1:]
+        print("Height: %d", message)
 
     # Sending a reply to client
 

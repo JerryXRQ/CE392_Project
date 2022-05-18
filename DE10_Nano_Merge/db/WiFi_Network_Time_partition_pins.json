@@ -264,6 +264,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "FPGA_CLK3_50",
+					"strict" : false
+				},
+				{
 					"name" : "MIPI_PIXEL_D[1]",
 					"strict" : false
 				},

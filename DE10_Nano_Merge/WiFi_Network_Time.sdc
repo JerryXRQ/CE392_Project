@@ -34,18 +34,29 @@ derive_pll_clocks
 #**************************************************************
 derive_clock_uncertainty
 
+create_clock -period "25.0 MHz"  -name MIPI_PIXEL_CLK [get_ports MIPI_PIXEL_CLK]
+create_clock -period "25.0 MHz"  -name HDMI_TX_CLK [get_ports HDMI_TX_CLK]
 
+create_clock -period "15 KHz"  -name HDMI_TX_HS [get_ports HDMI_TX_HS]
+create_clock -period "60 Hz"  -name HDMI_TX_VS [get_ports HDMI_TX_VS]
 
 #**************************************************************
 # Set Input Delay
 #**************************************************************
 
+set_input_delay 2.0 -clock "MIPI_PIXEL_CLK" [get_ports {MIPI_PIXEL_D[*]}]
+set_input_delay 2.0 -clock "MIPI_PIXEL_CLK" [get_ports MIPI_PIXEL_VS]
+set_input_delay 2.0 -clock "MIPI_PIXEL_CLK" [get_ports MIPI_PIXEL_HS]
 
 
 #**************************************************************
 # Set Output Delay
 #**************************************************************
 
+set_output_delay 2.0 -clock "HDMI_TX_CLK" [get_ports {HDMI_TX_D[*]}]
+set_output_delay 2.0 -clock "HDMI_TX_CLK" [get_ports HDMI_TX_DE]
+set_output_delay 2.0 -clock "HDMI_TX_CLK" [get_ports HDMI_TX_VS]
+set_output_delay 2.0 -clock "HDMI_TX_CLK" [get_ports HDMI_TX_HS]
 
 
 #**************************************************************
