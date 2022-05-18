@@ -61,8 +61,8 @@ fifo #(
 always_ff @(posedge clock_50 or negedge reset) begin
     if (reset == 1'b0)
     begin
-        center_x <= 2;
-        center_y <= 2;
+        center_x <= 'b0;
+        center_y <= 'b0;
         coord_x  <= 'b0;
         coord_y  <= 'b0;
         width    <= 'b0;
