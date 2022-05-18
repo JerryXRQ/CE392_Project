@@ -121,7 +121,7 @@ always_comb begin
                         coord_y_c = 12'b0;
                     end
                 end
-                state_c = s1;
+                state_c = s2;
 					 
             end
 			/*
@@ -130,13 +130,21 @@ always_comb begin
 				height_c = in_dout;
 			end
 			*/
-        end
-        
-        s1: begin
-            state_c = s2;
+
+            if (coord_x==WIDTH-1 && coord_y==HEIGHT-1) begin
+                start_c = 1'b0;
+                if (start==1'b1) begin
+                    valid_c = 1'b1;
+                    center_x_c = (a_x+(b_x? b_x:a_x))>>1;
+                    center_y_c = (a_y+(b_y? b_y:a_y))>>1;    
+                    width_c = (b_x? b_x:a_x)-a_x+1;
+                    height_c = (b_y? b_y:a_y)-a_y+1;
+                end
+            end
         end
         
         s2: begin
+            state_c = s0;
             if ((in_dout[23:16]<=8'd50) && 
                 (in_dout[15:8]>=8'd50) &&
                 (in_dout[7:0]<=8'd50)
@@ -150,22 +158,6 @@ always_comb begin
                     b_y_c = coord_y;
                 end                
             end
-            state_c = s3;
-        end
-        
-        s3: begin
-            state_c = s0;
-            if (coord_x==WIDTH-1 && coord_y==HEIGHT-1) begin
-                start_c = 1'b0;
-                if (start==1'b1) begin
-                    valid_c = 1'b1;
-                    center_x_c = (a_x+(b_x? b_x:a_x))>>1;
-                    center_y_c = (a_y+(b_y? b_y:a_y))>>1;    
-                    width_c = (b_x? b_x:a_x)-a_x+1;
-                    height_c = (b_y? b_y:a_y)-a_y+1;
-                end
-            end
-				
         end
 
         default: begin
