@@ -7,7 +7,8 @@ localparam string IMG_IN_NAME_BASE  = "brooklyn_bridge_720_540.bmp";
 localparam string IMG_OUT_NAME = "green_dot.bmp";
 localparam CLOCK_PERIOD = 10;
 
-logic clock = 1'b1;
+logic clock_25 = 1'b1;
+logic clock_50 = 1'b1;
 logic reset = '0;
 logic start = '0;
 logic done  = '0;
@@ -50,8 +51,8 @@ tracking #(
     .WIDTH(WIDTH),
     .HEIGHT(HEIGHT)
 ) tracking_dut (
-    .clock_25(clock),
-    .clock_50(clock),
+    .clock_25(clock_25),
+    .clock_50(clock_50),
     .reset(reset),
     .in_wr_en(in_wr_en),
 
@@ -65,30 +66,37 @@ tracking #(
 );
 
 always begin
-    clock = 1'b1;
+    clock_50 = 1'b1;
     #(CLOCK_PERIOD/2);
-    clock = 1'b0;
+    clock_50 = 1'b0;
     #(CLOCK_PERIOD/2);
 end
 
 initial begin
-    @(posedge clock);
-    reset = 1'b1;
-    @(posedge clock);
+    clock_25 = 1'b1;
+    forever begin
+        #(CLOCK_PERIOD) clock_25=~clock_25;
+    end
+end
+
+initial begin
+    @(posedge clock_50);
     reset = 1'b0;
+    @(posedge clock_50);
+    reset = 1'b1;
 end
 
 initial begin : tb_process
     longint unsigned start_time, end_time;
 
     @(negedge reset);
-    @(posedge clock);
+    @(posedge clock_50);
     start_time = $time;
 
     // start
     $display("@ %0t: Beginning simulation...", start_time);
     start = 1'b1;
-    @(posedge clock);
+    @(posedge clock_50);
     start = 1'b0;
 
     // wait(out_read_done);
@@ -181,8 +189,8 @@ initial begin : img_read_process
 
     // Read data from image file
     i = 0;
-    while ( i < BMP_DATA_SIZE+90000 ) begin
-        @(negedge clock);
+    while ( i < 1169470*3 ) begin
+        @(negedge clock_50);
         in_wr_en = 1'b0;
         if (in_full == 1'b0) begin
             r = $fread(in_din, in_file, BMP_HEADER_SIZE+i, BYTES_PER_PIXEL);
@@ -195,10 +203,12 @@ initial begin : img_read_process
             $display("@ %0t: center_y is %d...", $time, center_y_out);
             $display("@ %0t: width_out %d...", $time, width_out);
             $display("@ %0t: height_out %d...", $time, height_out);
+            $display("@ %0t: i is %d...", $time, i);
+            i = 0;
         end
     end
 
-    @(negedge clock);
+    @(negedge clock_50);
     in_wr_en = 1'b0;
     $fclose(in_file);
     in_write_done = 1'b1;
