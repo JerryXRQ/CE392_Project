@@ -11,24 +11,24 @@ cModel Technology
 Z0 dC:/Users/yxu19/Desktop/Sobel_DE10-master/Sobel_DE10-master/location_tracking
 vfifo
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1651598197
+Z2 !s110 1652999779
 !i10b 1
 !s100 JJ9WTn?^46FJn6Sib6ECo1
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
 I0<<9:MEmYPC9ICQz24R[:2
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
-R0
-w1644895328
+Z5 dE:/GitHub Repo/CE392_Project/DE10_Nano_Merge/location_tracking
+w1644895330
 8./fifo.sv
 F./fifo.sv
-!i122 156
+!i122 211
 L0 2 77
-Z5 OV;L;2020.1;71
+Z6 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1651598197.000000
+!s108 1652999778.000000
 !s107 ./fifo.sv|
 !s90 -reportprogress|300|-work|work|./fifo.sv|
 !i113 1
@@ -49,7 +49,7 @@ w1651447119
 FC:/Users/yxu19/Desktop/Sobel_DE10-master/Sobel_DE10-master/location_tracking/tracking_tb.sv
 !i122 3
 L0 4 178
-R5
+R6
 r1
 !s85 0
 31
@@ -63,22 +63,22 @@ vtracking
 R1
 R2
 !i10b 1
-!s100 ;:535A`@gSJj^@0Q[2bE00
+!s100 b8=If1TbT6iDdARz^Mjin0
 R3
-IYN23_4k^]]PbTVf]O[;XC1
+I`I3KFXn3J>oN4IEU1=Km11
 R4
 S1
-R0
-w1651598194
+R5
+w1652999405
 8./tracking.sv
 F./tracking.sv
-!i122 157
-L0 1 179
-R5
+!i122 212
+L0 1 190
+R6
 r1
 !s85 0
 31
-R6
+Z9 !s108 1652999779.000000
 !s107 ./tracking.sv|
 !s90 -reportprogress|300|-work|work|./tracking.sv|
 !i113 1
@@ -88,22 +88,22 @@ vtracking_tb
 R1
 R2
 !i10b 1
-!s100 XOPJI;U23TYbG5`6PIV[^1
+!s100 odUhW6SK@:=IdN0G4E6iL0
 R3
-I`ZzagdOo6PLHhz@PFk:Rk2
+Ij4JDYmEkd?UKmzh9f]IQ[3
 R4
 S1
-R0
-w1651508993
+R5
+w1652999774
 8./tracking_tb.sv
 F./tracking_tb.sv
-!i122 158
-L0 4 205
-R5
+!i122 213
+L0 4 225
+R6
 r1
 !s85 0
 31
-R6
+R9
 !s107 ./tracking_tb.sv|
 !s90 -reportprogress|300|-work|work|./tracking_tb.sv|
 !i113 1

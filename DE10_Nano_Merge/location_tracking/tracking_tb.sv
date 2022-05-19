@@ -99,7 +99,7 @@ initial begin : tb_process
     @(posedge clock_50);
     start = 1'b0;
 
-    // wait(out_read_done);
+    wait(out_read_done);
     end_time = $time;
 
     // report metrics
@@ -108,7 +108,7 @@ initial begin : tb_process
     $display("Total error count: %0d", out_errors);
 
 
-    wait(in_write_done);
+    // wait(in_write_done);
     // $display
 
 
@@ -122,8 +122,8 @@ end
 //     int cmp_file;
 //     logic [7:0] bmp_header [0:BMP_HEADER_SIZE-1];
 
-//     @(negedge reset);
-//     @(negedge clock);
+//     // @(negedge reset);
+//     @(negedge clock_50);
 
 //     $display("@ %0t: Generating file %s...", $time, IMG_OUT_NAME);
     
@@ -138,7 +138,7 @@ end
 
 //     i = 0;
 //     while (i < BMP_DATA_SIZE/BYTES_PER_PIXEL) begin
-//         @(negedge clock);
+//         @(negedge clock_50);
 //         // if (
 //         //     i==(WIDTH*100+WIDTH/2)
 //         // ) begin
@@ -161,13 +161,15 @@ end
 //             i==(WIDTH*103+WIDTH/2)+3 
 //         ) begin
 //             $fwrite(out_file, "%c%c%c", 8'b0, 8'b11111111, 8'b0);
+//         end else if (i < 10) begin 
+//             $fwrite(out_file, "%c%c%c", 8'b0, 8'b0, 8'b11111111);
 //         end else begin
 //             $fwrite(out_file, "%c%c%c", 8'b0, 8'b0, 8'b0);
 //         end
 //         i += 1;
 //     end
 
-//     @(negedge clock);
+//     @(negedge clock_50);
 //     $fclose(out_file);
 //     out_read_done = 1'b1;
 // end
@@ -189,12 +191,20 @@ initial begin : img_read_process
 
     // Read data from image file
     i = 0;
-    while ( i < 1169470*3 ) begin
-        @(negedge clock_50);
+    while ( i < 1169470*8 ) begin
+        @(negedge clock_25);
         in_wr_en = 1'b0;
         if (in_full == 1'b0) begin
-            r = $fread(in_din, in_file, BMP_HEADER_SIZE+i, BYTES_PER_PIXEL);
-
+            if(i<1166400)begin
+                r = $fread(in_din, in_file, BMP_HEADER_SIZE+i, BYTES_PER_PIXEL);
+                
+            end
+            else begin
+                i = 0;
+                in_file = $fopen(IMG_OUT_NAME, "rb");
+                r = $fread(bmp_header, in_file, 0, BMP_HEADER_SIZE);
+                r = $fread(in_din, in_file, BMP_HEADER_SIZE+i, BYTES_PER_PIXEL);
+            end
             in_wr_en = 1'b1;
             i += BYTES_PER_PIXEL;
         end
@@ -204,11 +214,11 @@ initial begin : img_read_process
             $display("@ %0t: width_out %d...", $time, width_out);
             $display("@ %0t: height_out %d...", $time, height_out);
             $display("@ %0t: i is %d...", $time, i);
-            i = 0;
+                   
         end
     end
 
-    @(negedge clock_50);
+    @(negedge clock_25);
     in_wr_en = 1'b0;
     $fclose(in_file);
     in_write_done = 1'b1;

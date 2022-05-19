@@ -38,7 +38,7 @@ logic [11:0] a_x_c, a_y_c, b_x_c, b_y_c;
 logic start_c, start;
 
 logic in_rd_en, in_empty;
-logic [23:0] in_dout;
+logic [23:0] in_dout, out, out_c;
 logic fifo_reset;
 
 assign fifo_reset = ~reset;
@@ -74,6 +74,7 @@ always_ff @(posedge clock_50 or negedge reset) begin
         b_y      <= 'b0;
         start    <= 'b0;
         state    <= s0;
+        out      <= 'b0;
     end else
     begin
         center_x <= center_x_c;
@@ -89,6 +90,7 @@ always_ff @(posedge clock_50 or negedge reset) begin
         b_y      <= b_y_c;
         start    <= start_c;
         state    <= state_c;
+        out      <= out_c;
     end
 end
 
@@ -106,6 +108,7 @@ always_comb begin
     b_y_c      = b_y;
     start_c    = start;
     state_c    = state;
+    out_c      = out;
 
     in_rd_en   = 1'b0;
 
@@ -113,6 +116,7 @@ always_comb begin
         s0: begin
             if ( in_empty == 1'b0 ) begin
                 in_rd_en = 1'b1;
+                out_c = in_dout;
                 coord_x_c = coord_x + 12'b1;
                 if ( coord_x == WIDTH-1 ) begin
                     coord_x_c = 12'b0;
@@ -124,9 +128,6 @@ always_comb begin
                 state_c = s2;
 
             end
-				if (in_full == 1'b1) begin
-					center_x_c = 88;
-				end
 			/*
 			else begin
 				center_y_c = counter;
@@ -148,9 +149,9 @@ always_comb begin
 
         s2: begin
             state_c = s0;
-            if (($unsigned(in_dout[23:16])<=8'd50) &&
-                ($unsigned(in_dout[15:8])>=8'd100) &&
-                ($unsigned(in_dout[7:0])<=8'd50)
+            if (($unsigned(out[23:16])<=8'd50) &&
+                ($unsigned(out[15:8])>=8'd100) &&
+                ($unsigned(out[7:0])<=8'd50)
             ) begin
                 if (start==1'b0) begin
                     start_c = 1'b1;
