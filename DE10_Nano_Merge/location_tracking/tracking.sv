@@ -68,8 +68,8 @@ always_ff @(posedge clock_50 or negedge reset) begin
         width    <= 'b0;
         height   <= 'b0;
         valid    <= 'b0;
-        a_x      <= 'b0;
-        a_y      <= 'b0;
+        a_x      <= 'd999;
+        a_y      <= 'd999;
         b_x      <= 'b0;
         b_y      <= 'b0;
         start    <= 'b0;
@@ -139,14 +139,24 @@ always_comb begin
                 start_c = 1'b0;
                 if (start==1'b1) begin
                     valid_c = 1'b1;
-                    center_x_c = (a_x+(b_x? b_x:a_x))>>1;
-                    center_y_c = (a_y+(b_y? b_y:a_y))>>1;
-                    width_c = (b_x? b_x:a_x)-a_x+1;
-                    height_c = (b_y? b_y:a_y)-a_y+1;
+                    center_x_c = (b_x + a_x)>>1;
+                    center_y_c = (b_y + a_y)>>1;
+                    width_c = (b_x - a_x)+1;
+                    height_c = (b_y - a_y)+1;
                 end
+                else begin
+                    center_x_c = 0;
+                    center_y_c = 0;
+                    width_c = 0;
+                    height_c = 0;
+                end
+                a_x_c = 999;
+                a_y_c = 999;
+                b_x_c = 0;
+                b_y_c = 0;
             end
         end
-
+        /*
         s2: begin
             state_c = s0;
             if (($unsigned(out[23:16])<=8'd50) &&
@@ -162,10 +172,30 @@ always_comb begin
                     b_y_c = coord_y;
                 end
             end
-				
-				if (in_full == 1'b1) begin
-					center_x_c = 88;
-				end
+				*/
+        s2: begin
+            state_c = s0;
+            if (($unsigned(out[23:16])<=$unsigned(out[15:8]>>1)) &&
+                ($unsigned(out[15:8])>=8'd100) &&
+                ($unsigned(out[7:0])<=$unsigned(out[15:8]>>1))
+            ) begin
+                if (start==1'b0) begin
+                    start_c = 1'b1;
+                end
+                if($unsigned(coord_x)<$unsigned(a_x)) begin
+                    a_x_c = coord_x;
+                end
+                if($unsigned(coord_x)>$unsigned(b_x)) begin
+                    b_x_c = coord_x;
+                end
+
+                if($unsigned(coord_y)<$unsigned(a_y)) begin
+                    a_y_c = coord_y;
+                end
+                if($unsigned(coord_y)>$unsigned(b_y)) begin
+                    b_y_c = coord_y;
+                end
+            end
         end
 
         default: begin
