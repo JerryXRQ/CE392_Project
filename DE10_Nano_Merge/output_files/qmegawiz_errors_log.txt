@@ -1,0 +1,11 @@
+
+
+E:/CE392/DE10_Nano_Merge/V/VIDEO_PLL.v
+
+May 20 10AM:04:12>: Megafunction PLL Intel FPGA IP v20.1 is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+E:/CE392/DE10_Nano_Merge/V/VIDEO_PLL.v
+
+May 20 10AM:04:13>: Megafunction PLL Intel FPGA IP v20.1 is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted

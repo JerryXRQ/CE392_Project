@@ -128,12 +128,6 @@ always_comb begin
                 state_c = s2;
 
             end
-			/*
-			else begin
-				center_y_c = counter;
-				height_c = in_dout;
-			end
-			*/
 
             if (coord_x==WIDTH-1 && coord_y==HEIGHT-1) begin
                 start_c = 1'b0;

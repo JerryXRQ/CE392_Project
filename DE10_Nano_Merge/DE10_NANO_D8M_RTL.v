@@ -99,6 +99,7 @@ wire        HDMI_I2S_;
 wire        LUT_MIPI_PIXEL_HS;
 wire        LUT_MIPI_PIXEL_VS;
 wire [9:0]  LUT_MIPI_PIXEL_D  ;
+wire DLY_RST_2;
 //=======================================================
 // Structural coding
 //=======================================================
@@ -131,7 +132,7 @@ RESET_DELAY  dl(
            .RESET_N      ( KEY[0] ) ,
            .CLK          ( FPGA_CLK1_50) , 
            .READY0       ( RESET_N),
-			  .READY1       ( RESET_N_DELAY ) 
+			  .READY1       ( RESET_N_DELAY )
 ); 
 
  //------ MIPI BRIGE & CAMERA SETTING  --   
@@ -229,7 +230,7 @@ VGA_Controller u1(
 	       .iCLK       ( VGA_CLK),		 				 
 	       .oVGA_HS    ( VGA_HS  ),
 	       .oVGA_VS    ( VGA_VS  ),	       		 
-	       .iRST_N      ( 1 ) ,
+	       .iRST_N      ( RESET_N ) ,
 			 .oRequest	 (TX_DE 	  )
 ); 
 assign READ_Request = TX_DE ; 
@@ -282,15 +283,15 @@ HDMI_TX_AD7513 hdmi (
 
  
 wire IN_full;
-reg IN_wr_en;
-reg [23:0] IN_din;
+wire IN_wr_en;
+wire [23:0] IN_din;
 
 tracking #(
     .WIDTH(640),
     .HEIGHT(480)
 ) tracking_dut (
     .clock_25 (HDMI_TX_CLK),
-    .clock_50(FPGA_CLK3_50),
+    .clock_50(FPGA_CLK1_50),
     .reset(RESET_N),
     .in_wr_en(IN_wr_en),
     .in_din(IN_din),
@@ -302,10 +303,9 @@ tracking #(
     .height(height_out)
 );
 
-always @ ( posedge HDMI_TX_CLK ) begin
-    IN_wr_en <= IN_full ? 1'b0 : 1'b1;
-    IN_din <= {VGA_R,VGA_G,VGA_B};
-end
+assign IN_wr_en = ~IN_full & READ_Request;
+assign IN_din = {VGA_R,VGA_G,VGA_B};
+
 
 
 // //---VGA TIMG TO HDMI  ----  

@@ -108,22 +108,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "LED[7]",
-					"strict" : false
-				},
-				{
-					"name" : "UART2USB_TX",
-					"strict" : false
-				},
-				{
-					"name" : "WIFI_RST_n",
-					"strict" : false
-				},
-				{
-					"name" : "MIPI_RESET_n",
-					"strict" : false
-				},
-				{
 					"name" : "LED[0]",
 					"strict" : false
 				},
@@ -140,11 +124,23 @@
 					"strict" : false
 				},
 				{
-					"name" : "HDMI_TX_DE",
+					"name" : "WIFI_RST_n",
+					"strict" : false
+				},
+				{
+					"name" : "MIPI_RESET_n",
 					"strict" : false
 				},
 				{
 					"name" : "LED[6]",
+					"strict" : false
+				},
+				{
+					"name" : "LED[7]",
+					"strict" : false
+				},
+				{
+					"name" : "UART2USB_TX",
 					"strict" : false
 				},
 				{
@@ -156,15 +152,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "HDMI_I2C_SCL",
-					"strict" : false
-				},
-				{
-					"name" : "HDMI_I2C_SDA",
-					"strict" : false
-				},
-				{
-					"name" : "HDMI_I2S",
+					"name" : "HDMI_TX_DE",
 					"strict" : false
 				},
 				{
@@ -184,7 +172,23 @@
 					"strict" : false
 				},
 				{
+					"name" : "HDMI_I2C_SCL",
+					"strict" : false
+				},
+				{
+					"name" : "HDMI_I2C_SDA",
+					"strict" : false
+				},
+				{
+					"name" : "HDMI_I2S",
+					"strict" : false
+				},
+				{
 					"name" : "CAMERA_I2C_SDA",
+					"strict" : false
+				},
+				{
+					"name" : "KEY[0]",
 					"strict" : false
 				},
 				{
@@ -193,10 +197,6 @@
 				},
 				{
 					"name" : "SW[0]",
-					"strict" : false
-				},
-				{
-					"name" : "KEY[0]",
 					"strict" : false
 				},
 				{
@@ -265,10 +265,6 @@
 				},
 				{
 					"name" : "MIPI_PIXEL_D[1]",
-					"strict" : false
-				},
-				{
-					"name" : "FPGA_CLK3_50",
 					"strict" : false
 				},
 				{

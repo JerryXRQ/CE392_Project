@@ -35,7 +35,7 @@ int main()
     return 0;
 }
 
-const char *pc_server_domain = "192.168.12.108";//"192.168.10.55";
+const char *pc_server_domain = "192.168.10.55";//"192.168.12.108";
 const char *greetings = "hello world";
 
 void hello_world()
@@ -70,23 +70,23 @@ void hello_world()
     printf("attempted");
 
     while(1){
-    	usleep(1 * 1000 * 1000);
+    	usleep(1 * 100 * 1000);
     	int sw1;
     	int sw2;
     	int sw3;
     	int sw4;
     	sw1 = IORD_ALTERA_AVALON_PIO_DATA(PIO_X_BASE);
-    	printf("Center X: %d\n", sw1);
+    	//printf("Center X: %d\n", sw1);
     	char str1[20];
 
     	sw2 = IORD_ALTERA_AVALON_PIO_DATA(PIO_Y_BASE);
 
-    	printf("Center Y: %d\n", sw2);
+    	//printf("Center Y: %d\n", sw2);
     	sw3 = IORD_ALTERA_AVALON_PIO_DATA(PIO_WIDTH_BASE);
-    	printf("Width: %d\n", sw3);
+		//printf("Width: %d\n", sw3);
 
     	sw4 = IORD_ALTERA_AVALON_PIO_DATA(PIO_HEIGHT_BASE);
-    	printf("Height: %d\n", sw4);
+    	//printf("Height: %d\n", sw4);
     	sprintf(str1, "%d\n%d\n%d\n%d\n", sw1,sw2,sw3,sw4);
 
     	printf("%s\n", str1);

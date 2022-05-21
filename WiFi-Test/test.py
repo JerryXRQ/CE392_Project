@@ -2,7 +2,7 @@ import socket
 import time
 import matplotlib
 import matplotlib.pyplot as plt
-matplotlib.use("TkAgg")
+from mpl_toolkits import mplot3d
 
 def main():
     localIP = "127.0.0.1"
@@ -29,17 +29,24 @@ def main():
 
     x = []
     y = []
-
+    z = []
 
     plt.ion()
-    figure, ax = plt.subplots(figsize=(8, 6))
-    plt.title("Tracker Results")
-    plt.xlabel("X")
-    plt.ylabel("Y")
-    line1, = ax.plot(x, y, 'o')
+
+    figure = plt.figure(figsize=(9, 6))
+    ax = plt.axes(projection='3d')
+    ax.grid()
+    pts = ax.scatter(x, y, z, color='red')
+
+    ax.set_title("Tracker Results")
+    ax.set_xlabel("X")
+    ax.set_ylabel("Y")
+    ax.set_zlabel("Z")
+
     ax.set_autoscaley_on(True)
     ax.set_xlim(0, 640)
     ax.set_ylim(0, 480)
+    ax.set_zlim(0,500)
     plt.pause(0.1)
 
     while (True):
@@ -70,16 +77,14 @@ def main():
         print("Height: ", msg)
 
 
-        if height_current < 480 and width_current < 640:
+        if height_current < 480 and width_current < 640 and width_current>0 and height_current>0:
             x.append(x_current)
             y.append(y_current)
+            z.append(500 - 300 * 100/(width_current*height_current)**0.5)
 
-            line1.set_xdata(x)
-            line1.set_ydata(y)
-            ax.relim()
-            ax.autoscale_view()
-            figure.canvas.draw()
-
+            pts.remove()
+            pts = ax.scatter(x, y, z, color='red')
+            plt.draw()
             figure.canvas.flush_events()
 
 if __name__ == "__main__":
