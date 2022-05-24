@@ -285,6 +285,7 @@ HDMI_TX_AD7513 hdmi (
 wire IN_full;
 wire IN_wr_en;
 wire [23:0] IN_din;
+wire [23:0] OUT_dout;
 
 tracking #(
     .WIDTH(640),
@@ -295,6 +296,7 @@ tracking #(
     .reset(RESET_N),
     .in_wr_en(IN_wr_en),
     .in_din(IN_din),
+    .out_dout(OUT_dout),
     .in_full(IN_full),
     .valid(valid_out),
     .center_x(center_x_out),
@@ -329,7 +331,7 @@ assign IN_din = {VGA_R,VGA_G,VGA_B};
 
 //---VGA TIMG TO HDMI  ----  
 assign HDMI_TX_CLK =   VGA_CLK;
-assign HDMI_TX_D = TX_DE ? (SW[1] ? {VGA_R, VGA_G, VGA_B} : { VGA_R, VGA_G, VGA_B  }) :  0;
+assign HDMI_TX_D = TX_DE ? (SW[1] ? OUT_dout : { VGA_R, VGA_G, VGA_B  }) :  0;
 //assign HDMI_TX_D   = TX_DE? { VGA_R, VGA_G, VGA_B  }  :0 ;  
 assign HDMI_TX_DE  = READ_Request;           
 assign HDMI_TX_HS  = VGA_HS                 ;
