@@ -80,7 +80,7 @@ def main():
         if height_current < 480 and width_current < 640 and width_current>0 and height_current>0:
             x.append(x_current)
             y.append(y_current)
-            z.append(500 - 300 * 100/(width_current*height_current)**0.5)
+            z.append(500 - 500 * 100/(width_current*height_current)**0.5)
 
             pts.remove()
             pts = ax.scatter(x, y, z, color='red')
