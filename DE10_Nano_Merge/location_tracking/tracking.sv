@@ -13,6 +13,7 @@ module tracking #(
 
     input logic [23:0] in_din,
 
+    output logic [23:0] out_dout,
 
     output logic        in_full,
 
@@ -137,12 +138,14 @@ always_comb begin
                     center_y_c = (b_y + a_y)>>1;
                     width_c = (b_x - a_x)+1;
                     height_c = (b_y - a_y)+1;
+                    out_dout = {8'255, 8'b0, 8'b0};
                 end
                 else begin
                     center_x_c = 0;
                     center_y_c = 0;
                     width_c = 0;
                     height_c = 0;
+                    out_dout = out;
                 end
                 a_x_c = 999;
                 a_y_c = 999;
