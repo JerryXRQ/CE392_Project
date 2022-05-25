@@ -39,13 +39,13 @@ logic [11:0] a_x_c, a_y_c, b_x_c, b_y_c;
 logic start_c, start;
 
 logic in_rd_en, in_empty;
-logic [23:0] in_dout, out, out_c;
+logic [23:0] in_dout, out, out_c, out_dout_c;
 logic fifo_reset;
 
 assign fifo_reset = ~reset;
 
 fifo #(
-    .FIFO_BUFFER_SIZE(1024),
+    .FIFO_BUFFER_SIZE(512),
     .FIFO_DATA_WIDTH(24)
 ) fifo_in_inst (
     .reset(fifo_reset),
@@ -76,6 +76,7 @@ always_ff @(posedge clock_50 or negedge reset) begin
         start    <= 'b0;
         state    <= s0;
         out      <= 'b0;
+		  out_dout <= 'b0;
     end else
     begin
         center_x <= center_x_c;
@@ -92,6 +93,7 @@ always_ff @(posedge clock_50 or negedge reset) begin
         start    <= start_c;
         state    <= state_c;
         out      <= out_c;
+		  out_dout <= out_dout_c;
     end
 end
 
@@ -112,12 +114,18 @@ always_comb begin
     out_c      = out;
 
     in_rd_en   = 1'b0;
+	 out_dout_c = out_dout;
 
     case (state)
         s0: begin
             if ( in_empty == 1'b0 ) begin
                 in_rd_en = 1'b1;
-                out_c = in_dout;
+					 out_dout_c = in_dout;
+					 out_c = in_dout;
+					 if ( coord_x <= center_x+3 && coord_x >= center_x-3 && coord_y <= center_y+3 && coord_y >= center_y-3) begin
+						out_dout_c = {8'd255, 8'b0, 8'b0};
+					 end
+					 
                 coord_x_c = coord_x + 12'b1;
                 if ( coord_x == WIDTH-1 ) begin
                     coord_x_c = 12'b0;
@@ -126,10 +134,13 @@ always_comb begin
                         coord_y_c = 12'b0;
                     end
                 end
+					 
+					 
                 state_c = s2;
 
             end
-
+				
+				
             if (coord_x==WIDTH-1 && coord_y==HEIGHT-1) begin
                 start_c = 1'b0;
                 if (start==1'b1) begin
@@ -138,14 +149,13 @@ always_comb begin
                     center_y_c = (b_y + a_y)>>1;
                     width_c = (b_x - a_x)+1;
                     height_c = (b_y - a_y)+1;
-                    out_dout = {8'255, 8'b0, 8'b0};
                 end
                 else begin
                     center_x_c = 0;
                     center_y_c = 0;
                     width_c = 0;
                     height_c = 0;
-                    out_dout = out;
+                    
                 end
                 a_x_c = 999;
                 a_y_c = 999;
@@ -172,6 +182,8 @@ always_comb begin
 				*/
         s2: begin
             state_c = s0;
+				
+				
             if (($unsigned(out[23:16])<=$unsigned(out[15:8]>>1)) &&
                 ($unsigned(out[15:8])>=8'd100) &&
                 ($unsigned(out[7:0])<=$unsigned(out[15:8]>>1))

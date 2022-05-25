@@ -1,9 +1,9 @@
 Info (10281): Verilog HDL Declaration information at AUTO_SYNC_MODIFY.v(4): object "VS" differs only in case from object "vs" in the same scope File: E:/CE392/DE10_Nano_Merge/V_Auto/AUTO_SYNC_MODIFY.v Line: 4
 Info (10281): Verilog HDL Declaration information at AUTO_SYNC_MODIFY.v(5): object "HS" differs only in case from object "hs" in the same scope File: E:/CE392/DE10_Nano_Merge/V_Auto/AUTO_SYNC_MODIFY.v Line: 5
-Warning (10273): Verilog HDL warning at tracking.sv(198): extended using "x" or "z" File: E:/CE392/DE10_Nano_Merge/location_tracking/tracking.sv Line: 198
-Warning (10273): Verilog HDL warning at tracking.sv(199): extended using "x" or "z" File: E:/CE392/DE10_Nano_Merge/location_tracking/tracking.sv Line: 199
-Warning (10273): Verilog HDL warning at tracking.sv(200): extended using "x" or "z" File: E:/CE392/DE10_Nano_Merge/location_tracking/tracking.sv Line: 200
-Warning (10273): Verilog HDL warning at tracking.sv(201): extended using "x" or "z" File: E:/CE392/DE10_Nano_Merge/location_tracking/tracking.sv Line: 201
+Warning (10273): Verilog HDL warning at tracking.sv(213): extended using "x" or "z" File: E:/CE392/DE10_Nano_Merge/location_tracking/tracking.sv Line: 213
+Warning (10273): Verilog HDL warning at tracking.sv(214): extended using "x" or "z" File: E:/CE392/DE10_Nano_Merge/location_tracking/tracking.sv Line: 214
+Warning (10273): Verilog HDL warning at tracking.sv(215): extended using "x" or "z" File: E:/CE392/DE10_Nano_Merge/location_tracking/tracking.sv Line: 215
+Warning (10273): Verilog HDL warning at tracking.sv(216): extended using "x" or "z" File: E:/CE392/DE10_Nano_Merge/location_tracking/tracking.sv Line: 216
 Info (10281): Verilog HDL Declaration information at tracking.sv(2): object "WIDTH" differs only in case from object "width" in the same scope File: E:/CE392/DE10_Nano_Merge/location_tracking/tracking.sv Line: 2
 Info (10281): Verilog HDL Declaration information at tracking.sv(4): object "HEIGHT" differs only in case from object "height" in the same scope File: E:/CE392/DE10_Nano_Merge/location_tracking/tracking.sv Line: 4
 Info (10281): Verilog HDL Declaration information at RFS_WiFi_mm_interconnect_0_router_005.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope File: E:/CE392/DE10_Nano_Merge/RFS_WiFi/synthesis/submodules/RFS_WiFi_mm_interconnect_0_router_005.sv Line: 48

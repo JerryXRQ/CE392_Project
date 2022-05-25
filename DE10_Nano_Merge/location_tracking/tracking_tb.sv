@@ -15,7 +15,6 @@ logic done  = '0;
 logic        in_full;
 logic        in_wr_en  = '0;
 logic [23:0] in_din    = '0;
-logic [23:0] out_dout  = '0;
 
 logic        in_full_1;
 logic        in_wr_en_1  = '0;
@@ -57,7 +56,6 @@ tracking #(
     .in_wr_en(in_wr_en),
 
     .in_din(in_din),
-    .out_dout(out_dout),
     .in_full(in_full),
     .valid(valid_out),
     .center_x(center_x_out),
@@ -104,6 +102,7 @@ initial begin : tb_process
 
     wait(in_write_done);
     // $display
+
 
     // end the simulation
     $finish;

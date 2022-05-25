@@ -327,15 +327,26 @@ assign IN_din = {VGA_R,VGA_G,VGA_B};
 // //-- HDMI SOUND ON -OFF
 // assign HDMI_I2S=SW[0]?HDMI_I2S_:0;
 	
-
+reg DE_C, HS_C, VS_C, DE_C1, HS_C1, VS_C1;
 
 //---VGA TIMG TO HDMI  ----  
 assign HDMI_TX_CLK =   VGA_CLK;
 assign HDMI_TX_D = TX_DE ? (SW[1] ? OUT_dout : { VGA_R, VGA_G, VGA_B  }) :  0;
 //assign HDMI_TX_D   = TX_DE? { VGA_R, VGA_G, VGA_B  }  :0 ;  
-assign HDMI_TX_DE  = READ_Request;           
-assign HDMI_TX_HS  = VGA_HS                 ;
-assign HDMI_TX_VS  = VGA_VS                 ;
+
+always@(posedge VGA_CLK)
+begin
+	DE_C <= READ_Request;
+	HS_C <= VGA_HS;
+	VS_C <= VGA_VS;
+	DE_C1 <= DE_C;
+	HS_C1 <= HS_C;
+	VS_C1 <= VS_C;
+end
+
+assign HDMI_TX_DE  = DE_C1;           
+assign HDMI_TX_HS  = HS_C1;
+assign HDMI_TX_VS  = VS_C1;
 
 //-- HDMI SOUND ON -OFF
 assign HDMI_I2S=SW[0]?HDMI_I2S_:0;
