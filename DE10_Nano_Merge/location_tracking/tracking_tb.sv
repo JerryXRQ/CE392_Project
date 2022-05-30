@@ -7,7 +7,8 @@ localparam string IMG_IN_NAME_BASE  = "brooklyn_bridge_720_540.bmp";
 localparam string IMG_OUT_NAME = "green_dot.bmp";
 localparam CLOCK_PERIOD = 10;
 
-logic clock = 1'b1;
+logic clock_25 = 1'b1;
+logic clock_50 = 1'b1;
 logic reset = '0;
 logic start = '0;
 logic done  = '0;
@@ -50,12 +51,12 @@ tracking #(
     .WIDTH(WIDTH),
     .HEIGHT(HEIGHT)
 ) tracking_dut (
-    .clock_25(clock),
-    .clock_50(clock),
+    .clock_25(clock_25),
+    .clock_50(clock_50),
     .reset(reset),
     .in_wr_en(in_wr_en),
-
     .in_din(in_din),
+    .out_dout(out_dout),
     .in_full(in_full),
     .valid(valid_out),
     .center_x(center_x_out),
@@ -65,33 +66,40 @@ tracking #(
 );
 
 always begin
-    clock = 1'b1;
+    clock_50 = 1'b1;
     #(CLOCK_PERIOD/2);
-    clock = 1'b0;
+    clock_50 = 1'b0;
     #(CLOCK_PERIOD/2);
 end
 
 initial begin
-    @(posedge clock);
-    reset = 1'b1;
-    @(posedge clock);
+    clock_25 = 1'b1;
+    forever begin
+        #(CLOCK_PERIOD) clock_25=~clock_25;
+    end
+end
+
+initial begin
+    @(posedge clock_50);
     reset = 1'b0;
+    @(posedge clock_50);
+    reset = 1'b1;
 end
 
 initial begin : tb_process
     longint unsigned start_time, end_time;
 
     @(negedge reset);
-    @(posedge clock);
+    @(posedge clock_25);
     start_time = $time;
 
     // start
     $display("@ %0t: Beginning simulation...", start_time);
     start = 1'b1;
-    @(posedge clock);
+    @(posedge clock_25);
     start = 1'b0;
 
-    // wait(out_read_done);
+    wait(out_read_done);
     end_time = $time;
 
     // report metrics
@@ -114,8 +122,8 @@ end
 //     int cmp_file;
 //     logic [7:0] bmp_header [0:BMP_HEADER_SIZE-1];
 
-//     @(negedge reset);
-//     @(negedge clock);
+//     // @(negedge reset);
+//     @(negedge clock_50);
 
 //     $display("@ %0t: Generating file %s...", $time, IMG_OUT_NAME);
     
@@ -130,7 +138,7 @@ end
 
 //     i = 0;
 //     while (i < BMP_DATA_SIZE/BYTES_PER_PIXEL) begin
-//         @(negedge clock);
+//         @(negedge clock_50);
 //         // if (
 //         //     i==(WIDTH*100+WIDTH/2)
 //         // ) begin
@@ -153,13 +161,15 @@ end
 //             i==(WIDTH*103+WIDTH/2)+3 
 //         ) begin
 //             $fwrite(out_file, "%c%c%c", 8'b0, 8'b11111111, 8'b0);
+//         end else if (i < 10) begin 
+//             $fwrite(out_file, "%c%c%c", 8'b0, 8'b0, 8'b11111111);
 //         end else begin
 //             $fwrite(out_file, "%c%c%c", 8'b0, 8'b0, 8'b0);
 //         end
 //         i += 1;
 //     end
 
-//     @(negedge clock);
+//     @(negedge clock_50);
 //     $fclose(out_file);
 //     out_read_done = 1'b1;
 // end
@@ -167,6 +177,7 @@ end
 initial begin : img_read_process
     int i, r;
     int in_file;
+    int counter;
     logic [7:0] bmp_header [0:BMP_HEADER_SIZE-1];
 
     @(posedge reset);
@@ -181,12 +192,20 @@ initial begin : img_read_process
 
     // Read data from image file
     i = 0;
-    while ( i < BMP_DATA_SIZE+90000 ) begin
-        @(negedge clock);
+    counter = 0;
+    while ( i < 23328050 ) begin
+        @(negedge clock_25);
         in_wr_en = 1'b0;
         if (in_full == 1'b0) begin
-            r = $fread(in_din, in_file, BMP_HEADER_SIZE+i, BYTES_PER_PIXEL);
-
+            if(i<1166400)begin
+                r = $fread(in_din, in_file, BMP_HEADER_SIZE+i, BYTES_PER_PIXEL);
+            end
+            else begin
+                i = 0;
+                in_file = $fopen(IMG_OUT_NAME, "rb");
+                r = $fread(bmp_header, in_file, 0, BMP_HEADER_SIZE);
+                r = $fread(in_din, in_file, BMP_HEADER_SIZE+i, BYTES_PER_PIXEL);
+            end
             in_wr_en = 1'b1;
             i += BYTES_PER_PIXEL;
         end
@@ -195,10 +214,14 @@ initial begin : img_read_process
             $display("@ %0t: center_y is %d...", $time, center_y_out);
             $display("@ %0t: width_out %d...", $time, width_out);
             $display("@ %0t: height_out %d...", $time, height_out);
+            counter += 1;
+            if(counter == 3) break;
         end
     end
 
-    @(negedge clock);
+    $finish;
+    
+    @(negedge clock_25);
     in_wr_en = 1'b0;
     $fclose(in_file);
     in_write_done = 1'b1;
