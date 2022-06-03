@@ -4,7 +4,7 @@ import matplotlib
 import matplotlib.pyplot as plt
 from mpl_toolkits import mplot3d
 
-mode = 0
+mode = 1
 #Mode 0 Plotting 3D Plot
 #Mode 1 Plotting XY Plot
 #Mode 2 Plotting XZ Plot
